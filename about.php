@@ -39,7 +39,7 @@
 
 
   <div class="about-contents">
-  <img src="imgs/about-big-bg.png" class="about-contents-bg">
+  <img src="imgs/about-big-bg.png" class="img-fluid about-contents-bg">
   <section class="story">
     <div class="story-head">
       <h3>Our Story</h3>
@@ -143,34 +143,85 @@
 
     </div>
   </section>
+  <section class="work">
+    <div class="work-head">
+      <h3>How do we work?</h3>
+    </div>
+    <div class="work-contents">
+    <div class="left-side">
+      <div class="work-side">
+        <div class="work-card">
+          <h4>01</h4>
+          <p>Businesses contact us with their staffing requirements.</p>
+        </div>
+      </div>
+      <div class="work-side">
+        <div class="work-card">
+          <h4>03</h4>
+          <p>We match the best-suited candidates with the job requirements and facilitate the placement process.</p>
+        </div>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="work-side">
+        <div class="work-card">
+          <h4>02</h4>
+          <p>We source and screen qualified and trained candidates from our pool of temporary workers.</p>
+        </div>
+      </div>
+      <div class="work-side">
+        <div class="work-card">
+          <h4>04</h4>
+          <p>We provide ongoing support and assistance to ensure a successful temporary work arrangement.</p>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
 </div>
 </div>
+<div class="footer">
+        <div>
+          <img src="imgs/logo1.png" alt="logo">
+          <h5>LK GROUP</h5>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a href="#" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="#">FAQs</a>
+          <a href="#">Help</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#">Our Mission</a>
+          <a href="#">Our Objective</a>
+          <a href="#">Our Values</a>
+          <a href="#">Our Team</a>
+        </div>
+        <div>
+          <h4>Useful Links</h4>
+          <a href="#">How we work</a>
+          <a href="#">What we do</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <div class="footer-social">
+            <a href="#"><img src="icons/linkedin.svg"></a>
+            <a href="#"><img src="icons/x.svg"><a>
+            <a href="#"><img src="icons/insta.svg"></</a>
+          </div>
+        </div>
+      </div>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript">
-  document.addEventListener("DOMContentLoaded", function () {
-    const slider = document.querySelector(".team-cards");
-    const cards = document.querySelectorAll(".team-card");
 
-    let index = 0;
-    const totalCards = cards.length;
-
-    function updateSlider() {
-        const translateValue = -(index * (cards[0].offsetWidth + 20)) + "px";
-        cards.style.transform = `translateX(${translateValue})`;
-
-        cards.forEach(card => card.classList.remove("active"));
-        cards[index].classList.add("active");
-    }
-
-    function nextSlide() {
-        index = (index + 1) % totalCards;
-        updateSlider();
-    }
-
-    setInterval(nextSlide, 5000); // Slide every 5 seconds
-
-    updateSlider();
-});
 
 </script>
 
