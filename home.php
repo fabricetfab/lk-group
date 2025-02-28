@@ -6,6 +6,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="home.css">
   <title>Lk Group | Home Page</title>
+  
 </head>
 <body>
 
@@ -13,10 +14,10 @@
     <img src="imgs/logo.png" alt="logo" class="logo" />
     
     <div class="header-navigation">
-      <a href="#about" class="active">Home</a>
-      <a href="services.php">Services</a>
-      <a href="about.php">About Us</a>
-      <a href="contact.php">Contact Us</a>
+      <a href="#about" id="homeLink" class="active">Home</a>
+      <a href="services.php" id="servicesLink">Services</a>
+      <a href="about.php" id="aboutLink">About Us</a>
+      <a href="contact.php" id="contactLink">Contact Us</a>
     </div>
 
     <div class="header-links">
@@ -24,8 +25,10 @@
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
       </svg>
-      <a href="/how-it-works">How it Works</a>
-      <a href="/faqs">FAQs</a>
+      <div class="language-toggle">
+  <button id="languageBtn" class="lang-btn" onclick="toggleLanguage()">English</button>
+</div>
+
     </div>
   </div>
 
@@ -51,7 +54,7 @@
           <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <h1>HR & Communication</h1>
+                <h1 id="corousel">HR & Communication</h1>
                 <p>Tailored solutions for modern businesses to thrive in a fast-paced digital world.</p>
               </div>
               <div class="carousel-item">
@@ -65,7 +68,7 @@
             </div>
           </div>
 
-          <button class="get-started">Get Started</button>
+          <button class="get-started" id="getStartedBtn">Get Started</button>
           <div class="home-hero-navs">
             <button id="prevBtn"><img src="icons/prev.svg"></button>
             <button id="nextBtn"><img src="icons/next.svg"></button>
@@ -490,6 +493,7 @@
           </div>
         </div>
       </div>
+      <script src="js/languageToggle.js"></script> 
 <script src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript">
     document.getElementById("prevBtn").addEventListener("click", function () {

@@ -77,6 +77,33 @@ button,input{
     color: white;
     padding: 0 15px;
 }
+.language-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .lang-btn {
+    background: linear-gradient(90deg, #2BADE2, #2286AF, #185F7C); /* Gradient color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .lang-btn:hover {
+    background-color: #185F7C; /* Change to a solid color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover for better interaction */
+  }
+  
+  .lang-btn.active {
+    background-color: #185F7C; /* Keep a solid color when active */
+  }
+  
 .header-search{
     color: #2BADE2;
     height: 16px;
