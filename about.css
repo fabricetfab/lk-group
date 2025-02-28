@@ -1,0 +1,381 @@
+@font-face {
+    font-family: 'Phudu';
+    src: url('fonts/Phudu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Phudu-big';
+    src: url('fonts/Phudu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins",sans-serif;
+    overflow-x: hidden;
+    text-align: left;
+}
+
+span,a,label,p{
+    font-family: "poppins",sans-serif;
+    text-decoration: none;
+}
+
+
+h1,h2,h3,h4,h6,h6{
+    font-family: "Phudu-big";
+     font-size: bold;
+}
+button,input{
+    font-family: "poppins",sans-serif;
+}
+
+.navigation-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    background: linear-gradient(90deg,rgb(5, 5, 5),#111111D9,#111111D9);
+    z-index: 10000;
+    height: 110px;
+    border-bottom: 2px solid #2BADE2;
+    width: 100%;
+    top: 0;
+}
+.navigation-container a{
+    font-size: .9em;
+}
+
+.header-navigation{
+    padding: 20px 15px;
+    border-radius: 50px;
+    background: linear-gradient(90deg,rgb(5, 5, 5),#111111D9,#111111D9);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.header-navigation a{
+    color: white;
+    padding: 10px 23px;
+    border: none;
+    border-radius: 30px; 
+    margin-left: 3px;
+    transition: all .5s;
+}
+.header-navigation a.active{
+    background: linear-gradient(90deg,#2BADE2,#2286AF,#185F7C);
+}
+.header-navigation a:hover{
+    background: linear-gradient(90deg,#2BADE2,#2286AF,#185F7C);
+}
+.header-links{
+    position: relative;
+}
+.header-links a{
+    color: white;
+    padding: 0 15px;
+}
+.header-search{
+    color: #2BADE2;
+    height: 16px;
+    width: 16px;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -30px;
+}
+.header-links a{
+    color: #2BADE2;
+}
+.header-links a:first-of-type{
+    border-right: 3px solid #2BADE2;
+}
+.about-hero{
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+    position: relative;
+}
+.about-hero img{
+    margin-top: -40vh;
+    height: 140vh;
+    width: 100%;
+    overflow: hidden;
+}
+.hero-contents{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    justify-items: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.hero-contents h1{
+    font-family: monoton;
+    font-size: 6em;
+}
+.hero-contents h1 span{
+    font-family: monoton;
+    margin-left: 15px;
+}
+.hero-contents p{
+    font-size: 1.3em;
+    font-weight: 300;
+}
+.about-contents{
+    position: relative;
+}
+.about-contents-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.story{
+    padding: 80px;
+    background-color: #111111;
+}
+.story .story-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.story h3{
+    color: #2BADE2;
+    position: relative;
+}
+
+.story h3::before{
+    content: "";
+    width: 50%;
+    background-color: #2BADE2;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+.story h3::after{
+    content: "";
+    width: 50%;
+    background-color: #2BADE2;
+    height: 3px;
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+}
+
+.story button{
+    width: 140px;
+    border: none;
+    border-radius: 7px;
+    background-color: #2BADE2;
+    font-weight: 600;
+    font-size: .9em;
+}
+
+.story p{
+    margin-top: 40px;
+    color: white;
+    font-size: 1.3em;
+    line-height: 1.7;
+}
+.story p span{
+    font-size: 1.7em;
+}
+.story p:first-letter{
+    font-size: 5em;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+.mission{
+    background-color: #FFFFFF03;
+    margin: 30px 80px;
+    position: relative;
+    padding: 30px;
+    position: relative;
+    border: .1em solid transparent;  /* Set border to transparent */
+    border-image: linear-gradient(-90deg, #185974, #FFFFFF03) 1;  /* Apply gradient border */
+}
+
+
+.nav-tabs {
+    border-bottom: 3px solid transparent;
+}
+
+.nav-tabs .nav-link {
+    color: #2BADE2;
+    background-color: transparent;
+    border: 2px solid transparent;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: none;
+    font-weight: 400;
+    margin-right: 20px;
+    font-family: "Phudu";
+    padding: 10px 40px;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: none;
+    color: #2BADE2;
+    border-color: transparent;
+    border-bottom: 3px solid #2BADE2;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #2286AF0D;
+    color: #2BADE2;
+    border-color: transparent;
+    border-bottom: 3px solid #2BADE2;
+}
+
+.tab-content {
+    margin-top: 20px;
+    border: none;
+    padding: 15px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5em;
+}
+.tab-content .tab-pane:first-child{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.tab-content .tab-pane:first-child div{
+    position: relative;
+}
+.tab-content .tab-pane:first-child div img{
+    width: 50%;
+    margin: auto;
+    position: relative;
+    left: 50%;
+    top: -30%;
+    transform: translateX(-50%);
+}
+.tab-content .tab-pane:first-child div p{
+    width: 70%;
+}
+.tab-content .tab-pane:first-child div:last-child{
+    grid-column: span 2;
+    transform: translateY(-100%);
+}
+.tab-content .tab-pane:first-child div:last-child p{
+    width: 100%;
+}
+.shadows{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #2BADE2;
+    filter: blur(150px);
+    z-index: 10;
+    top: 0;
+    right: 0;
+}
+.team{
+    padding: 30px 80px;
+    background-color: #111111;
+}
+.team-head{
+    display: flex;
+}
+
+.team h3{
+    color: #2BADE2;
+    position: relative;
+}
+
+.team h3::before{
+    content: "";
+    width: 50%;
+    background-color: #2BADE2;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+.team h3::after{
+    content: "";
+    width: 50%;
+    background-color: #2BADE2;
+    height: 3px;
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+}
+.team-cards{
+    background-color: #0B0A0A;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.team-card{
+    width: 400px;
+    background-color: #111111;
+    position: relative;
+    z-index: 1;
+}
+.team-card .bg-1{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    bottom: 0;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 25%, 0% 0%);
+    background-color: #2BADE291;
+    z-index: 1;
+}
+.team-card .bg-2{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    bottom: 0;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 25%);
+    background-color: #000000;
+    z-index: 2;
+}
+.member{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    z-index: 3;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.basic-info,.other-info{
+    position: relative;
+    z-index: 3;
+    padding: 0 30px;
+    color: white;
+}
+.basic-info{
+    padding-top: 30px;
+    margin-bottom: 25px;
+}
+.basic-info div{
+    display: flex;
+    justify-content: space-between;
+}
+.basic-info p{
+    opacity: .5;
+}
+.other-info div{
+    margin-top: 30px;
+    padding-bottom: 25px;
+}
+.other-info div img{
+    width: 30px;
+    margin-right: 10px;
+}
