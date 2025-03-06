@@ -113,7 +113,7 @@ button,input{
     bottom: 0;
     justify-items: center;
     align-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
 }
 .hero-contents h1{
@@ -125,7 +125,7 @@ button,input{
     margin-left: 15px;
 }
 .hero-contents p{
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: 300;
 }
 .about-contents{

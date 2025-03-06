@@ -126,10 +126,10 @@ button,input{
     height: 90vh;
     position: relative;
 }
-.home-hero .home-bg-hero{
-    margin-top: -20vh;
+.home-bg-hero{
     width: 100%;
-    height: 120vh;
+    height: 150vh;
+    margin-top: -35vh;
     z-index: 10;
 }
 .home-hero-contents{
@@ -139,7 +139,7 @@ button,input{
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(90deg,rgba(0,0,0,0.8),rgba(0,0,0,0.7),rgba(0,0,0,0.2),rgba(0,0,0,0.2),rgba(0,0,0,0.7),rgba(0,0,0,0.8));
+    background: linear-gradient(90deg,rgba(0,0,0,0.8),rgba(0,0,0,0.7),rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.7),rgba(0,0,0,0.8));
 }
 .home-hero .home-union-hero{
     width: 100%;
@@ -168,13 +168,13 @@ button,input{
 
 .home-hero-left h1{
     width: 90%;
-    font-size: 3.2em;
+    font-size: 2.5em;
     line-height: 1.3;
     margin-bottom: 10px;
 }
 .home-hero-left p{
     width: 80%;
-    font-size: 1.4em;
+    font-size: 1.2em;
     line-height: 1.3;
 }
 .home-hero-left .get-started{
@@ -211,7 +211,7 @@ button,input{
     color: white;
 }
 .home-hero-navs button{
-    padding: 6px 9px;
+    padding: 3px 6px;
     border-radius: 50%;
     background: linear-gradient(90deg,rgb(5, 5, 5),#111111D9,#111111D9);
     border: .1em solid #2BADE2;
@@ -223,29 +223,17 @@ button,input{
 }
 
 .home-hero-right-bg{
-    width: 45%;
-    height: 82%;
+    height: 100%;
     position: relative;
     margin: auto;
-    margin-left: 35%;
-    
 }
-.home-hero-right-bg .hero-phone-image{
-    position: absolute;
-    width: 90%;
-    height: 92%;
-    z-index: 1;
-    border-radius: 40px;
-    margin-left: 20px;
-    margin-top: 20px;
-    border-bottom-left-radius: 60px;
-}
-.home-hero-right-bg .hero-phone-image{
-    z-index: 2;
-    width:80%;
-    height: 96%;
-    margin-left: 0;
-    margin-top: 0;
+.hero-phone-image{
+    width: 60%;
+    height: 50%;
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: translateX(37%);
 }
 .custom-carousel{
     position: absolute;
@@ -265,8 +253,8 @@ button,input{
     position: absolute;
     z-index: 3;
     line-height: 1;
-    border-radius: 20px;
-    width: 320px;
+    border-radius: 10px;
+    width: 230px;
     padding: 20px;
 }
 
@@ -289,7 +277,7 @@ button,input{
     }
 }
 .floating-service p{
-    font-size: 1.1em;
+    font-size: .8em;
     color: white;
     font-weight: 280;
     margin-bottom: 0px;
@@ -299,20 +287,22 @@ button,input{
     background: linear-gradient(90deg, #FFFFFF, #13AEEE,#13AEEE,#13AEEE);
     -webkit-background-clip: text; /* For Safari & Chrome */
     -webkit-text-fill-color: transparent;
-    font-size: 1.9em;
+    font-size: 1.3em;
     margin-top: 0px;
 }
 .floating-service.one{
-    top: 100px;
+    top: 90px;
+    left: 47%;
     animation: bouncing 2s ease-in-out infinite;
 }
 .floating-service.two{
-    bottom: 60px;
+    bottom: 200px;
+    left: 47%;
     animation: bouncing 2s ease-in-out infinite;
 }
 .floating-service.three{
     top: 40%;
-    right: 0;
+    right: 100px;
     animation: bouncingRight 2s ease-in-out infinite;
 }
 .home-hero-footer{
@@ -716,7 +706,117 @@ button,input{
     font-family: "poppins";
     color: #2BADE2;
 }
+.blogs{
+    background-color: #111111;
+    width: 100%;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
 
+.blogs .blogs-header{
+    color: white;
+    text-align: center;
+}
+.blogs .blogs-header span{
+    color: #13AEEE;
+    font-family: 'Phudu';
+}
+.blogs .blogs-contents{
+    padding: 0 40px;
+    margin-top: 100px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.blogs .blogs-contents .blogs-side{
+}
+.blogs .blogs-contents .blogs-side .blogs-card img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.blogs-side{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+.blogs-side .blogs-card{
+    width: 100%;
+    position: relative;
+    height: 512px;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+}
+.blogs-side:nth-child(2){
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+.blogs-side:nth-child(2) .blogs-card{
+    width: 100%;
+    position: relative;
+    height: auto;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.blogs-card-contents{
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    margin-top: auto;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    padding: 10px 20px;
+}
+.blogs-card-contents .bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    backdrop-filter: blur(25px);
+}
+.blogs-card-contents h4{
+    font-family: "poppins",sans-serif;
+    font-size: 1.2em;
+}
+.blogs-card-contents p{
+    font-family: "poppins",sans-serif;
+    font-size: .9em;
+    width: 95%;
+}
+.blogs-card-contents button{
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    padding: 5px 10px;
+}
+.blog-footer{
+    padding: 70px 0 50px 50px;
+    position: relative;
+}
+.blog-footer button{
+    margin-left: auto;
+    padding: 13px 50px;
+    font-size: 1.2em;
+    font-family: "poppins";
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg,#2BADE2,#32A0CD,#2286AF);
+    cursor: pointer;
+}
 .contact{
     background-color: #01141C;
     width: 100%;

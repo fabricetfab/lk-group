@@ -6,7 +6,29 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="home.css">
   <title>Lk Group | Home Page</title>
-  
+  <style type="text/css">
+    .phone-carousel{
+      position: absolute;
+      width: 40vh;
+      height: 100%;
+      z-index: 1;
+      border-radius: 40px;
+      margin-left: 13px;
+      margin-top: 14px;
+      overflow: hidden;
+      border: 1px solid green;
+    }
+    .phone-carousel .carousel-item{
+      height: 106%;
+      position: relative;
+    }
+    .phone-carousel .carousel-item img{
+      height: 100%;
+      width: 100%;
+      border-radius: 40px;
+    }
+
+  </style>
 </head>
 <body>
 
@@ -33,17 +55,11 @@
   </div>
 
   <div class="home-container">
-    <div class="home-hero">
+    <div class="container-xlg home-hero">
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
         <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="imgs/img4.jfif" alt="" class="d-block w-100 home-bg-hero">
-            </div>
-            <div class="carousel-item">
-                <img src="imgs/img5.jfif" alt="" class="d-block w-100 home-bg-hero">
-            </div>
-            <div class="carousel-item">
-                <img src="imgs/img2.jfif" alt="" class="d-block w-100 home-bg-hero">
+              <img src="imgs/newbg.jfif" alt="" class="d-block w-100 home-bg-hero">
             </div>
         </div>
     </div>
@@ -67,7 +83,6 @@
               </div>
             </div>
           </div>
-
           <button class="get-started" id="getStartedBtn">Get Started</button>
           <div class="home-hero-navs">
             <button id="prevBtn"><img src="icons/prev.svg"></button>
@@ -77,30 +92,19 @@
 
         <div class="home-hero-right">
           <div class="home-hero-right-bg">
-            <img src="imgs/phone.png" alt="" class="hero-phone-image">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false" style="position: absolute;
-                  width: 74%;
-                  height: 100%;
-                  z-index: 1;
-                  border-radius: 40px;
-                  margin-left: 13px;
-                  margin-top: 14px;
-                  border-bottom-left-radius: 60px;
-                  overflow: hidden;
-              ">
-              <div class="carousel-inner">
-                <div class="carousel-item active" style="height: 555px;">
-                  <img src="imgs/img6.jfif" alt="" class="home-hero-in-phone" style="width: 100%;height: 100%;border-radius: 40px;">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade w-100" data-bs-ride="carousel" data-bs-pause="false" style="position: relative;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="imgs/phone-bg1.png" alt="" class="hero-phone-image img-fluid">
+                    </div>
+                    <div class="carousel-item w-100">
+                      <img src="imgs/phone-bg2.png" alt="" class="hero-phone-image img-fluid h-100">
+                    </div>
+                    <div class="carousel-item w-100">
+                      <img src="imgs/phone-bg3.png" alt="" class="hero-phone-image img-fluid">
+                    </div>
                 </div>
-                <div class="carousel-item" style="height: 555px;">
-                  <img src="imgs/img1.jfif" alt="" class="home-hero-in-phone" style="width: 100%;height: 100%;border-radius: 40px;">
-                </div>
-                <div class="carousel-item" style="height: 555px;">
-                  <img src="imgs/img3.jfif" alt="" class="home-hero-in-phone" style="width: 100%;height: 100%;border-radius: 40px;">
-                </div>
-              </div>
             </div>
-
             <div class="floating-service one">
               <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
                 <div class="carousel-inner">
@@ -178,6 +182,8 @@
       </div>
     </div>
 
+
+
     <div class="about" id="about">
       <div class="text-in-bg"><h1>ABOUT</h1><h1>US</h1></div>
       <h1 class="about-header">GET TO <span>KNOW</span> US !</h1>
@@ -253,6 +259,8 @@
       </div>
     </div>
 
+
+
     <div class="testimonials">
         <div class="text-in-bg"><h1>TESTIMONIALS</h1></div>
         <h1 class="testimonials-header">WHAT OUR <span>CLIENTS </span> SAY !</h1>
@@ -264,7 +272,7 @@
             <div class="testimonial-list" style="background-image: url('imgs/test4.png');"></div>
           </div>
           <div class="div-2">
-            <div id="carouselExampleFade" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-pause="false" data-bs-pause="false">
+            <div id="carouselExampleFade1" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
             <div class="carousel-inner">
               <div class="carousel-item active carousel-item-custom">
                 <h3>Quick and Easy</h3>
@@ -307,6 +315,107 @@
 
       </div>
 
+
+      <div class="container-xlg blogs">
+        <div class="text-in-bg"><h1>BLOGS</h1></div>
+        <h1 class="blogs-header">Explore What's <span>new !</span></h1>
+        <div class="blogs-contents">
+          <div class="blogs-side">
+            <div class="blogs-card">
+              <img src="imgs/blog1.png">
+              <div class="blogs-card-contents">
+                <div class="bg"></div>
+                <h4>LK Recruitment embraces the agenda 2063, Future thrive</h4>
+                <p>LK recently participated in the “One Africa, One HR” Summit...</p>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2BADE2" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#2BADE2" stroke-width="1.8"/>
+                  </svg>
+                </button>
+
+              </div>
+            </div>
+            <div class="blogs-card">
+              <img src="imgs/blog2.png">
+              <div class="blogs-card-contents">
+                <div class="bg"></div>
+                <h4>LK Recruitment embraces the agenda 2063, Future thrive</h4>
+                <p>LK recently participated in the “One Africa, One HR” Summit...</p>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2BADE2" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#2BADE2" stroke-width="1.8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="blogs-side">
+            <div class="blogs-card">
+              <img src="imgs/blog3.png">
+              <div class="blogs-card-contents">
+                <div class="bg"></div>
+                <h4>LK Recruitment embraces the agenda 2063, Future thrive</h4>
+                <p>LK recently participated in the “One Africa, One HR” Summit...</p>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2BADE2" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#2BADE2" stroke-width="1.8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="blogs-card">
+              <img src="imgs/blog4.png">
+            </div>
+            <div class="blogs-card">
+              <img src="imgs/blog5.png">
+              <div class="blogs-card-contents">
+                <div class="bg"></div>
+                <h4>LK Recruitment embraces the agenda 2063, Future thrive</h4>
+                <p>LK recently participated in the “One Africa, One HR” Summit...</p>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2BADE2" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#2BADE2" stroke-width="1.8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="blogs-side">
+            <div class="blogs-card">
+              <img src="imgs/blog6.png">
+              <div class="blogs-card-contents">
+                <div class="bg"></div>
+                <h4>LK Recruitment embraces the agenda 2063, Future thrive</h4>
+                <p>LK recently participated in the “One Africa, One HR” Summit...</p>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2BADE2" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#2BADE2" stroke-width="1.8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="blogs-card">
+              <img src="imgs/blog7.png">
+              <div class="blogs-card-contents">
+                <div class="bg"></div>
+                <h4>LK Recruitment embraces the agenda 2063, Future thrive</h4>
+                <p>LK recently participated in the “One Africa, One HR” Summit...</p>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2BADE2" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#2BADE2" stroke-width="1.8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog-footer">
+          <button class="position-absolute top-50 start-50 translate-middle">See More</button>
+        </div>
+      </div>
+
+
+      
       <div class="contact">
         <div class="text-in-bg"><h1>CONTACT <h1>US</h1></h1></div>
         <h1 class="contact-header">LET'S <span>TALK !</span></h1>
@@ -492,7 +601,7 @@
             <a href="#"><img src="icons/insta.svg"></</a>
           </div>
         </div>
-      </div>
+</div>
       <script src="js/languageToggle.js"></script> 
 <script src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript">
@@ -527,11 +636,11 @@ document.getElementById("nextBtn2").addEventListener("click", function () {
 const images = document.querySelectorAll(".testimonials-contents div:first-of-type img");
 let currentIndex = 0; // Start with the first image
 
-// **Sync Testimonials with Bootstrap Carousel**
-document.getElementById("carouselExampleFade").addEventListener("slide.bs.carousel", function (event) {
+document.getElementById("carouselExampleFade1").addEventListener("slide.bs.carousel", function (event) {
   let nextIndex = event.to; // Get the next active slide index
   syncTestimonials(nextIndex);
 });
+
 
 // **Update image classes based on carousel movement**
 function syncTestimonials(newIndex) {

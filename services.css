@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Phudu';
+    src: url('fonts/Phudu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Phudu-big';
+    src: url('fonts/Phudu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins",sans-serif;
+    overflow-x: hidden;
+    text-align: left;
+}
+
+span,a,label,p{
+    font-family: "poppins",sans-serif;
+    text-decoration: none;
+}
+
+
+h1,h2,h3,h4,h6,h6{
+    font-family: "Phudu-big";
+     font-size: bold;
+}
+button,input{
+    font-family: "poppins",sans-serif;
+}
+
+.navigation-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    background: linear-gradient(90deg,rgb(5, 5, 5),#111111D9,#111111D9);
+    z-index: 10000;
+    height: 110px;
+    border-bottom: 2px solid #2BADE2;
+    width: 100%;
+    top: 0;
+}
+.navigation-container a{
+    font-size: .9em;
+}
+
+.header-navigation{
+    padding: 20px 15px;
+    border-radius: 50px;
+    background: linear-gradient(90deg,rgb(5, 5, 5),#111111D9,#111111D9);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.header-navigation a{
+    color: white;
+    padding: 10px 23px;
+    border: none;
+    border-radius: 30px; 
+    margin-left: 3px;
+    transition: all .5s;
+}
+.header-navigation a.active{
+    background: linear-gradient(90deg,#2BADE2,#2286AF,#185F7C);
+}
+.header-navigation a:hover{
+    background: linear-gradient(90deg,#2BADE2,#2286AF,#185F7C);
+}
+.header-links{
+    position: relative;
+}
+.header-links a{
+    color: white;
+    padding: 0 15px;
+}
+.header-search{
+    color: #2BADE2;
+    height: 16px;
+    width: 16px;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -30px;
+}
+.header-links a{
+    color: #2BADE2;
+}
+.header-links a:first-of-type{
+    border-right: 3px solid #2BADE2;
+}
+.services-hero{
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+    position: relative;
+}
+.services-hero img{
+    height: 300vh;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -120vh;
+}
+.hero-contents{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    justify-items: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+.hero-contents h1{
+    font-family: monoton;
+    font-size: 6em;
+}
+.hero-contents h1 span{
+    font-family: monoton;
+    margin-left: 15px;
+}
+.hero-contents p{
+    font-size: 1em;
+    font-weight: 300;
+}
