@@ -159,6 +159,8 @@
       </div>
     </div>
   </div>
+
+  
   <div class="footer">
         <div>
           <img src="imgs/logo1.png" alt="logo">
