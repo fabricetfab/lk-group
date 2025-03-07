@@ -551,7 +551,6 @@ button,input{
 .services-card:hover img{
     bottom: -40px;
     left: -30px;
-    z-index: ;
 }
 .services-card span{
     font-size: 1.8em;

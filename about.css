@@ -130,14 +130,15 @@ button,input{
 }
 .about-contents{
     position: relative;
+    overflow: hidden;
 }
 .about-contents-bg{
+    width: 100%;
     position: absolute;
-    top: 0;
+    top: -100vh;
+    bottom: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    z-index: -1;
 }
 .story{
     padding: 80px;
@@ -186,6 +187,7 @@ button,input{
     color: white;
     font-size: 1.3em;
     line-height: 1.7;
+    position: relative;
 }
 .story p span{
     font-size: 1.7em;
@@ -320,6 +322,7 @@ button,input{
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 .team-card{
     width: 400px;
@@ -376,6 +379,174 @@ button,input{
     padding-bottom: 25px;
 }
 .other-info div img{
+    width: 30px;
+    margin-right: 10px;
+}
+.work{
+    padding: 80px;
+    background-color: #111111;
+}
+.work .work-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.work h3{
+    color: #2BADE2;
+    position: relative;
+}
+
+.work h3::before{
+    content: "";
+    width: 50%;
+    background-color: #2BADE2;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+.work h3::after{
+    content: "";
+    width: 50%;
+    background-color: #2BADE2;
+    height: 3px;
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+}
+.work-contents{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    padding: 100px 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.work-contents .left-side{
+    border-right: 4px solid #2BADE2;
+    position: relative;
+}
+
+.work-contents .right-side{
+    border-left: 4px solid #2BADE2;
+}
+.work-contents .left-side .work-card,.work-contents .right-side .work-card{
+    display: flex;
+    width: 380px;
+    height: 100%;
+    background-color: green;
+    padding: 20px;
+    gap: 20px;
+    background-color: #000000;
+    position: relative;
+    margin-bottom: 30px;
+    border: none;
+}
+.left-side .work-card{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.right-side .work-card{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.work-card h4{
+    color: #2BADE2;
+    font-size: 3em;
+}
+.work-card p{
+    color: white;
+    font-size: 1.4em;
+}
+.work-contents .left-side .work-side{
+    height: 300px;
+    border-top-left-radius: 20px;
+    border-top: 4px solid #2BADE2;
+    border-left: 4px solid #2BADE2;
+    position: relative;
+}
+.work-contents .right-side .work-side{
+    height: 300px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 4px solid #2BADE2;
+    border-right: 4px solid #2BADE2;
+    position: relative;
+}
+.work-contents .right-side .work-side .work-card{
+    position: absolute;
+    right: 0;
+}
+
+.work-contents .work-side{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.footer{
+    background-color: #010C11;
+    padding: 20px 40px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+}
+.footer div:first-child{
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer div:first-child img{
+    width: 100px;
+    margin: auto;
+}
+.footer div:first-of-type h5{
+    text-align: center;
+    color: white;
+    font-family: "phudu-big";
+    margin-top: 15px;
+}
+.footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer div h4{
+    font-size: 1em;
+    color: white;
+    font-family: "phudu-big";
+}
+.footer div a{
+    font-size: .9em;
+    opacity: 1;
+    color: white;
+    font-family: "poppins";
+    transition: all .3s ease;
+}
+.footer div a:hover{
+    transform: scale(1.02);
+}
+.footer div a.active{
+    color: #2BADE2;
+    position: relative;
+}
+.footer div a.active:after{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 2px;
+    background-color: #2BADE2;
+    bottom: -5px;
+    left: 0;
+}
+
+.footer .footer-social{
+    display: block;
+}
+
+.footer .footer-social img{
     width: 30px;
     margin-right: 10px;
 }
