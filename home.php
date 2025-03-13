@@ -8,26 +8,6 @@
   <link rel="stylesheet" href="try.css">
   <title>Lk Group | Home Page</title>
   <style type="text/css">
-    .phone-carousel{
-      position: absolute;
-      width: 40vh;
-      height: 100%;
-      z-index: 1;
-      border-radius: 40px;
-      margin-left: 13px;
-      margin-top: 14px;
-      overflow: hidden;
-      border: 1px solid green;
-    }
-    .phone-carousel .carousel-item{
-      height: 106%;
-      position: relative;
-    }
-    .phone-carousel .carousel-item img{
-      height: 100%;
-      width: 100%;
-      border-radius: 40px;
-    }
     body{
       max-width: 1600px;
       margin: auto;
@@ -200,10 +180,11 @@
           <img src="imgs/about1.png">
           <div>
             <p>At LK Group  we offer cutting-edge solutions that address pressing Technology challenges. Our focus on research innovation leads to sustainable practices and policies that benefit communities globally.</p>
+            <p class="about-paragraph">Innovate  with confidence! Explore the future of IT infrastructure and  how  we lead the way with cutting edge solutions.</p>
+
             <button>Learn more</button>
           </div>
           
-          <p class="about-paragraph">Innovate  with confidence! Explore the future of IT infrastructure and  how  we lead the way with cutting edge solutions.</p>
         </div>
         <div class="shadows"></div>
         <div class="partners">
@@ -277,19 +258,19 @@
             <div class="testimonial-list" style="background-image: url('imgs/test4.png');"></div>
           </div>
           <div class="div-2">
-            <div id="carouselExampleFade1" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
-            <div class="carousel-inner">
-              <div class="carousel-item active carousel-item-custom">
-                <h3>Quick and Easy</h3>
-                <p>Jane Faith - HR Manager</p>
-                <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</label>
+            <div id="carouselExampleFade1" class="carousel slide w-100" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-inner w-100">
+              <div class="carousel-item active w-100">
+                <h3 class="d-block w-100">Quick and Easy</h3>
+                <p class="d-block w-100">Jane Faith - HR Manager</p>
+                <label class="d-block w-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</label>
               </div>
-              <div class="carousel-item carousel-item-custom">
+              <div class="carousel-item">
                 <h3>Growth and Keen Management</h3>
                 <p>Alice - Fashion Designer</p>
                 <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</label>
               </div>
-              <div class="carousel-item carousel-item-slide">
+              <div class="carousel-item">
                 <h3>Unforgettable Services</h3>
                 <p>Ashraf - Data analyst</p>
                 <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</label>

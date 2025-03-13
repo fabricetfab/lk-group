@@ -330,7 +330,7 @@ button,input{
     z-index: 1;
 }
 .text-in-bg h1{
-    font-size: 3.5em;
+    font-size: 3em;
     font-family: monoton;
 }
 .text-in-bg{
@@ -383,7 +383,7 @@ button,input{
     border-radius: 10px;
 }
 .about-contents-container img{
-    width: 100%;
+    width: 250px;
     height: 330px;
     border: none;
     border: .1em solid #185974;
@@ -469,8 +469,8 @@ button,input{
     scrollbar-arrow-color: transparent;
 }
 .partners div img{
-    max-width: 25%;
-    min-width: 25%;
+    max-width: 300px;
+    min-width: 300px;
     margin-top: 30px;
     height: 150px;
     border-radius: 30px;
@@ -590,10 +590,7 @@ button,input{
     gap: 50px;
     position: relative;
 }
-.testimonials-contents div{
-    margin-top: -100px;
-    padding: 100px 100px 0 0;
-}
+
 .testimonials-contents .div-1{
     padding: 0;
 }
@@ -617,7 +614,7 @@ button,input{
     border: 1px solid #2BADE2;
     position: absolute;
     margin: auto;
-    top: 35%;
+    top: 0%;
     left: 24%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -642,6 +639,7 @@ button,input{
 }
 .testimonials-contents .div-2 {
     color: white;
+    padding: 0 0 0 40px;
 }
 .testimonials-contents .div-2 p{
     opacity: .7;
@@ -663,6 +661,7 @@ button,input{
     background: linear-gradient(90deg,rgb(5, 5, 5),#111111D9,#111111D9);
     border: .1em solid #2BADE2;
     margin-right: 10px;
+    margin-top: 20px;
 }
 .testimonial-navs img{
     width: 15px;
