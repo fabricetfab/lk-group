@@ -542,8 +542,8 @@
             </div>
             <p>Need more Info, check <span>support page !</span></p>
         </div>
-        <div class="image-cut">
-          <img src="imgs/trial.png" alt="Styled Image">
+        <div class="image-cut mt-5">
+          <img src="imgs/faqs.png" class="img-fluid mt-5" alt="Styled Image">
         </div>
       </div>
       </div>
@@ -551,7 +551,14 @@
       <div class="subscribe">
         <div class="subscribe-contents">
           <div class="image-cut">
-            <img src="imgs/trial1.png" alt="Styled Image">
+            <h2 class="ms-3 mb-3 text-light">Why Choose Us?</h2>
+            <ol>
+              <li><span>Comprehensive Solutions:</span> We offer a full range of services including digital presence, cybersecurity, IT support, and communication & HR consulting.</li>
+              <li><span>Tailored Services:</span> Our solutions are customized to meet the specific challenges and goals of each client.</li>
+              <li><span>Experienced Team:</span> With over a decade of experience, our team combines technical expertise, results-driven solutions.</li>
+              <li><span>Customer-Centric Approach:</span> We prioritize client satisfaction by offering personalized support.</li>
+              <li><span>Commitment to Innovation:</span> We stay at the forefront of new technologies and trends.</li>
+            </ol>
           </div>
           <div class="subscribe-form">
             <div><h1>STAY <h1>INFORMED</h1></h1></div>

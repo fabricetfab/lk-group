@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="about.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="about.css">
   <title>Lk Group | Home Page</title>
 </head>
 <body>
@@ -168,10 +168,10 @@
         </div>
       </div>
     </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next swiper-btn"></div>
+    <div class="swiper-button-prev swiper-btn"></div>
     </div>
+    <div class="swiper-pagination"></div>
   </section>
 
 

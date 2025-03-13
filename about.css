@@ -324,7 +324,27 @@ button,input{
     justify-content: space-around;
     position: relative;
 }
-.team-card{
+.swiper-btn{
+    color: #2BADE2;
+    transition: all .3s ease;
+}
+.swiper-btn:hover{
+    color: #185F7C;
+}
+.swiper-btn::before,
+.swiper-btn::after{
+    font-size: 20px;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgb(89, 84, 84);
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: #2BADE2;
+}
+
+.team-card{ 
     width: 400px;
     background-color: #111111;
     position: relative;
