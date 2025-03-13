@@ -6,6 +6,12 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="contact.css">
   <title>Lk Group | Home Page</title>
+  <style>
+    body{
+      max-width: 1440px;
+      margin: auto;
+    }
+  </style>
 </head>
 <body>
 
@@ -14,9 +20,9 @@
     
     <div class="header-navigation">
       <a href="home.php">Home</a>
-      <a href="contacts.php" class="active">contacts</a>
+      <a href="services.php">Services</a>
       <a href="about.php">About Us</a>
-      <a href="contact.php">Contact Us</a>
+      <a href="contact.php" class="active">Contact Us</a>
     </div>
 
     <div class="header-links">
@@ -126,7 +132,8 @@
         <h1 class="h3 my-5">Location on map</h1>
         <div class="location-contents">
           <div class="">
-            <img src="imgs/location.png" class="img-fluid w-100">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.1977959265896!2d29.76334837477935!3d-2.0767247979046672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dccb7ba8a0bb35%3A0xafb19a1cde25a1a7!2sNyamabuye%20Sector!5e0!3m2!1sen!2srw!4v1741855129922!5m2!1sen!2srw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
           </div>
           <div class="">
             <h2 class="h5 d-block"><span class="text-light">See Place</span> photos</h2>

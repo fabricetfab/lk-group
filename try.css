@@ -1,0 +1,238 @@
+@media (max-width: 1560px) {
+    .hero-phone-image{
+        width: 460px;
+        position: relative;
+        transform: translateX(54%);
+    }
+}
+@media (max-width: 1490px) {
+    .hero-phone-image{
+        width: 460px;
+        position: relative;
+        transform: translateX(45%);
+    }
+}
+@media (max-width: 1450px) {
+    .hero-phone-image{
+        width: 460px;
+        position: relative;
+        transform: translateX(37%);
+    }
+}
+@media (max-width: 1390px) {
+    .hero-phone-image{
+        width: 460px;
+        position: relative;
+        transform: translateX(35%);
+    }
+}
+@media (max-width: 1250px) {
+    .hero-phone-image{
+        transform: translateX(28%);
+    }
+    .floating-service.one{
+        left: 47%;
+        animation: bouncing 2s ease-in-out infinite;
+    }
+    .floating-service.two{
+        bottom: 200px;
+        left: 47%;
+        animation: bouncing 2s ease-in-out infinite;
+    }
+    .floating-service.three{
+        right: 100px;
+    }    
+    .home-hero-left h1{
+        width: 100%;
+        font-size: 2.2em;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+    .home-hero-left p{
+        width: 100%;
+        font-size: 1.1em;
+        line-height: 1.3;
+    }
+    .home-hero-footer div{
+        border-right: 2px solid transparent;  /* Set border to transparent */
+        border-image: linear-gradient(0deg, #6DDCFF, black) 1;  /* Apply gradient border */
+        padding-right: 20px;
+        padding-left: 10px;
+    }
+    .home-hero-footer div h5{
+        margin: 0px;
+        font-size: 1.1em;
+    }
+    .home-hero-footer div p{
+        margin: 0px;
+        font-size: .8em;
+        font-weight: 400;
+    }
+    .home-hero .home-union-hero{
+        width: 120%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 10000000;
+    }
+    .home-hero .home-union1-hero{
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1000000;
+    }
+.home-hero-left .get-started{
+    margin-top: 20px;
+}
+}
+@media (max-width: 1220px) {
+    .hero-phone-image{
+        transform: translateX(15%);
+    }
+    .floating-service.one{
+        left: 40%;
+        animation: bouncing 2s ease-in-out infinite;
+    }
+    .floating-service.two{
+        bottom: 200px;
+        left: 40%;
+        animation: bouncing 2s ease-in-out infinite;
+    }
+    .floating-service.three{
+        top: 35%;
+        right: 100px;
+    }    
+}
+@media (max-width: 1120px) {
+    .hero-phone-image{
+        transform: translateX(5%);
+    }
+    .floating-service.one{
+        left: 40%;
+        animation: bouncing 2s ease-in-out infinite;
+    }
+    .floating-service.two{
+        bottom: 200px;
+        left: 40%;
+        animation: bouncing 2s ease-in-out infinite;
+    }
+    .floating-service.three{
+        right: 100px;
+    }    
+    .home-hero-left h1{
+        width: 100%;
+        font-size: 1.9em;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+    .home-hero-left p{
+        width: 100%;
+        font-size: 1.1em;
+        line-height: 1.3;
+    }
+    .home-hero-footer div h5{
+        margin: 0px;
+        font-size: 1em;
+    }
+    .home-hero-footer div p{
+        margin: 0px;
+        font-size: .8em;
+        font-weight: 400;
+    }
+    .home-hero .home-union-hero{
+        width: 130%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 10000000;
+    }
+    .home-hero .home-union1-hero{
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+        right: -20%;
+        z-index: 1000000;
+    }
+}
+
+@media (max-width: 1024px) {
+    .home-hero-contents{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .home-hero-left{
+        padding: 0px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+    }
+    .home-hero{
+        width: 100%;
+        height: 900px;
+        position: relative;
+        overflow: hidden;
+    }
+    .home-bg-hero{
+        width: 100%;
+        height: 900px;
+        margin-top: 0px;
+        z-index: 10;
+    }
+    .home-hero-left h1{
+        width: 60%;
+        font-size: 2.2em;
+        line-height: 1.3;
+        margin-bottom: 10px;
+        text-align: center;
+        margin: auto;
+    }
+    .home-hero-left p{
+        width: 60%;
+        font-size: 1.1em;
+        line-height: 1.3;
+        margin: auto;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .home-hero-navs button{
+        padding: 3px 6px;
+        border-radius: 50%;
+        background: linear-gradient(90deg,rgb(5, 5, 5),#111111D9,#111111D9);
+        border: .1em solid #2BADE2;
+        margin-right: 0;
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        z-index: 10000000;
+    }
+    .home-hero-navs button:last-child{
+        top: 50%;
+        left: unset;
+        right: 30px;
+
+    }
+    .home-hero-navs{
+        margin-top: 0px;
+    }
+    .hero-phone-image{
+        transform: translateX(33%);
+    }
+    .floating-service.one{
+        left: 35%;
+        animation: bouncing 2s ease-in-out infinite;
+    }
+    .floating-service.two{
+        bottom:200px;
+        left: 35%;
+        animation: bouncing 2s ease-in-out infinite;
+    }
+    .floating-service.three{
+        top: 40%;
+        right: 28%;
+    }  
+}

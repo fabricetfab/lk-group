@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="try.css">
   <title>Lk Group | Home Page</title>
   <style type="text/css">
     .phone-carousel{
@@ -26,6 +27,10 @@
       height: 100%;
       width: 100%;
       border-radius: 40px;
+    }
+    body{
+      max-width: 1600px;
+      margin: auto;
     }
 
   </style>
@@ -108,15 +113,15 @@
             <div class="floating-service one">
               <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
+                  <div class="carousel-item bg active">
                     <p>Digital Presence in</p>
                     <h2>Social Media</h2>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item bg">
                     <p>Cybersecurity in</p>
                     <h2>Assessment</h2>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item bg">
                     <p>IT Support in</p>
                     <h2>Remote Updates</h2>
                   </div>
@@ -126,15 +131,15 @@
             <div class="floating-service two">
               <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
+                  <div class="carousel-item bg active">
                     <p>Digital Presence in</p>
                     <h2>Web Design</h2>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item bg">
                     <p>Cybersecurity in</p>
                     <h2>Incidents Response</h2>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item bg">
                     <p>IT Support in</p>
                     <h2>Interventions Reporting</h2>
                   </div>
@@ -144,15 +149,15 @@
             <div class="floating-service three">
               <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
+                  <div class="carousel-item bg active">
                     <p>Digital Presence in</p>
                     <h2>Contents Creation</h2>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item bg">
                     <p>Cybersecurity in</p>
                     <h2>Solutions</h2>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item bg">
                     <p>IT Support in</p>
                     <h2>Ticketing</h2>
                   </div>
@@ -215,7 +220,7 @@
       </div>
     </div>
 
-    <div class="services">
+    <div class="services container-xlg">
       <div class="text-in-bg"><h1>SERVICES</h1></div>
       <h1 class="services-header">WHAT WE <span>OFFER !</span></h1>
       <div class="services-contents">

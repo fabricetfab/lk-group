@@ -6,6 +6,12 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="services.css">
   <title>Lk Group | Home Page</title>
+  <style>
+    body{
+      max-width: 1440px;
+      margin: auto;
+    }
+  </style>
 </head>
 <body>
 
