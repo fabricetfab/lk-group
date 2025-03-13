@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <title>Lk Group | Home Page</title>
 </head>
 <body>
@@ -72,12 +74,16 @@
         <div class="tab-pane fade" id="values" role="tabpanel" aria-labelledby="values-tab" tabindex="0">Values Content</div>
     </div>
   </section>
-  <section class="team">
+  
+
+ <section class="team">
     <div class="team-head">
       <h3>Our Team</h3>
     </div>
     <div class="team-cards">
-      <div class="team-card">
+      <div class="card-slide-holder w-100 h-100 d-flex swiper">
+      <div class="card-slide w-100 h-100 d-flex justify-content-between swiper-wrapper">
+      <div class="team-card swiper-slide">
         <img src="imgs/member1.png" class="member">
         <div class="bg-1"></div>
         <div class="bg-2"></div>
@@ -98,7 +104,7 @@
           </div>
         </div>
       </div>
-      <div class="team-card">
+      <div class="team-card swiper-slide">
         <img src="imgs/member1.png" class="member">
         <div class="bg-1"></div>
         <div class="bg-2"></div>
@@ -119,7 +125,7 @@
           </div>
         </div>
       </div>
-      <div class="team-card">
+      <div class="team-card swiper-slide">
         <img src="imgs/member1.png" class="member">
         <div class="bg-1"></div>
         <div class="bg-2"></div>
@@ -140,9 +146,36 @@
           </div>
         </div>
       </div>
-
+      <div class="team-card swiper-slide">
+        <img src="imgs/member1.png" class="member">
+        <div class="bg-1"></div>
+        <div class="bg-2"></div>
+        <div class="basic-info">
+          <div>
+            <h4>Loneto Kelly</h4>
+            <a href=""><img src="icons/mail.svg"></a>
+          </div>
+          <p>CEO - Chief Executive Officer</p>
+        </div>
+        <div class="other-info">
+          <p>“Every individual has the potential to achieve amazing things.”</p>
+          <p>It's a passion that fuels everything, we do at LK RECRUITMENT we believe in a world where talent flourishes.</p>
+          <div>
+            <a href=""><img src="icons/insta.svg"></a>
+            <a href=""><img src="icons/linkedin.svg"></a>
+            <a href=""><img src="icons/x.svg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
     </div>
   </section>
+
+
+
   <section class="work">
     <div class="work-head">
       <h3>How do we work?</h3>
@@ -220,10 +253,76 @@
         </div>
       </div>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript">
+<script>
+      function updateSlideOpacity() {
+      const slides = document.querySelectorAll('.swiper-slide'); // Get all slides
+      const swiperWrapper = document.querySelector('.swiper-wrapper'); // Get the wrapper
+
+      slides.forEach(slide => {
+        slide.style.opacity = "0.6"; // Default opacity for all slides
+        slide.style.transform = "scale(.7)"; // Reset scale
+      });
+
+      // Find the center slide
+      let centerIndex = Math.floor(slides.length / 2); // Get the middle index
+      let centerSlide = slides[centerIndex]; // Find the middle slide
+
+      // Highlight the center slide
+      if (centerSlide) {
+        centerSlide.style.opacity = "1";
+        centerSlide.style.transform = "scale(1)";
+      }
+    }
+
+    // Run once when page loads
+    setTimeout(updateSlideOpacity, 1);
+
+  </script>
+  <script type="text/javascript">
+    function updateSlideOpacity() {
+  const slides = document.querySelectorAll('.swiper-slide'); // Get all slides
+  const swiperWrapper = document.querySelector('.swiper-wrapper'); // Get the wrapper
+
+  slides.forEach(slide => {
+    slide.style.opacity = "0.6"; // Default opacity for all slides
+    slide.style.transform = "scale(0.7)"; // Reset scale
+  });
+
+  // Find the currently active slide (center)
+    const activeSlide = document.querySelector('.swiper-slide-active'); // Get the active slide
+    if (activeSlide) {
+      activeSlide.style.opacity = "1"; // Highlight active slide with full opacity
+      activeSlide.style.transform = "scale(1)"; // Scale up active slide
+    }
+  }
+
+  // Initialize Swiper
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 3, // Display 3 slides at a time
+  spaceBetween: 20,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: '.swiper-pagination', // Target the pagination element
+    clickable: true, // Allow clicking to go to specific slides
+    type: 'bullets', // Options: 'bullets', 'fraction', 'progressbar'
+  },
+  navigation: {
+    nextEl: '.swiper-button-next', // Target next button
+    prevEl: '.swiper-button-prev'  // Target previous button
+  },
+  on: {
+    slideChange: function () {
+      setTimeout(updateSlideOpacity, 100); // Update opacity after slide change
+    },
+  }
+});
 
 
-</script>
-
+  </script>
 </body>
 </html>

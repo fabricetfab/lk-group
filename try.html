@@ -1,40 +1,192 @@
-<form action="submit_form" method="POST">
-  <!-- Agent/Officer Name -->
-  <label for="agentName">Agent/Officer Name:</label>
-  <input type="text" id="agentName" name="agentName" required>
+<head>
+  <!-- Swiper Stylesheet (add inside <head>) -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-  <!-- Date of Visit -->
-  <label for="visitDate">Date of Visit:</label>
-  <input type="date" id="visitDate" name="visitDate" required>
+  <!-- Swiper Script (add before closing </body>) -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Customer Name -->
-  <label for="customerName">Customer Name:</label>
-  <input type="text" id="customerName" name="customerName" required>
+  <style>
+      .team-cards {
+          background-color: #0B0A0A;
+          padding: 30px;
+          margin-top: 50px;
+          border-radius: 20px;
+          display: flex;
+          justify-content: space-around;
+          position: relative;
+          overflow: hidden;
+      }
 
-  <!-- Customer ID/Account Number -->
-  <label for="customerID">Customer ID/Account Number:</label>
-  <input type="text" id="customerID" name="customerID" required>
+      .team-card {
+          width: 400px;
+          background-color: #111111;
+          position: relative;
+          z-index: 1;
+      }
 
-  <!-- Visit Type -->
-  <label for="visitType">Visit Type (New/Current):</label>
-  <input type="text" id="visitType" name="visitType" required>
+      .team-card .bg-1 {
+          position: absolute;
+          width: 100%;
+          height: 90%;
+          bottom: 0;
+          clip-path: polygon(0% 100%, 100% 100%, 100% 25%, 0% 0%);
+          background-color: #2BADE291;
+          z-index: 1;
+      }
 
-  <!-- Decision/Outcome -->
-  <label for="decisionOutcome">Decision/Outcome:</label>
-  <textarea id="decisionOutcome" name="decisionOutcome" required></textarea>
+      .team-card .bg-2 {
+          position: absolute;
+          width: 100%;
+          height: 90%;
+          bottom: 0;
+          clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 25%);
+          background-color: #000000;
+          z-index: 2;
+      }
 
-  <!-- Follow-Up Actions -->
-  <label for="followUpActions">Follow-Up Actions Needed:</label>
-  <textarea id="followUpActions" name="followUpActions" required></textarea>
+      .member {
+          width: 190px;
+          height: 190px;
+          border-radius: 50%;
+          z-index: 3;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+      }
 
-  <!-- Alternative Contact -->
-  <label for="altContact">Alternative Contact (if any):</label>
-  <input type="text" id="altContact" name="altContact">
+      .basic-info,
+      .other-info {
+          position: relative;
+          z-index: 3;
+          padding: 0 30px;
+          color: white;
+      }
 
-  <!-- Additional Notes -->
-  <label for="additionalNotes">Additional Notes/Comments:</label>
-  <textarea id="additionalNotes" name="additionalNotes"></textarea>
+      .basic-info {
+          padding-top: 30px;
+          margin-bottom: 25px;
+      }
 
-  <!-- Submit Button -->
-  <button type="submit">Submit</button>
-</form>
+      .basic-info div {
+          display: flex;
+          justify-content: space-between;
+      }
+
+      .basic-info p {
+          opacity: .5;
+      }
+
+      .other-info div {
+          margin-top: 30px;
+          padding-bottom: 25px;
+      }
+
+      .other-info div img {
+          width: 30px;
+          margin-right: 10px;
+      }
+
+      /* Optional: You can style the navigation buttons */
+      .swiper-button-next, .swiper-button-prev {
+          color: white;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="team-cards">
+              <div class="team-card swiper-slide">
+                  <img src="imgs/member1.png" class="member">
+                  <div class="bg-1"></div>
+                  <div class="bg-2"></div>
+                  <div class="basic-info">
+                      <div>
+                          <h4>Loneto Kelly</h4>
+                          <a href=""><img src="icons/mail.svg"></a>
+                      </div>
+                      <p>CEO - Chief Executive Officer</p>
+                  </div>
+                  <div class="other-info">
+                      <p>“Every individual has the potential to achieve amazing things.”</p>
+                      <p>It's a passion that fuels everything, we do at LK RECRUITMENT we believe in a world where talent flourishes.</p>
+                      <div>
+                          <a href=""><img src="icons/insta.svg"></a>
+                          <a href=""><img src="icons/linkedin.svg"></a>
+                          <a href=""><img src="icons/x.svg"></a>
+                      </div>
+                  </div>
+              </div>
+              <!-- Repeat the swiper-slide for other team members -->
+              <div class="team-card swiper-slide">
+                  <img src="imgs/member1.png" class="member">
+                  <div class="bg-1"></div>
+                  <div class="bg-2"></div>
+                  <div class="basic-info">
+                      <div>
+                          <h4>Loneto Kelly</h4>
+                          <a href=""><img src="icons/mail.svg"></a>
+                      </div>
+                      <p>CEO - Chief Executive Officer</p>
+                  </div>
+                  <div class="other-info">
+                      <p>“Every individual has the potential to achieve amazing things.”</p>
+                      <p>It's a passion that fuels everything, we do at LK RECRUITMENT we believe in a world where talent flourishes.</p>
+                      <div>
+                          <a href=""><img src="icons/insta.svg"></a>
+                          <a href=""><img src="icons/linkedin.svg"></a>
+                          <a href=""><img src="icons/x.svg"></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="team-card swiper-slide">
+                  <img src="imgs/member1.png" class="member">
+                  <div class="bg-1"></div>
+                  <div class="bg-2"></div>
+                  <div class="basic-info">
+                      <div>
+                          <h4>Loneto Kelly</h4>
+                          <a href=""><img src="icons/mail.svg"></a>
+                      </div>
+                      <p>CEO - Chief Executive Officer</p>
+                  </div>
+                  <div class="other-info">
+                      <p>“Every individual has the potential to achieve amazing things.”</p>
+                      <p>It's a passion that fuels everything, we do at LK RECRUITMENT we believe in a world where talent flourishes.</p>
+                      <div>
+                          <a href=""><img src="icons/insta.svg"></a>
+                          <a href=""><img src="icons/linkedin.svg"></a>
+                          <a href=""><img src="icons/x.svg"></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Add Pagination and Navigation -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+  </div>
+
+  <script>
+      var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 2, // Show 2 slides at a time
+          spaceBetween: 10, // Spacing between slides
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+          },
+          loop: true, // Loop the slides
+          autoplay: {
+              delay: 3000, // Auto slide every 3 seconds
+              disableOnInteraction: false, // Keep autoplay on even after user interaction
+          },
+      });
+  </script>
+</body>
