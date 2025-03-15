@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="try.css">
   <title>Lk Group | Home Page</title>
   <style>
     body{
-      max-width: 1440px;
+      max-width: 1660px;
       margin: auto;
     }
   </style>
@@ -44,7 +45,7 @@
         <p>“LK GROUP is a unique and dynamic company dedicated to helping businesses thrive in today's digital landscape”.</p>
       </div>
     </div>
-
+  </div>
 
   <div class="about-contents">
   <img src="imgs/about-big-bg.png" class="img-fluid about-contents-bg">

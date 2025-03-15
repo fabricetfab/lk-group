@@ -8,7 +8,7 @@
   <title>Lk Group | Home Page</title>
   <style>
     body{
-      max-width: 1440px;
+      max-width: 1600px;
       margin: auto;
     }
   </style>
@@ -39,7 +39,7 @@
       <img src="imgs/services-bg.jfif" class="img-fluid">
       <div class="hero-contents">
         <h1>SERVICES</h1>
-        <p>“ We offer a comprehensive suite of services, tailored to address the specific challenges and opportunities faced by modern organizations”.</p>
+        <p class="w-75">“ We offer a comprehensive suite of services, tailored to address the specific challenges and opportunities faced by modern organizations”.</p>
       </div>
     </div>
   </div>
@@ -52,7 +52,7 @@
         <h3>Digital Presence</h3>
         <button>HERE WE GO!</button>
       </div>
-      <div class="service1-contents container-xlg">
+      <div class="service1-contents">
         <div>
           <h5 class="h5">Unlock Your Digital Potential with a Powerful Online Presence</h5>
           <p>"In today's competitive landscape, a strong online presence is essential for any business looking to grow and thrive. At LK GROUP, we offer a comprehensive suite of digital presence solutions, designed to help you reach your target audience, build brand awareness, and drive meaningful results.”</p>
