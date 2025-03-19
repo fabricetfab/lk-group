@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="about.css">
-  <link rel="stylesheet" href="try.css">
   <title>Lk Group | Home Page</title>
   <style>
     body{
@@ -42,7 +41,7 @@
       <img src="imgs/about-bg.jfif" class="img-fluid">
       <div class="hero-contents">
         <h1>ABOUT <span>US</span></h1>
-        <p>“LK GROUP is a unique and dynamic company dedicated to helping businesses thrive in today's digital landscape”.</p>
+        <p class="text-center">“LK GROUP is a unique and dynamic company dedicated to helping businesses thrive in today's digital landscape”.</p>
       </div>
     </div>
   </div>
@@ -71,7 +70,7 @@
             <p>To empower businesses with seamless technology solutions that drive growth, efficiency, and innovation.</p>
           </div>
           <div>
-            <img src="imgs/service1.png">
+            <img src="imgs/service1copy.png">
           </div>
           <div>
             <p>LK GROUP is a unique and dynamic company dedicated to helping businesses thrive in today's digital landscape. We oAer a comprehensive suite of services, tailored to address the specific challenges and opportunities faced by modern organizations.</p>
@@ -90,6 +89,48 @@
     <div class="team-cards">
       <div class="card-slide-holder w-100 h-100 d-flex swiper">
       <div class="card-slide w-100 h-100 d-flex justify-content-between swiper-wrapper">
+      <div class="team-card swiper-slide">
+        <img src="imgs/member1.png" class="member">
+        <div class="bg-1"></div>
+        <div class="bg-2"></div>
+        <div class="basic-info">
+          <div>
+            <h4>Loneto Kelly</h4>
+            <a href=""><img src="icons/mail.svg"></a>
+          </div>
+          <p>CEO - Chief Executive Officer</p>
+        </div>
+        <div class="other-info">
+          <p>“Every individual has the potential to achieve amazing things.”</p>
+          <p>It's a passion that fuels everything, we do at LK RECRUITMENT we believe in a world where talent flourishes.</p>
+          <div>
+            <a href=""><img src="icons/insta.svg"></a>
+            <a href=""><img src="icons/linkedin.svg"></a>
+            <a href=""><img src="icons/x.svg"></a>
+          </div>
+        </div>
+      </div>
+      <div class="team-card swiper-slide">
+        <img src="imgs/member1.png" class="member">
+        <div class="bg-1"></div>
+        <div class="bg-2"></div>
+        <div class="basic-info">
+          <div>
+            <h4>Loneto Kelly</h4>
+            <a href=""><img src="icons/mail.svg"></a>
+          </div>
+          <p>CEO - Chief Executive Officer</p>
+        </div>
+        <div class="other-info">
+          <p>“Every individual has the potential to achieve amazing things.”</p>
+          <p>It's a passion that fuels everything, we do at LK RECRUITMENT we believe in a world where talent flourishes.</p>
+          <div>
+            <a href=""><img src="icons/insta.svg"></a>
+            <a href=""><img src="icons/linkedin.svg"></a>
+            <a href=""><img src="icons/x.svg"></a>
+          </div>
+        </div>
+      </div>
       <div class="team-card swiper-slide">
         <img src="imgs/member1.png" class="member">
         <div class="bg-1"></div>
@@ -267,7 +308,7 @@
 
       slides.forEach(slide => {
         slide.style.opacity = "0.6"; // Default opacity for all slides
-        slide.style.transform = "scale(.7)"; // Reset scale
+        slide.style.transform = "scale(.8)"; // Reset scale
       });
 
       // Find the center slide
@@ -292,7 +333,7 @@
 
   slides.forEach(slide => {
     slide.style.opacity = "0.6"; // Default opacity for all slides
-    slide.style.transform = "scale(0.7)"; // Reset scale
+    slide.style.transform = "scale(0.8)"; // Reset scale
   });
 
   // Find the currently active slide (center)
@@ -303,24 +344,27 @@
     }
   }
 
-  // Initialize Swiper
-const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.swiper', {
   loop: true,
-  centeredSlides: true,
-  slidesPerView: 3, // Display 3 slides at a time
-  spaceBetween: 20,
+  centeredSlides: true,  // Keep the active slide centered
+  slidesPerView: 'auto', // Auto adjust to fit slides, which helps in making partial slides visible
+  spaceBetween: 0, // Adjust the space between slides to make them peek in
   autoplay: {
     delay: 3000,
     disableOnInteraction: false
   },
+  keyboard: {
+    enabled: true,
+  },
   pagination: {
-    el: '.swiper-pagination', // Target the pagination element
+    el: '.swiper-pagination', // Pagination element
     clickable: true, // Allow clicking to go to specific slides
-    type: 'bullets', // Options: 'bullets', 'fraction', 'progressbar'
+    type: 'bullets', // Bullet type pagination
+    dynamicBullets: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next', // Target next button
-    prevEl: '.swiper-button-prev'  // Target previous button
+    nextEl: '.swiper-button-next', // Next button
+    prevEl: '.swiper-button-prev', // Previous button
   },
   on: {
     slideChange: function () {
@@ -328,6 +372,7 @@ const swiper = new Swiper('.swiper', {
     },
   }
 });
+
 
 
   </script>

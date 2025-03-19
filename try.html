@@ -1,192 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Swiper Stylesheet (add inside <head>) -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Check Magazine</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style type="text/css">
+    .magazine {
+      display: flex;
+      font-family: "poppins";
+    }
+    .magazine-story {
+      display: flex;
+      max-height: 250px;
+      overflow: hidden;
+    }
+    .magazine-story img {
+      max-width: 300px;
+      height: 80%;
+    }
 
-  <!-- Swiper Script (add before closing </body>) -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    .magazine p {
+      font-size: .9em;
+      font-weight: 300;
+    }
+    .magazine h6 {
+      font-size: .9em;
+      font-weight: 600;
+    }
+    .magazine h6 a{
+     color: black;
+    }
 
-  <style>
-      .team-cards {
-          background-color: #0B0A0A;
-          padding: 30px;
-          margin-top: 50px;
-          border-radius: 20px;
-          display: flex;
-          justify-content: space-around;
-          position: relative;
-          overflow: hidden;
+    .text-container{
+      max-height: 220px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+
+    @media(max-width: 680px) {
+      .magazine p {
+        font-size: .8em;
       }
-
-      .team-card {
-          width: 400px;
-          background-color: #111111;
-          position: relative;
-          z-index: 1;
+      .magazine h6 {
+        font-size: .8em;
       }
-
-      .team-card .bg-1 {
-          position: absolute;
-          width: 100%;
-          height: 90%;
-          bottom: 0;
-          clip-path: polygon(0% 100%, 100% 100%, 100% 25%, 0% 0%);
-          background-color: #2BADE291;
-          z-index: 1;
+      .magazine-story {
+        display: flex;
+        max-height: 200px;
+        overflow: hidden;
       }
-
-      .team-card .bg-2 {
-          position: absolute;
-          width: 100%;
-          height: 90%;
-          bottom: 0;
-          clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 25%);
-          background-color: #000000;
-          z-index: 2;
+      .magazine-story img {
+        max-width: 220px;
+        height: 80%;
       }
-
-      .member {
-          width: 190px;
-          height: 190px;
-          border-radius: 50%;
-          z-index: 3;
-          position: relative;
-          left: 50%;
-          transform: translateX(-50%);
+      .text-container{
+        max-height: 150px;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
-
-      .basic-info,
-      .other-info {
-          position: relative;
-          z-index: 3;
-          padding: 0 30px;
-          color: white;
+    }
+    @media(max-width: 480px) {
+      .magazine p {
+        font-size: .8em;
       }
-
-      .basic-info {
-          padding-top: 30px;
-          margin-bottom: 25px;
+      .magazine h6 {
+        font-size: .8em;
       }
-
-      .basic-info div {
-          display: flex;
-          justify-content: space-between;
+      .magazine-story {
+        display: flex;
+        max-height: 160px;
+        overflow: hidden;
       }
-
-      .basic-info p {
-          opacity: .5;
+      .magazine-story img {
+        max-width: 140px;
+        height: 80%;
       }
-
-      .other-info div {
-          margin-top: 30px;
-          padding-bottom: 25px;
+      .text-container{
+        max-height: 120px;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
-
-      .other-info div img {
-          width: 30px;
-          margin-right: 10px;
+    }
+    @media(max-width: 400px) {
+      .magazine p {
+        font-size: .7em;
+        text-overflow: ellipsis;
       }
-
-      /* Optional: You can style the navigation buttons */
-      .swiper-button-next, .swiper-button-prev {
-          color: white;
+      .magazine h6 {
+        font-size: .7em;
+        text-overflow: ellipsis;
       }
+      .magazine-story {
+        display: flex;
+        max-height: 110px;
+        overflow: hidden;
+      }
+      .magazine-story img {
+        max-width: 110px;
+        height: 80%;
+      }
+      .text-container{
+        max-height: 100px;
+        overflow: hidden;
+      }
+    }
+    .story-img div{
+      margin-top: 10px;
+    }
+    .story-img p{
+      font-weight: 600;
+      font-size: .7em;
+    }
+    @media(max-width : 480px){
+      .story-img div{
+        margin-top: 5px;
+      }
+      .story-img p{
+        font-weight: 500;
+        font-size: .5em;
+      }
+      .story-img div img{
+        width: 11px;
+      }
+    }
+    
   </style>
 </head>
-
 <body>
-  <div class="swiper-container">
-      <div class="swiper-wrapper">
-          <div class="team-cards">
-              <div class="team-card swiper-slide">
-                  <img src="imgs/member1.png" class="member">
-                  <div class="bg-1"></div>
-                  <div class="bg-2"></div>
-                  <div class="basic-info">
-                      <div>
-                          <h4>Loneto Kelly</h4>
-                          <a href=""><img src="icons/mail.svg"></a>
-                      </div>
-                      <p>CEO - Chief Executive Officer</p>
-                  </div>
-                  <div class="other-info">
-                      <p>“Every individual has the potential to achieve amazing things.”</p>
-                      <p>It's a passion that fuels everything, we do at LK RECRUITMENT we believe in a world where talent flourishes.</p>
-                      <div>
-                          <a href=""><img src="icons/insta.svg"></a>
-                          <a href=""><img src="icons/linkedin.svg"></a>
-                          <a href=""><img src="icons/x.svg"></a>
-                      </div>
-                  </div>
-              </div>
-              <!-- Repeat the swiper-slide for other team members -->
-              <div class="team-card swiper-slide">
-                  <img src="imgs/member1.png" class="member">
-                  <div class="bg-1"></div>
-                  <div class="bg-2"></div>
-                  <div class="basic-info">
-                      <div>
-                          <h4>Loneto Kelly</h4>
-                          <a href=""><img src="icons/mail.svg"></a>
-                      </div>
-                      <p>CEO - Chief Executive Officer</p>
-                  </div>
-                  <div class="other-info">
-                      <p>“Every individual has the potential to achieve amazing things.”</p>
-                      <p>It's a passion that fuels everything, we do at LK RECRUITMENT we believe in a world where talent flourishes.</p>
-                      <div>
-                          <a href=""><img src="icons/insta.svg"></a>
-                          <a href=""><img src="icons/linkedin.svg"></a>
-                          <a href=""><img src="icons/x.svg"></a>
-                      </div>
-                  </div>
-              </div>
-              <div class="team-card swiper-slide">
-                  <img src="imgs/member1.png" class="member">
-                  <div class="bg-1"></div>
-                  <div class="bg-2"></div>
-                  <div class="basic-info">
-                      <div>
-                          <h4>Loneto Kelly</h4>
-                          <a href=""><img src="icons/mail.svg"></a>
-                      </div>
-                      <p>CEO - Chief Executive Officer</p>
-                  </div>
-                  <div class="other-info">
-                      <p>“Every individual has the potential to achieve amazing things.”</p>
-                      <p>It's a passion that fuels everything, we do at LK RECRUITMENT we believe in a world where talent flourishes.</p>
-                      <div>
-                          <a href=""><img src="icons/insta.svg"></a>
-                          <a href=""><img src="icons/linkedin.svg"></a>
-                          <a href=""><img src="icons/x.svg"></a>
-                      </div>
-                  </div>
-              </div>
-          </div>
+
+  <div class="container-lg shadow-lg magazine my-3">
+    <div class="magazine-story gap-4">
+      <div class="story-img">
+        <img class="img-fluid" src="imgs/try.png" alt="Magazine Image">
+        <div class="d-flex">
+          <img src="edit.svg" width="15">
+          <p class="fw-semibold ms-2">Impano</p>
+        </div>
       </div>
 
-      <!-- Add Pagination and Navigation -->
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="text-container">
+        <h6><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></h6>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+        </p>
+      </div>
+    </div>
   </div>
 
-  <script>
-      var swiper = new Swiper('.swiper-container', {
-          slidesPerView: 2, // Show 2 slides at a time
-          spaceBetween: 10, // Spacing between slides
-          navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-          },
-          pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-          },
-          loop: true, // Loop the slides
-          autoplay: {
-              delay: 3000, // Auto slide every 3 seconds
-              disableOnInteraction: false, // Keep autoplay on even after user interaction
-          },
-      });
-  </script>
 </body>
+</html>

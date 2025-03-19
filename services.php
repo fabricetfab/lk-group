@@ -11,6 +11,29 @@
       max-width: 1600px;
       margin: auto;
     }
+      .service1-contents .with-img{
+          position: relative;
+      }  
+    @media (max-width: 1024px) {
+      .service1-contents .with-img{
+          position: initial;
+      }  
+      .service1-contents{
+        padding-top: 50px;
+      }
+      .service-head{
+        position: absolute; 
+        top : 0;
+        left: 0;
+        right: 0;
+      }
+      .service-head.first{
+        top : 40px;
+        left: 80px;
+        right: 80px;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -39,7 +62,7 @@
       <img src="imgs/services-bg.jfif" class="img-fluid">
       <div class="hero-contents">
         <h1>SERVICES</h1>
-        <p class="w-75">“ We offer a comprehensive suite of services, tailored to address the specific challenges and opportunities faced by modern organizations”.</p>
+        <p class="w-75 text-center">“ We offer a comprehensive suite of services, tailored to address the specific challenges and opportunities faced by modern organizations”.</p>
       </div>
     </div>
   </div>
@@ -47,8 +70,9 @@
 
   <div class="services-contents">
     <img src="imgs/services-big-bg.png" class="services-contents-bg">
-    <div class="service1">
-      <div class="service-head">
+    
+    <div class="service1 position-relative pb-5">
+      <div class="service-head first">
         <h3>Digital Presence</h3>
         <button>HERE WE GO!</button>
       </div>
@@ -63,15 +87,16 @@
           <li><span> Content Creation : </span>   "We craft compelling content that educates, entertains, and inspires your audience. From blog posts and articles to website copy and social media captions, we provide high-quality content that resonates with your target market and drives engagement." </li>
           </ul>
         </div>
-        <div class="with-img position-relative">
+        <div class="with-img">
           <img src="imgs/Oservice1.png" class="img-fluid">
           <button class="position-absolute bottom-0 start-50 translate-middle-x">See Details</button>
         </div>
       </div>
     </div>
-    <div class="service1">
+
+    <div class="service1 position-relative pb-5">
       <div class="service1-contents container-xlg">
-        <div class="with-img position-relative">
+        <div class="with-img">
           <img src="imgs/Oservice2.png" class="img-fluid">
           <button class="position-absolute bottom-0 start-50 translate-middle-x">See Details</button>
         </div>
@@ -92,7 +117,7 @@
     </div>
 
 
-    <div class="service1">
+    <div class="service1 position-relative pb-5">
       <div class="service1-contents container-xlg">
         <div>
           <div class="service-head">
@@ -109,15 +134,17 @@
             <li><span>Software & Hardware Updates: </span> "We manage and implement software updates to ensure security and optimal performance. We also monitor hardware health and proactively address any potential issues, preventing downtime and ensuring long-term reliability."</li>
           </ul>
         </div>
-        <div class="with-img position-relative">
+        <div class="with-img">
           <img src="imgs/Oservice3.png" class="img-fluid">
           <button class="position-absolute bottom-0 start-50 translate-middle-x">See Details</button>
         </div>
       </div>
     </div>
-    <div class="service1">
+
+
+    <div class="service1 position-relative pb-5">
       <div class="service1-contents container-xlg">
-        <div class="with-img position-relative">
+        <div class="with-img">
           <img src="imgs/Oservice4.png" class="img-fluid">
           <button class="position-absolute bottom-0 start-50 translate-middle-x">See Details</button>
         </div>
@@ -141,7 +168,7 @@
     <h3 class="h3 mt-5 text-center" style="color: #2BADE2;">Why Choose Us?</h3>
     <p class="fs-6 mt-3 text-center text-light">Leading technology solutions since 2010</p>
 
-    <div class="container-xlg row gap-5 text-light why-choose">
+    <div class="row gap-5 text-light why-choose">
       <div class="col">
         <div class="d-flex justify-content-between">
           <h4 class="h4">13+ Years</h1>

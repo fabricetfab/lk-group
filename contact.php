@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="try.css">
   <title>Lk Group | Home Page</title>
   <style>
     body{
-      max-width: 1440px;
+      max-width: 1660px;
       margin: auto;
     }
   </style>
 </head>
 <body>
-
   <div class="navigation-container p-3">
     <img src="imgs/logo.png" alt="logo" class="logo" />
     
@@ -39,7 +39,7 @@
       <img src="imgs/contacts-bg.jfif" class="img-fluid">
       <div class="hero-contents">
         <h1>CONTACT <span>US</span></h1>
-        <p>“We understand that success in the digital world requires a holistic approach so Lk group is a Multifaceted Approach to Business Growth”</p>
+        <p class="w-75 text-center">“We understand that success in the digital world requires a holistic approach so Lk group is a Multifaceted Approach to Business Growth”</p>
       </div>
     </div>
   </div>
@@ -94,31 +94,31 @@
             </div>
             <div class="contact-item">
               <button>See location on map<svg class="ms-3" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0z"/>
-</svg></button>
+              <path fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0z"/>
+            </svg></button>
             </div>
           </div>
           <div class="contact-form">
             <h3>Message <span>US !</span></h3>
             <form>
               <div>
-                <label class="mb-2 mt-2">Name</label>
+                <label class="mb-2 mt-2">Name</label><br> 
                 <input type="text" name="" placeholder="Name">
               </div>
               <div>
-                <label class="mb-2 mt-2">Email</label>
+                <label class="mb-2 mt-2">Email</label><br>  
                 <input type="email" name="" placeholder="Email">
               </div>
               <div>
-                <label class="mb-2 mt-2">Subject</label>
+                <label class="mb-2 mt-2">Subject</label><br>
                 <input type="text" name="" placeholder="Subject">
               </div>
               <div>
-                <label class="mb-2 mt-2">Service</label>
+                <label class="mb-2 mt-2">Service</label><br>
                 <input type="text" name="" placeholder="Service">
               </div>
               <div class="fortextarea">
-                <label class="mb-2 mt-2">Message</label>
+                <label class="mb-2 mt-2">Message</label><br> 
                 <textarea placeholder="Type a message..."></textarea>
               </div>
               <button class="send">Send</button>
