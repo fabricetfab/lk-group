@@ -417,12 +417,6 @@ button,input{
 
 
 
-
-
-
-
-
-
 .footer{
     background-color: #010C11;
     padding: 20px 40px;
@@ -489,3 +483,138 @@ button,input{
     width: 30px;
     margin-right: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsiveness*/
+
+.hamburger{
+    display: none;
+}
+.offcanvas{
+    background-color: #111111;
+    color: white;
+    max-width: 300px;
+}
+.offcanvas-body ul{
+    list-style-type: none;
+    width: 100%;
+    padding-left: 0;
+}
+.offcanvas-body ul{
+    overflow: hidden;
+}
+.offcanvas-body ul li{
+    font-size: 1.3em;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: white;
+    transition: all .3s;
+    transform: translateX(10px);
+}
+.offcanvas-body ul li:hover{
+    background-color: rgba(0, 0, 0, 1);
+}
+.offcanvas-body ul li svg{
+    margin-right: 10px;
+    color: #13AEEE;
+}
+
+
+@media (max-width: 1200px) {
+    .contacts-hero{
+        height: 550px;
+        overflow: hidden;
+        position: relative;
+    }
+    .contacts-hero img{
+        height: 800px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -200px;
+    }
+    .location h2{
+        color: #2BADE2;
+        font-size: 1.1em;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    .hamburger{
+        display: block;
+    }
+    .contacts-hero{
+        height: 550px;
+        overflow: hidden;
+        position: relative;
+    }
+    .contacts-hero img{
+        height: 800px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -200px;
+    }
+    .contact-contents{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 50px;
+    }
+    .icons{
+        display: flex;
+        gap: 20px;
+        grid-row: 3;
+        padding: 0;
+    }
+    .contact-contents .icons{
+        padding: 5px 0;
+        margin: auto;
+    }
+    .contact-info{
+        grid-row: 2;
+        max-width: 400px;
+        margin: auto;
+    }
+    .contact-form{
+        grid-row: 1;
+    }
+    .contact-item button{
+        margin: auto;
+    }
+    .location-contents{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 30px;
+    }
+    .location-contents div:last-child{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    .location-contents div:first-child{
+        min-height: 350px;
+    }
+    .location-contents div:last-child h2{
+        grid-row: 1;
+    }
+    .location-contents div:last-child img{
+        grid-row: 2;
+    }
+    .location-text{
+        font-size: 1em;
+    }
+    
+}
+
+
