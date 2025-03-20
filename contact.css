@@ -15,7 +15,6 @@ body{
     padding: 0;
     margin: 0;
     font-family: "poppins",sans-serif;
-    overflow-x: hidden;
     text-align: left;
 }
 
@@ -406,8 +405,8 @@ button,input{
     scrollbar-arrow-color: transparent;
 }
 .partners div img{
-    max-width: 25%;
-    min-width: 25%;
+    max-width: 300px;
+    min-width: 300px;
     margin-top: 30px;
     height: 150px;
     border-radius: 30px;
@@ -423,6 +422,8 @@ button,input{
     display: grid;
     width: 100%;
     grid-template-columns: repeat(6, 1fr);
+    justify-content: space-around;
+    justify-items:center;
 }
 .footer div:first-child{
     justify-content: center;
@@ -431,6 +432,7 @@ button,input{
     align-items: center;
     text-align: center;
 }
+
 .footer div:first-child img{
     width: 100px;
     margin: auto;
@@ -445,6 +447,7 @@ button,input{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 20px;
 }
 .footer div h4{
     font-size: 1em;
@@ -477,6 +480,7 @@ button,input{
 
 .footer .footer-social{
     display: block;
+    margin-bottom: 0;
 }
 
 .footer .footer-social img{
@@ -550,6 +554,9 @@ button,input{
 }
 
 @media (max-width: 1024px) {
+    .header-navigation{
+        display: none;
+    }
     .hamburger{
         display: block;
     }
@@ -613,6 +620,9 @@ button,input{
     }
     .location-text{
         font-size: 1em;
+    }
+    .footer{
+        grid-template-columns: repeat(5, 1fr);
     }
     
 }

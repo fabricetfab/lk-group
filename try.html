@@ -1,153 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Check Magazine</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <style type="text/css">
-    .magazine {
-      display: flex;
-      font-family: "poppins";
-    }
-    .magazine-story {
-      display: flex;
-      max-height: 250px;
-      overflow: hidden;
-    }
-    .magazine-story img {
-      max-width: 300px;
-      height: 80%;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Width Layout with Media Queries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 1200px; /* Fixed width for large screens */
+            margin: 0 auto; /* Centers the container */
+            background-color: lightblue;
+        }
+        .content {
+            padding: 20px;
+            font-size: 18px;
+        }
 
-    .magazine p {
-      font-size: .9em;
-      font-weight: 300;
-    }
-    .magazine h6 {
-      font-size: .9em;
-      font-weight: 600;
-    }
-    .magazine h6 a{
-     color: black;
-    }
+        /* Media query for smaller screens */
+        @media (max-width: 1200px) {
+            .container {
+                width: 90%; /* 90% of the screen width for smaller screens */
+                padding: 0 10px; /* Add some padding to prevent content from touching edges */
+            }
+        }
 
-    .text-container{
-      max-height: 220px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    
-
-    @media(max-width: 680px) {
-      .magazine p {
-        font-size: .8em;
-      }
-      .magazine h6 {
-        font-size: .8em;
-      }
-      .magazine-story {
-        display: flex;
-        max-height: 200px;
-        overflow: hidden;
-      }
-      .magazine-story img {
-        max-width: 220px;
-        height: 80%;
-      }
-      .text-container{
-        max-height: 150px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-    }
-    @media(max-width: 480px) {
-      .magazine p {
-        font-size: .8em;
-      }
-      .magazine h6 {
-        font-size: .8em;
-      }
-      .magazine-story {
-        display: flex;
-        max-height: 160px;
-        overflow: hidden;
-      }
-      .magazine-story img {
-        max-width: 140px;
-        height: 80%;
-      }
-      .text-container{
-        max-height: 120px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-    }
-    @media(max-width: 400px) {
-      .magazine p {
-        font-size: .7em;
-        text-overflow: ellipsis;
-      }
-      .magazine h6 {
-        font-size: .7em;
-        text-overflow: ellipsis;
-      }
-      .magazine-story {
-        display: flex;
-        max-height: 110px;
-        overflow: hidden;
-      }
-      .magazine-story img {
-        max-width: 110px;
-        height: 80%;
-      }
-      .text-container{
-        max-height: 100px;
-        overflow: hidden;
-      }
-    }
-    .story-img div{
-      margin-top: 10px;
-    }
-    .story-img p{
-      font-weight: 600;
-      font-size: .7em;
-    }
-    @media(max-width : 480px){
-      .story-img div{
-        margin-top: 5px;
-      }
-      .story-img p{
-        font-weight: 500;
-        font-size: .5em;
-      }
-      .story-img div img{
-        width: 11px;
-      }
-    }
-    
-  </style>
+        /* Media query for very small screens (like mobile phones) */
+        @media (max-width: 600px) {
+            .container {
+                width: 100%; /* Full width on mobile screens */
+                padding: 0 15px; /* Extra padding for mobile */
+            }
+            .content {
+                font-size: 16px; /* Smaller font size on mobile */
+            }
+        }
+    </style>
 </head>
 <body>
-
-  <div class="container-lg shadow-lg magazine my-3">
-    <div class="magazine-story gap-4">
-      <div class="story-img">
-        <img class="img-fluid" src="imgs/try.png" alt="Magazine Image">
-        <div class="d-flex">
-          <img src="edit.svg" width="15">
-          <p class="fw-semibold ms-2">Impano</p>
+    <div class="container">
+        <div class="content">
+            <h1>Welcome to the Responsive Page</h1>
+            <p>This layout adjusts for smaller screens to improve usability.</p>
         </div>
-      </div>
-
-      <div class="text-container">
-        <h6><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></h6>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
-        </p>
-      </div>
     </div>
-  </div>
-
 </body>
 </html>

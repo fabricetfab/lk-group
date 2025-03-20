@@ -248,7 +248,7 @@ button,input{
 .floating-service .bg{
     backdrop-filter: blur(10px);
     padding: 20px 10px 20px 20px;
-    width: 230px;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -391,7 +391,6 @@ button,input{
 }
 .about-contents-container img:nth-child(2){
     transform: translateY(-40%);
-    height: 300px;
 }
 .about-contents-container img:nth-child(1){
     transform: translateY(-60%);
@@ -436,7 +435,7 @@ button,input{
 
 .partners{
     color: #2BADE2;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -469,15 +468,13 @@ button,input{
     scrollbar-arrow-color: transparent;
 }
 .partners div img{
-    max-width: 300px;
-    min-width: 300px;
+    max-width: 250px;
+    min-width: 250px;
     margin-top: 30px;
-    height: 150px;
-    border-radius: 30px;
+    max-height: 120px;
 }
 .services{
     background-color: #01141C;
-    width: 100%;
     padding: 40px 20px;
     position: relative;
     z-index: 1;
@@ -499,12 +496,11 @@ button,input{
     justify-content: center;
     align-content: center;
     justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 50px;
 }
 .services-card {
     max-width: 370px;
-    min-width: 370px;
     height: 400px;
     position: relative;
     padding: 30px;
@@ -604,7 +600,6 @@ button,input{
     margin: auto;
     top: 10%;
     left: 25%;
-
 }
 .testimonial-list{
     border: 1px solid green;
@@ -736,11 +731,14 @@ button,input{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .blogs-side .blogs-card{
     width: 100%;
     position: relative;
     height: 512px;
+    max-width: 450px;
     border-radius: 7px;
     overflow: hidden;
     display: flex;
@@ -757,6 +755,7 @@ button,input{
     height: auto;
     border-radius: 7px;
     overflow: hidden;
+    max-width: 450px;
 }
 .blogs-card-contents{
     width: 100%;
@@ -1196,9 +1195,41 @@ button,input{
 
 
 
-
 /*responsiveness tablet*/
 
+
+
+.hamburger{
+    display: none;
+}
+.offcanvas{
+    background-color: #111111;
+    color: white;
+    max-width: 300px;
+}
+.offcanvas-body ul{
+    list-style-type: none;
+    width: 100%;
+    padding-left: 0;
+}
+.offcanvas-body ul{
+    overflow: hidden;
+}
+.offcanvas-body ul li{
+    font-size: 1.3em;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: white;
+    transition: all .3s;
+    transform: translateX(10px);
+}
+.offcanvas-body ul li:hover{
+    background-color: rgba(0, 0, 0, 1);
+}
+.offcanvas-body ul li svg{
+    margin-right: 10px;
+    color: #13AEEE;
+}
 
 
 @media (max-width: 1560px) {
@@ -1299,10 +1330,10 @@ button,input{
     }
     .about-contents-container img{
         width: 100%;
+        height: 300px;
     }
     .about-contents-container img:nth-child(2){
         transform: translateY(0%);
-        height: 300px;
     }
     .about-contents-container img:nth-child(1){
         transform: translateY(0%);
@@ -1394,9 +1425,26 @@ button,input{
         right: -20%;
         z-index: 1000000;
     }
+    .text-in-bg h1{
+        font-size: 2.8em;
+        font-family: monoton;
+    }
 }
 
 @media (max-width: 1024px) {
+    .testimonials-header, .about-header , .services-header, .faqs-header, .blogs-header, .contact-header{
+        margin-top: 35px;
+    }
+    .text-in-bg h1{
+        font-size: 2.4em;
+        font-family: monoton;
+    }
+    .header-navigation{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
     .home-hero-contents{
         display: grid;
         grid-template-columns: 1fr;
@@ -1458,7 +1506,7 @@ button,input{
         margin-top: 0px;
     }
     .hero-phone-image{
-        transform: translateX(33%);
+        transform: translateX(40%);
     }
     .floating-service.one{
         left: 35%;
@@ -1470,21 +1518,36 @@ button,input{
         animation: bouncing 2s ease-in-out infinite;
     }
     .floating-service.three{
-        top: 40%;
+        top: 30%;
         right: 28%;
     }  
+
     .testimonials-contents{
         grid-template-columns: repeat(1,1fr);
     }
     .testimonials-contents div:first-of-type img{
         top: 6%;
-        left: 45%;
+        left: 40%;
     
     }
     .testimonial-list{
         top: 0%;
-        left: 42%;
+        left: 36%;
     }
+    .testimonials-contents div:first-of-type img.next{
+        transform: translate(60%,-20%);
+        z-index: 2;
+    }
+    .testimonials-contents div:first-of-type img.prev{
+        transform: translate(-100%,-20%);
+        z-index: 2;
+    }
+    .testimonials-contents div:first-of-type img.active{
+        transform: translate(-20%,70%) scale(1.3);
+        box-shadow: none;
+        z-index: 4;
+    }
+
     .testimonials-contents .div-2 {
         margin-top: 250px;
     }
@@ -1498,7 +1561,6 @@ button,input{
         position: absolute;
         left: unset;
         right: 20px;
-        top: 50%;
         transform: translateY(-50%);
     }
     .testimonial-navs img{
@@ -1507,9 +1569,11 @@ button,input{
     .blogs .blogs-contents{
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+        padding: 0 20px;
     }
     .contact-contents{
         grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto auto;
         gap: 50px;
     }
     .contact-contents{
@@ -1538,5 +1602,382 @@ button,input{
     .subscribe-contents{
         grid-template-columns: repeat(1,1fr);
     }
-
+    .ratings{
+        padding: 20px 0;
+        width: 90%;
+    }
+    .ratings div h5{
+        font-size: 2em;
+    }
+    .ratings div p{
+        font-size: .9em;
+    }
 }
+@media (max-width: 990px) {
+    .hero-phone-image{
+        transform: translateX(35%);
+    }
+    .home-hero-footer div h5{
+        font-size: .9em;
+    }
+    .home-hero-footer div p{
+        font-size: .7em;
+    }
+    .about-contents-container img{
+        width: 100%;
+        height: 250px;
+    }
+}
+@media (max-width: 920px) {
+    .hero-phone-image{
+        transform: translateX(28%);
+    }
+}
+@media (max-width: 870px) {
+    .hero-phone-image{
+        transform: translateX(22%);
+    }
+    .home-hero .home-union-hero{
+        width: 155%;
+        left: -10%;
+    }
+    .home-hero .home-union1-hero{
+        width: 120%;
+        right: -20%;
+    }
+    .partners div img{
+        max-width: 220px;
+        min-width: 220px;
+        margin-top: 30px;
+        max-height: 100px;
+    }
+    
+}
+@media (max-width: 800px) {
+    .hero-phone-image{
+        transform: translateX(13%);
+    }
+    .home-hero-footer{
+        width: 60%;
+    }
+    .home-hero-footer div h5{
+        font-size: .8em;
+    }
+    .home-hero-footer div p{
+        font-size: .6em;
+    }
+    .home-hero .home-union-hero{
+        width: 175%;
+        left: -10%;
+    }
+    .home-hero .home-union1-hero{
+        width: 135%;
+        right: -20%;
+    }
+    .home-hero-left h1{
+        font-size: 2em;
+    }
+    .home-hero-left p{
+        font-size: 1em;
+    }
+    .about-contents-container img{
+        width: 100%;
+        height: 220px;
+    }
+    .services-contents{
+        gap: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .blogs .blogs-contents{
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+    .blogs-side:nth-child(2) .blogs-card{
+        height: 350px;
+    }
+}
+
+
+
+@media (max-width: 710px) {
+    .hero-phone-image{
+        transform: translateX(5%);
+    }
+    .about-contents-container img{
+        border-radius: 10px;
+    }
+    .about-contents-container{
+        gap: 10px;
+        padding: 0px;
+        border: none;
+        background-color: transparent;
+    }
+    .about-contents{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0;
+    }
+    .about{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .about-contents-container div p{
+        font-size: 1em;
+    }
+    .about-paragraph{
+        font-size: 1em;
+    }
+    .testimonials-contents{
+        margin-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .testimonials-contents .div-2{
+        padding: 0;
+    }
+
+    .testimonials-contents div:first-of-type img{
+        width: 100px;
+        height: 115px;
+    }
+    .testimonial-list{
+        width: 110px;
+        height: 110px;
+        margin-top: 10px;
+    }
+    .services-contents{
+        padding: 0 10px;
+    }
+    .services{
+        padding: 40px 10px;
+    }
+    .services-contents p{
+        font-size: .9em;
+    }
+    .testimonials-contents h3{
+        font-size: 1.4em;
+    }
+    .testimonials-contents .div-2 p{
+        font-size: .7em;
+    }
+    .testimonials-contents .div-2 label{
+        font-size: .9em;
+    }
+    .testimonial-navs button{
+        top: 40%;
+        transform: translateY(-50%);
+    }
+    .ratings{
+        padding: 10px 0;
+        width: 95%;
+    }
+    .ratings div h5{
+        font-size: 1.5em;
+    }
+    .ratings div p{
+        font-size: .8em;
+    }
+    .blogs-card-contents h4{
+        font-size: 1em;
+    }
+    .blogs-card-contents p{
+        font-family: "poppins",sans-serif;
+        font-size: .8em;
+        width: 95%;
+    }
+}
+@media (max-width: 670px) {
+    .hero-phone-image{
+        transform: translateX(0%);
+    }
+    .home-hero .home-union-hero{
+        width: 185%;
+        left: -10%;
+    }
+    .home-hero .home-union1-hero{
+        width: 145%;
+        right: -50%;
+    }
+    .home-hero-footer div h5{
+        font-size: .7em;
+    }
+    .home-hero-footer div p{
+        font-size: .5em;
+    }
+    .home-hero-footer{
+        width: 70%;
+    }
+    .about-contents-container img{
+        width: 100%;
+        height: 200px;
+    }
+    .partners div img{
+        max-width: 200px;
+        min-width: 200px;
+        margin-top: 30px;
+        max-height: 100px;
+    }
+    .contact-contents .contact-form{
+        padding: 50px 0px 40px 0;
+    }
+    
+    
+}
+@media (max-width: 630px) {
+    .hero-phone-image{
+        transform: translateX(-5%);
+    }
+    .about-contents-container img{
+        width: 100%;
+        height: 180px;
+    }
+}
+@media (max-width: 580px) {
+    .hero-phone-image{
+        transform: translateX(-10%);
+    }
+    .home-hero-left h1{
+        width: 90%;
+    }
+    .home-hero-left p{
+        width: 90%;
+    }
+    .home-hero .home-union-hero{
+        width: 205%;
+        left: -10%;
+    }
+    .home-hero .home-union1-hero{
+        width: 165%;
+        right: -50%;
+    } 
+    .home-hero-left h1{
+        font-size: 1.8em;
+    }
+    .home-hero-left p{
+        font-size: 1em;
+    }
+    .floating-service.one{
+        left: 40%;
+        animation: bouncing 2s ease-in-out infinite;
+    }
+    .floating-service.two{
+        bottom:200px;
+        left: 40%;
+        animation: bouncing 2s ease-in-out infinite;
+    }
+    .floating-service.three{
+        top: 40%;
+        right: 25%;
+    }  
+    .floating-service p{
+        font-size: .8em;
+    }
+    .floating-service h2{
+        font-size: 1em;
+    }
+}
+@media (max-width: 520px) {
+    .text-in-bg h1{
+        font-size: 2.1em;
+        font-family: monoton;
+    }
+    .hero-phone-image{
+        transform: translateX(-18%);
+    }
+    .home-hero-footer{
+        width: 100%;
+    }
+    .home-hero .home-union-hero{
+        width: 225%;
+        left: -10%;
+    }
+    .home-hero .home-union1-hero{
+        width: 185%;
+        right: -50%;
+    } 
+    .floating-service{
+        width: 170px;
+    }
+    .about-contents-container img{
+        width: 100%;
+        height: 150px;
+    }
+    .about-contents-container div p{
+        font-size: .9em;
+    }
+    .about-paragraph{
+        font-size: .9em;
+    }
+    .about-contents button{
+        font-size: .9em;
+    }
+    .partners div img{
+        max-width: 170px;
+        min-width: 170px;
+        margin-top: 30px;
+        max-height: 90px;
+    }
+    .testimonials-contents{
+        margin-top: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .ratings div h5{
+        font-size: 1.3em;
+    }
+    .ratings div p{
+        font-size: .7em;
+    }
+    .blogs-side .blogs-card{
+        height: 425px;
+    }
+    .blogs{
+        padding: 40px 10px 20px 10px;
+    }
+}
+@media (max-width: 450px) {
+    .home-hero .home-union-hero{
+        width: 245%;
+        left: -10%;
+    }
+    .home-hero .home-union1-hero{
+        width: 205%;
+        right: -50%;
+    } 
+    .home-hero-footer div h5{
+        font-size: .6em;
+    }
+    .home-hero-footer div p{
+        font-size: .4em;
+    }
+    .floating-service p{
+        font-size: .7em;
+    }
+    .floating-service h2{
+        font-size: .9em;
+    }
+    .partners div img{
+        max-width: 150px;
+        min-width: 150px;
+        margin-top: 30px;
+        max-height: 80px;
+    }
+    .ratings{
+        width: 100%;
+        margin: 40px 0;
+    }
+    .ratings div{
+        padding: 20px 10px;
+    }
+    .ratings div h5{
+        font-size: 1.1em;
+    }
+    .ratings div p{
+        font-size: .5em;
+    }
+    .blogs-side .blogs-card{
+        height: 400px;
+    }
+}
+

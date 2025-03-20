@@ -8,14 +8,26 @@
   <link rel="stylesheet" href="try.css">
   <title>Lk Group | Home Page</title>
   <style>
-    body{
-      max-width: 1600px;
-      margin: 0;
-      padding: 0;
+    body {
+        background: #111111;
+        overflow-x: hidden;
     }
-  </style>
+
+    /* Default fixed-width layout for larger screens */
+    .page {
+        margin: auto;
+        max-width: 1660px;
+        overflow-x: hidden;
+    }
+
+
+</style>
+
+
+
 </head>
 <body>
+  <div class="page">
   <div class="navigation-container p-3">
     <img src="imgs/logo.png" alt="logo" class="logo" />
     
@@ -287,7 +299,7 @@
             <a href="#"><img src="icons/insta.svg"></</a>
           </div>
         </div>
-
+        </div>
 
         <script src="js/bootstrap.bundle.min.js"></script>
 </body>
