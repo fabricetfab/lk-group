@@ -201,10 +201,10 @@
         </div>
         <div>
           <h4>Resources</h4>
-          <a href="#" class="active">Home</a>
+          <a href="#">Home</a>
+          <a href="#" class="active">Services</a>
           <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
+          <a href="#">Contact Us</a>
         </div>
         <div>
           <h4>Support</h4>
@@ -231,5 +231,6 @@
             <a href="#"><img src="icons/insta.svg"></</a>
           </div>
         </div>
+    </div>
 </body>
 </html>

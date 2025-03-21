@@ -42,7 +42,6 @@
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
       </svg>
       <div class="language-toggle">
-  <button id="languageBtn" class="lang-btn" onclick="toggleLanguage()">English</button>
   <button class="hamburger btn btn-primary" style="background-color:transparent;border:none;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#2BADE2" class="bi bi-list" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -583,7 +582,7 @@
             <p>Need more Info, check <span>support page !</span></p>
         </div>
         <div class="image-cut mt-5">
-          <img src="imgs/faqs.png" class="img-fluid mt-5" alt="Styled Image">
+          <img src="imgs/faqs.png" class="img-fluid" alt="Styled Image">
         </div>
       </div>
       </div>
@@ -619,9 +618,9 @@
         <div>
           <h4>Resources</h4>
           <a href="#" class="active">Home</a>
-          <a href="#">About</a>
           <a href="#">Services</a>
-          <a href="#">Contact</a>
+          <a href="#">About</a>
+          <a href="#">Contact Us</a>
         </div>
         <div>
           <h4>Support</h4>
@@ -648,7 +647,7 @@
             <a href="#"><img src="icons/insta.svg"></</a>
           </div>
         </div>
-</div>
+    </div>
 </div>
       <script src="js/languageToggle.js"></script> 
 <script src="js/bootstrap.bundle.min.js"></script>

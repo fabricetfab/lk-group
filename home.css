@@ -24,7 +24,10 @@ span,a,label,p{
     text-decoration: none;
 }
 
-
+h1 span,h2 span,h3 span,h4 span,h6 span,h6 span{
+    font-family: "Phudu-big";
+     font-size: bold;
+}
 h1,h2,h3,h4,h6,h6{
     font-family: "Phudu-big";
      font-size: bold;
@@ -47,6 +50,9 @@ button,input{
 }
 .navigation-container a{
     font-size: .9em;
+}
+.logo{
+    width: 200px;
 }
 
 .header-navigation{
@@ -970,7 +976,7 @@ button,input{
 .accordion-button {
     background-color: #01141C;
     box-shadow: none;
-    font-size: .5em;
+    font-size: .6em;
     border: none;
     color: white;
     padding: 25px 20px;
@@ -988,7 +994,6 @@ button,input{
 .accordion-button:hover {
     background-color: #01141C;
     box-shadow: none;
-    font-size: .5em;
 }
 
 .accordion-collapse {
@@ -1206,6 +1211,7 @@ button,input{
     background-color: #111111;
     color: white;
     max-width: 300px;
+    z-index: 100000000000000000000000;
 }
 .offcanvas-body ul{
     list-style-type: none;
@@ -1432,6 +1438,9 @@ button,input{
 }
 
 @media (max-width: 1024px) {
+    .logo{
+        width: 150px;
+    }
     .testimonials-header, .about-header , .services-header, .faqs-header, .blogs-header, .contact-header{
         margin-top: 35px;
     }
@@ -1590,6 +1599,11 @@ button,input{
     }
     .faqs-contents{
         grid-template-columns: repeat(1,1fr);
+        gap: 0;
+    }
+    .faqs .faqs-header{
+        margin-top: 30px;
+        text-align: center;
     }
     .image-cut{
         grid-row: 1;
@@ -1611,6 +1625,12 @@ button,input{
     }
     .ratings div p{
         font-size: .9em;
+    }
+    .contact-contents{
+        margin-top: 40px;
+     }
+     .home-hero-footer{
+        padding: 10px;
     }
 }
 @media (max-width: 990px) {
@@ -1714,9 +1734,7 @@ button,input{
         background-color: transparent;
     }
     .about-contents{
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-bottom: 0;
+        padding: 30px 0 0 0;
     }
     .about{
         padding-left: 20px;
@@ -1786,6 +1804,36 @@ button,input{
         font-size: .8em;
         width: 95%;
     }
+    .text-in-bg h1{
+        font-size: 2em;
+        font-family: monoton;
+    }
+    .faqs-contents{
+        padding: 0 20px;
+    }
+    .subscribe-contents{
+        padding: 0 20px;
+    }
+    .subscribe{
+        padding-top: 0;
+    }
+    .subscribe-form{
+        padding: 00px;
+    }
+    .subscribe-form div h1{
+        font-size: 3em;
+    }
+    .subscribe-form h1{
+        font-size: 1.5em;
+    }
+    .subscribe-form form{
+        margin-top: 30px;
+    }
+    .subscribe-form form input{
+        display: block;
+        width: 100%;
+    }
+    
 }
 @media (max-width: 670px) {
     .hero-phone-image{
@@ -1821,8 +1869,43 @@ button,input{
     .contact-contents .contact-form{
         padding: 50px 0px 40px 0;
     }
-    
-    
+    .contact-contents .contact-form form{
+        display: block;
+    }
+    .contact-contents .contact-form form input{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .contact-contents .contact-form form textarea{
+        width: 100%;
+    }
+    .contact-contents{
+       padding: 0;
+       margin-top: 40px;
+    }
+    .contact-item p{
+        font-size: .9em;
+    }
+    .contact .send{
+        width: 40%;
+        font-size: 1em;
+    }
+    .contact-info h4{
+        margin-bottom: 30px;
+        font-size: 1.2em;
+    }
+    .subscribe ol li{
+        font-size: .8em;
+    }
+    .subscribe ol li span{
+        font-size: 1.1em;
+    }
+    .subscribe ol{
+        padding-left: 10px;
+    }
+    .subscribe h2{
+        margin-left: 0;
+    }
 }
 @media (max-width: 630px) {
     .hero-phone-image{
@@ -1858,23 +1941,44 @@ button,input{
         font-size: 1em;
     }
     .floating-service.one{
-        left: 40%;
+        left: 30%;
         animation: bouncing 2s ease-in-out infinite;
     }
     .floating-service.two{
-        bottom:200px;
-        left: 40%;
+        bottom:230px;
+        left: 30%;
         animation: bouncing 2s ease-in-out infinite;
     }
     .floating-service.three{
-        top: 40%;
-        right: 25%;
+        top: 30%;
+        right: 19%;
     }  
     .floating-service p{
         font-size: .8em;
     }
     .floating-service h2{
         font-size: 1em;
+    }
+    .floating-service{
+        width: 150px;
+    }
+    .floating-service .bg{
+        backdrop-filter: blur(10px);
+        padding: 16px 5px 16px 10px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .accordion-button {
+        font-size: .6em;
+    }
+    .accordion-body{
+        font-size: .9em;
+    }
+    .subscribe-form div h1{
+        font-size: 2em;
+    }
+    .testimonial-list{
+        left: 34%;
     }
 }
 @media (max-width: 520px) {
@@ -1896,9 +2000,7 @@ button,input{
         width: 185%;
         right: -50%;
     } 
-    .floating-service{
-        width: 170px;
-    }
+    
     .about-contents-container img{
         width: 100%;
         height: 150px;
@@ -1935,6 +2037,17 @@ button,input{
     .blogs{
         padding: 40px 10px 20px 10px;
     }
+    .contact .send{
+        width: 60%;
+        font-size: 1em;
+    }
+    .subscribe-contents{
+        padding: 0 0px;
+    }
+    .subscribe-form div h1{
+        font-size: 1.7em;
+    }
+    
 }
 @media (max-width: 450px) {
     .home-hero .home-union-hero{
@@ -1979,5 +2092,48 @@ button,input{
     .blogs-side .blogs-card{
         height: 400px;
     }
+    .blog-footer button{
+        margin-left: auto;
+        padding: 10px 30px;
+        font-size: 1em;
+        font-family: "poppins";
+        font-weight: 600;
+    }
+    .text-in-bg h1{
+        font-size: 1.7em;
+        font-family: monoton;
+    }
+    .faqs-contents{
+        padding: 0 0px;
+    }
+    .subscribe h2{
+        font-size: 1.3em;
+    }
+    .testimonial-list{
+        left: 33%;
+    }
+    .about-contents-container img{
+        width: 100%;
+        height: 130px;
+    }
 }
 
+@media(max-width: 360px){
+    .floating-service.one{
+        left: 35%;
+        animation: bouncing 2s ease-in-out infinite;
+    }
+    .about-contents-container img{
+        width: 100%;
+        height: 110px;
+    }
+    .floating-service.two{
+        bottom:230px;
+        left: 35%;
+        animation: bouncing 2s ease-in-out infinite;
+    }
+    .floating-service.three{
+        top: 30%;
+        right: 21%;
+    } 
+}

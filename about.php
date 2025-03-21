@@ -269,10 +269,10 @@
         </div>
         <div>
           <h4>Resources</h4>
-          <a href="#" class="active">Home</a>
-          <a href="#">About</a>
+          <a href="#">Home</a>
           <a href="#">Services</a>
-          <a href="#">Contact</a>
+          <a href="#" class="active">About</a>
+          <a href="#">Contact Us</a>
         </div>
         <div>
           <h4>Support</h4>
@@ -299,6 +299,7 @@
             <a href="#"><img src="icons/insta.svg"></</a>
           </div>
         </div>
+    </div>
       </div>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script>
