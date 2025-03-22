@@ -1448,6 +1448,10 @@ button,input{
         font-size: 2.4em;
         font-family: monoton;
     }
+    .header-links{
+        position: absolute;
+        right: 70px;
+    }
     .header-navigation{
         display: none;
     }

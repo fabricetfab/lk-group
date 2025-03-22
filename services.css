@@ -32,6 +32,9 @@ h1,h2,h3,h4,h6,h6{
 button,input{
     font-family: "poppins",sans-serif;
 }
+.logo{
+    width: 200px;
+}
 
 .navigation-container{
     display: flex;
@@ -204,7 +207,7 @@ button,input{
     color: #13AEEE;
 }
 .service-head p span:first-of-type{
-    margin-left: 40px;
+    margin-left: 0px;
     opacity: .4;
     font-weight: 950;
     font-size: 2em;
@@ -248,6 +251,7 @@ button,input{
     overflow: hidden;
     position: relative;
     transition: .3s ease;
+    display: none;
 }
 
 .service1-contents button::before{
@@ -369,6 +373,42 @@ button,input{
 
 /*responsiveness*/
 
+
+
+.hamburger{
+    display: none;
+}
+.offcanvas{
+    background-color: #111111;
+    color: white;
+    max-width: 300px;
+    z-index: 100000000000000000000000;
+}
+.offcanvas-body ul{
+    list-style-type: none;
+    width: 100%;
+    padding-left: 0;
+}
+.offcanvas-body ul{
+    overflow: hidden;
+}
+.offcanvas-body ul li{
+    font-size: 1.3em;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: white;
+    transition: all .3s;
+    transform: translateX(10px);
+}
+.offcanvas-body ul li:hover{
+    background-color: rgba(0, 0, 0, 1);
+}
+.offcanvas-body ul li svg{
+    margin-right: 10px;
+    color: #13AEEE;
+}
+
+
 @media (max-width: 1200px) {
     .services-hero{
         height: 550px;
@@ -385,6 +425,19 @@ button,input{
 }
 
 @media (max-width: 1024px) {
+    .logo{
+        width: 150px;
+    }
+    .header-links{
+        position: absolute;
+        right: 70px;
+    }
+    .header-navigation{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
     .service1-contents{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -402,5 +455,147 @@ button,input{
         grid-row: 1;
         position: initial;
     }
+    .service-head p{
+        margin: 10px 0;
+    }
     
+}
+
+@media (max-width: 900px) {
+    .services-hero{
+        height: 500px;
+        overflow: hidden;
+        position: relative;
+    }
+    .services-hero img{
+        height: 1200px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -400px;
+    }
+}
+
+
+@media (max-width: 710px) {
+    .services-hero{
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+    }
+    .services-hero img{
+        height: 1000px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -300px;
+    }
+    .hero-contents h1{
+        font-size: 5em;
+    }
+    .hero-contents h1 span{
+        margin-left: 10px;
+    }
+    .hero-contents p{
+        font-size: .9em;
+    }
+    .service1{
+        padding: 20px 40px 20px 40px;
+    }
+    .service1 .service-head h3{
+        color: #2BADE2;
+        position: relative;
+        height: 30px;
+        font-size: 1.3em;
+    }
+    .service1-contents{
+        margin-top: 20px;
+        padding: 0;
+    }
+    .service1-contents p,.service1-contents li{
+        font-size: .8em;
+    }
+    .service1-contents li span{
+        font-size: 1.1em;
+    }
+    .service1-contents h5{
+        font-size: 1.1em;
+    }
+}
+@media (max-width: 580px) {
+    .services-hero{
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+    }
+    .services-hero img{
+        height: 800px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -250px;
+    }
+    .service1{
+        padding: 20px 20px 0 20px;
+    }
+    .service-head p{
+        margin: 0;
+    }
+}
+@media (max-width: 480px) {
+    .services-hero{
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+    }
+    .services-hero img{
+        height: 600px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -150px;
+    }
+    .hero-contents h1{
+        font-size: 4em;
+    }
+    .hero-contents h1 span{
+        margin-left: 10px;
+    }
+    .hero-contents p{
+        font-size: .8em;
+    }
+    .service1 .service-head h3{
+        color: #2BADE2;
+        position: relative;
+        height: 20px;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 425px) {
+    .services-hero{
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+    }
+    .services-hero img{
+        height: 450px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -100px;
+    }
+    .hero-contents h1{
+        font-size: 3em;
+    }
+    .hero-contents h1 span{
+        margin-left: 10px;
+    }
+    .hero-contents p{
+        font-size: .8em;
+    }
+    .service1{
+        padding: 20px 10px 0 10px;
+    }
+    .service1 .service-head h3{
+        color: #2BADE2;
+        position: relative;
+        height: 20px;
+        font-size: 1em;
+    }
 }

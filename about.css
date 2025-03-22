@@ -210,6 +210,10 @@ button,input{
     border-image: linear-gradient(-90deg, #185974, #FFFFFF03) 1;  /* Apply gradient border */
 }
 
+.tab-content, .tab-pane, .tab-content {
+    height: auto;
+    max-height: auto;
+  }
 
 .nav-tabs {
     border-bottom: 3px solid transparent;

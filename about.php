@@ -9,14 +9,21 @@
   <link rel="stylesheet" href="about.css">
   <title>Lk Group | Home Page</title>
   <style>
-    body{
-      max-width: 1660px;
-      margin: auto;
+    body {
+        background: #111111;
+        overflow-x: hidden;
+    }
+
+    /* Default fixed-width layout for larger screens */
+    .page {
+        margin: auto;
+        max-width: 1660px;
+        overflow-x: hidden;
     }
   </style>
 </head>
 <body>
-
+<div class="page">
   <div class="navigation-container p-3">
     <img src="imgs/logo.png" alt="logo" class="logo" />
     
@@ -261,7 +268,6 @@
 
   </section>
 </div>
-</div>
 <div class="footer">
         <div>
           <img src="imgs/logo1.png" alt="logo">
@@ -301,6 +307,7 @@
         </div>
     </div>
       </div>
+  </div>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script>
       function updateSlideOpacity() {

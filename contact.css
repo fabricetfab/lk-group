@@ -47,6 +47,9 @@ button,input{
 .navigation-container a{
     font-size: .9em;
 }
+.logo{
+    width: 200px;
+}
 
 .header-navigation{
     padding: 20px 15px;
@@ -118,7 +121,7 @@ button,input{
 }
 .hero-contents h1{
     font-family: monoton;
-    font-size: 6em;
+    font-size: 5.8em;
 }
 .hero-contents h1 span{
     font-family: monoton;
@@ -224,6 +227,7 @@ button,input{
     color: #595C5F;
     border-radius: 10px;
     border: none;
+    min-width: none;
     outline: none;
 }
 .contact-contents form .fortextarea{
@@ -554,11 +558,18 @@ button,input{
 }
 
 @media (max-width: 1024px) {
+    .logo{
+        width: 150px;
+    }
     .header-navigation{
         display: none;
     }
     .hamburger{
         display: block;
+    }
+    .header-links{
+        position: absolute;
+        right: 70px;
     }
     .contacts-hero{
         height: 550px;
@@ -575,6 +586,7 @@ button,input{
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         gap: 50px;
+        margin-top: 50px;
     }
     .icons{
         display: flex;
@@ -628,3 +640,136 @@ button,input{
 }
 
 
+
+@media (max-width: 900px) {
+    .contacts-hero{
+        height: 500px;
+        overflow: hidden;
+        position: relative;
+    }
+    .contacts-hero img{
+        height: 650px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -150px;
+    }
+}
+
+
+@media (max-width: 710px) {
+    .contacts-hero{
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+    }
+    .contacts-hero img{
+        height: 550px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -120px;
+    }
+    .hero-contents h1{
+        font-size: 4.7em;
+    }
+    .hero-contents h1 span{
+        margin-left: 10px;
+    }
+    .hero-contents p{
+        font-size: .9em;
+    }
+    .contact{
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 50px;
+    }
+    .contact-contents{
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 580px) {
+    .contacts-hero{
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+    }
+    .contacts-hero img{
+        height: 450px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -100px;
+    }
+    .hero-contents h1{
+        font-size: 4em;
+    }
+    .contact-contents{
+        width: 100%;
+        padding: 0px;
+        margin-top: 50px;
+    }
+    
+}
+@media (max-width: 480px) {
+    .contacts-hero{
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+    }
+    .contacts-hero img{
+        height: 400px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -50px;
+    }
+    .hero-contents h1{
+        font-size: 3.5em;
+    }
+    .hero-contents h1 span{
+        margin-left: 10px;
+    }
+    .hero-contents p{
+        font-size: .8em;
+    }
+    .container-xlg.one h1{
+        font-size: 1.2em;
+    }
+    .container-xlg.one p{
+        font-size: .9em;
+    }
+    .contact-contents form{
+        display: block;
+        margin-top: 30px;
+    }
+    .contact .send{
+        width: 60%;
+    }
+}
+
+@media (max-width: 425px) {
+    .contacts-hero{
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+    }
+    .contacts-hero img{
+        height: 320px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -20px;
+    }
+    .hero-contents h1{
+        font-size: 3em;
+    }
+    .hero-contents h1 span{
+        margin-left: 10px;
+    }
+    .hero-contents p{
+        font-size: .8em;
+    }
+}
+@media (max-width: 375px) {
+    .hero-contents h1{
+        font-size: 2.4em;
+    }
+}

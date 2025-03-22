@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="contact.css">
-  <link rel="stylesheet" href="try.css">
   <title>Lk Group | Home Page</title>
   <style>
     body {
@@ -43,8 +42,6 @@
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
       </svg>
-      <a href="/how-it-works">How it Works</a>
-      <a href="/faqs">FAQs</a>
     </div>
 
 
@@ -108,11 +105,11 @@
 
   <div class="contacts-contents">
     <img src="imgs/new-big-bg.png" class="img-fluid contacts-contents-bg">
-    <div class="container-xlg one text-center">
+    <div class="container-xlg one text-center px-2">
       <h1 class="pt-4 h3" style="color: #2BADE2;">We’d Love to Hear from You!</h1>
-      <p class="text-light mt-5 m-auto fs-6" style="max-width: 768px;opacity: .7;">we're here to help! Our team at LK GROUP is just a message away. Fill out the form below, and let's connect to make your vision a reality.</p>
-      <p class="text-light mt-5 m-auto fs-6">Your next step toward growth starts here—let's chat!</p>
-      <div class="container-sm border-bottom mt-5 border-dark"></div>
+      <p class="text-light mt-5 m-auto" style="max-width: 768px;opacity: .7;">we're here to help! Our team at LK GROUP is just a message away. Fill out the form below, and let's connect to make your vision a reality.</p>
+      <p class="text-light mt-5 m-auto">Your next step toward growth starts here—let's chat!</p>
+      <div class="container-sm border-bottom mt-4 border-dark"></div>
     </div>
 
      <div class="contact">
@@ -302,6 +299,6 @@
     </div>
   </div>
 
-        <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
