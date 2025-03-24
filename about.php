@@ -19,17 +19,19 @@
         margin: auto;
         max-width: 1660px;
         overflow-x: hidden;
+        margin-top: 110px;
     }
   </style>
 </head>
 <body>
 <div class="page">
+
   <div class="navigation-container p-3">
     <img src="imgs/logo.png" alt="logo" class="logo" />
     
     <div class="header-navigation">
       <a href="home.php">Home</a>
-      <a href="services.php" >Services</a>
+      <a href="services.php">Services</a>
       <a href="about.php" class="active">About Us</a>
       <a href="contact.php">Contact Us</a>
     </div>
@@ -39,10 +41,57 @@
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
       </svg>
-      <a href="/how-it-works">How it Works</a>
-      <a href="/faqs">FAQs</a>
     </div>
+
+
+    <button class="hamburger btn btn-primary" style="background-color:transparent;border:none;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#2BADE2" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
+    </button>
+
+      <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasTopLabel" style="color: #13AEEE;">MENUS</h5>
+          <button type="button me-2" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+        <ul>
+          <a href="home.php"><li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+              <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+            </svg>
+            Home
+          </li></a>
+          
+          <a href="services.php"><li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+              <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
+            </svg>
+            Services
+          </li></a>
+          
+          <a href="about.php"><li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+              <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+            </svg>
+            About Us
+          </li></a>
+          
+          <a href="contact.php" class="active"><li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+            </svg>
+            Contact Us
+          </li></a>
+        </ul>
+
+        </div>
+      </div>
   </div>
+
+
   <div class="about-container">
     <div class="about-hero">
       <img src="imgs/about-bg.jfif" class="img-fluid">
@@ -72,7 +121,8 @@
       </div>
     </nav>
     <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="mission" role="tabpanel" aria-labelledby="mission-tab" tabindex="0">
+        <div class="tab-pane fade show active with-grid" id="mission" role="tabpanel" aria-labelledby="mission-tab" tabindex="0">
+          <div class="for-grid">
           <div>
             <p>To empower businesses with seamless technology solutions that drive growth, efficiency, and innovation.</p>
           </div>
@@ -82,9 +132,31 @@
           <div>
             <p>LK GROUP is a unique and dynamic company dedicated to helping businesses thrive in today's digital landscape. We oAer a comprehensive suite of services, tailored to address the specific challenges and opportunities faced by modern organizations.</p>
           </div>
+          </div>
         </div>
-        <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab" tabindex="0">Vision Content</div>
-        <div class="tab-pane fade" id="values" role="tabpanel" aria-labelledby="values-tab" tabindex="0">Values Content</div>
+        <div class="tab-pane fade with-grid two" id="vision" role="tabpanel" aria-labelledby="vision-tab" tabindex="0">
+        <div class="for-grid">
+          <div>
+          <img src="imgs/service1copy.png">
+          </div>
+          <div>
+            <p>To empower businesses with seamless technology solutions that drive growth, efficiency, and innovation.</p>
+          </div>
+          <div>
+            <p>LK GROUP is a unique and dynamic company dedicated to helping businesses thrive in today's digital landscape. We oAer a comprehensive suite of services, tailored to address the specific challenges and opportunities faced by modern organizations.</p>
+          </div>
+          </div>        </div>
+        <div class="tab-pane fade" id="values" role="tabpanel" aria-labelledby="values-tab" tabindex="0">
+        <ul>
+            <li><span>Integrity:</span> We operate with honesty and transparency, building trust with our clients and partners.</li>
+            <li><span>Customer Focus:</span> Our clients are at the heart of everything we do. We are committed to delivering exceptional service and exceeding expectations.</li>
+            <li><span>Innovation:</span> We embrace new technologies and ideas, constantly seeking ways to improve our solutions and create value for our clients.</li>
+            <li><span>Collaboration:</span> We believe in the power of collaboration, working closely with our clients and partners to achieve shared goals.</li>
+            <li><span>Excellence:</span> We strive for excellence in everything we do, from the quality of our services to the professionalism of our team.</li>
+            <li>Showcase the team, highlighting expertise and experience.</li>
+            <li>Include any awards or recognition received.</li>
+        </ul>
+        </div>
     </div>
   </section>
   

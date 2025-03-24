@@ -44,9 +44,16 @@ button,input{
     border-bottom: 2px solid #2BADE2;
     width: 100%;
     top: 0;
+    background: #111111D9;
+    backdrop-filter: blur(20px);
+    z-index: 10000000000000;
+    position: fixed;
 }
 .navigation-container a{
     font-size: .9em;
+}
+.logo{
+    width: 200px;
 }
 
 .header-navigation{
@@ -254,29 +261,49 @@ button,input{
     color: white;
     font-size: 1.3em;
 }
-.tab-content .tab-pane:first-child{
+.tab-content .with-grid .for-grid{
+    width: 100%;
+    height: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
 }
-.tab-content .tab-pane:first-child div{
+.tab-content .with-grid .two{
+    grid-template-columns: 1fr 2fr;
+}
+
+.tab-content .with-grid div{
     position: relative;
     bordr: 1px solid green;
 }
-.tab-content .tab-pane:first-child div img{
+.tab-content .with-grid div img{
     width: 40%;
     margin: auto;
     position: relative;
     left: 10%;
 }
-.tab-content .tab-pane:first-child div p{
-    width: 70%;
-}
-.tab-content .tab-pane:first-child div:last-child{
-    grid-column: span 2;
-}
-.tab-content .tab-pane:first-child div:last-child p{
+.tab-content .with-grid div p{
     width: 100%;
 }
+
+.tab-content .with-grid div:last-child{
+    grid-column: span 2;
+}
+.tab-content .with-grid div:last-child p{
+    width: 100%;
+}
+
+.tab-content{
+    line-height: 2;
+    font-size: 1.1em;
+}
+.tab-content ul span{
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.tab-content, .tab-pane, .tab-content {
+    height: auto;
+    max-height: auto;
+  }
 .shadows{
     position: absolute;
     width: 120px;
@@ -510,12 +537,15 @@ button,input{
     margin-bottom: 120px;
 }
 
+
+
 .footer{
     background-color: #010C11;
-    padding: 20px 40px;
+    padding: 20px 40px 0 40px;
     display: grid;
     width: 100%;
     grid-template-columns: repeat(6, 1fr);
+    text-align: left;
 }
 .footer div:first-child{
     justify-content: center;
@@ -524,6 +554,7 @@ button,input{
     align-items: center;
     text-align: center;
 }
+
 .footer div:first-child img{
     width: 100px;
     margin: auto;
@@ -538,6 +569,7 @@ button,input{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 40px;
 }
 .footer div h4{
     font-size: 1em;
@@ -570,6 +602,7 @@ button,input{
 
 .footer .footer-social{
     display: block;
+    margin-bottom: 0;
 }
 
 .footer .footer-social img{
@@ -589,7 +622,54 @@ button,input{
 
 
 
+
+
+
 /*responsiveness*/
+
+.hamburger{
+    display: none;
+}
+.offcanvas{
+    background-color: #111111;
+    color: white;
+    max-width: 300px;
+    z-index: 100000000000000000000000;
+    position: fixed;
+    top: 0; 
+    right: 0; 
+    height: 100vh; 
+    width: 250px; 
+    z-index: 10; 
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease; 
+    backdrop-filter: blur(20px);
+}
+.offcanvas-body ul{
+    list-style-type: none;
+    width: 100%;
+    padding-left: 0;
+}
+.offcanvas-body ul{
+    overflow: hidden;
+}
+.offcanvas-body ul li{
+    font-size: 1.3em;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: white;
+    transition: all .3s;
+    transform: translateX(10px);
+}
+.offcanvas-body ul li:hover{
+    background-color: rgba(0, 0, 0, 1);
+}
+.offcanvas-body ul li svg{
+    margin-right: 10px;
+    color: #13AEEE;
+}
+
+
 
 @media (max-width: 1400px) {
     .work-contents{
@@ -617,18 +697,31 @@ button,input{
         .tab-content .tab-pane:first-child div img{
             width: 60%;
         }
-        .tab-content .tab-pane:first-child div p{
-            width: 70%;
-        } 
     }
 
     @media (max-width: 1024px) {
+        .logo{
+            width: 150px;
+        }
+        .header-links{
+            position: absolute;
+            right: 70px;
+        }
+        .header-navigation{
+            display: none;
+        }
+        .hamburger{
+            display: block;
+        }
         .story p{
             margin-top: 40px;
             color: white;
             font-size: 1.1em;
             line-height: 1.7;
             position: relative;
+        }
+        .tab-content {
+            font-size: 1em;
         }
         .work-card h4{
             color: #2BADE2;
@@ -641,5 +734,148 @@ button,input{
         .work-contents .left-side .work-card,.work-contents .right-side .work-card{
             width: 300px;
         }
+        .footer{
+            grid-template-columns: repeat(5, 1fr);
+        }
+        .footer div:first-child{
+            justify-content: start;
+            justify-items: start;
+            align-content: start;
+            align-items: start;
+            text-align: left;
+        }
+        
+        .footer div:first-child img{
+            width: 100px;
+            margin: 0;
+        }
+        .footer div:first-of-type h5{
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+        .story{
+            padding: 40px;
+            background-color: #111111;
+        }
+        .story p{
+            font-size: 1.1em;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .about-hero{
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+        }
+        .about-hero img{
+            height: 600px;
+            width: 100%;
+            overflow: hidden;
+            margin-top: -100px;
+        }
     }
     
+    @media (max-width: 768px) {
+        .footer{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    @media (max-width: 710px) {
+        .about-hero{
+            height: 400px;
+        }
+        .about-hero img{
+            height: 500px;
+            margin-top: -100px;
+        }
+        .hero-contents h1{
+            font-size: 4.7em;
+        }
+        .hero-contents h1 span{
+            margin-left: 10px;
+        }
+        .hero-contents p{
+            font-size: .9em;
+        }
+        .story{
+            padding: 30px;
+            background-color: #111111;
+        }
+        .story p{
+            font-size: 1em;
+        }
+    }
+    @media (max-width: 680px) {
+        .footer{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    @media (max-width: 520px) {
+        .footer{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .about-hero{
+            height: 350px;
+        }
+        .about-hero img{
+            height: 450px;
+            margin-top: -100px;
+        }
+        .hero-contents h1{
+            font-size: 4em;
+        }
+    }
+
+    .footer div h4{
+        font-size: .9em;
+        color: white;
+        font-family: "phudu-big";
+    }
+    @media (max-width: 480px) {
+        .footer div a{
+            font-size: .8em;
+            opacity: 1;
+            color: white;
+            font-family: "poppins";
+            transition: all .3s ease;
+        }
+        .about-hero{
+            height: 350px;
+        }
+        .about-hero img{
+            height: 400px;
+            margin-top: -50px;
+        }
+        .hero-contents h1{
+            font-size: 3.5em;
+        }
+        .story{
+            padding: 15px;
+            background-color: #111111;
+        }
+        .story p{
+            font-size: .9em;
+        }
+    }
+@media (max-width: 425px) { 
+    .footer{
+        padding: 10px 20px;
+    }
+    .about-hero{
+        height: 300px;
+    }
+    .about-hero img{
+        height: 300px;
+        margin-top: -0px;
+    }
+    .hero-contents h1{
+        font-size: 3em;
+    }
+}
+@media (max-width: 375px) {
+    .hero-contents h1{
+        font-size: 2.4em;
+    }
+
+}

@@ -43,6 +43,10 @@ button,input{
     border-bottom: 2px solid #2BADE2;
     width: 100%;
     top: 0;
+    background: #111111D9;
+    backdrop-filter: blur(20px);
+    z-index: 10000000000000;
+    position: fixed;
 }
 .navigation-container a{
     font-size: .9em;
@@ -422,12 +426,11 @@ button,input{
 
 .footer{
     background-color: #010C11;
-    padding: 20px 40px;
+    padding: 20px 40px 0 40px;
     display: grid;
     width: 100%;
     grid-template-columns: repeat(6, 1fr);
-    justify-content: space-around;
-    justify-items:center;
+    text-align: left;
 }
 .footer div:first-child{
     justify-content: center;
@@ -451,7 +454,7 @@ button,input{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .footer div h4{
     font-size: 1em;
@@ -512,6 +515,15 @@ button,input{
     background-color: #111111;
     color: white;
     max-width: 300px;
+    position: fixed;
+    top: 0; 
+    right: 0; 
+    height: 100vh; 
+    width: 250px; 
+    z-index: 10; 
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease; 
+    backdrop-filter: blur(20px);
 }
 .offcanvas-body ul{
     list-style-type: none;
@@ -636,6 +648,22 @@ button,input{
     .footer{
         grid-template-columns: repeat(5, 1fr);
     }
+    .footer div:first-child{
+        justify-content: start;
+        justify-items: start;
+        align-content: start;
+        align-items: start;
+        text-align: left;
+    }
+    
+    .footer div:first-child img{
+        width: 100px;
+        margin: 0;
+    }
+    .footer div:first-of-type h5{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
     
 }
 
@@ -652,6 +680,11 @@ button,input{
         width: 100%;
         overflow: hidden;
         margin-top: -150px;
+    }
+}
+@media (max-width: 768px) {
+    .footer{
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -688,6 +721,11 @@ button,input{
         margin-top: 50px;
     }
 }
+@media (max-width: 680px) {
+    .footer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 @media (max-width: 580px) {
     .contacts-hero{
         height: 350px;
@@ -709,6 +747,11 @@ button,input{
         margin-top: 50px;
     }
     
+}
+@media (max-width: 520px) {
+    .footer{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 @media (max-width: 480px) {
     .contacts-hero{
@@ -744,6 +787,18 @@ button,input{
     .contact .send{
         width: 60%;
     }
+    .footer div h4{
+        font-size: .9em;
+        color: white;
+        font-family: "phudu-big";
+    }
+    .footer div a{
+        font-size: .8em;
+        opacity: 1;
+        color: white;
+        font-family: "poppins";
+        transition: all .3s ease;
+    }
 }
 
 @media (max-width: 425px) {
@@ -767,9 +822,13 @@ button,input{
     .hero-contents p{
         font-size: .8em;
     }
+    .footer{
+        padding: 10px 20px;
+    }
 }
 @media (max-width: 375px) {
     .hero-contents h1{
         font-size: 2.4em;
     }
+
 }

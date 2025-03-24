@@ -17,6 +17,7 @@
         margin: auto;
         max-width: 1660px;
         overflow-x: hidden;
+        margin-top: 110px;
     }
 
 
@@ -46,9 +47,8 @@
         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
       </svg>
     </button>
-
       <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-        <div class="offcanvas-header">
+      <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasTopLabel" style="color: #13AEEE;">MENUS</h5>
           <button type="button me-2" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -255,38 +255,44 @@
       <h1 class="services-header">WHAT WE <span>OFFER !</span></h1>
       <div class="services-contents">
         <div class="services-card">
+          <img src="icons/people.svg" alt="">
           <h3>HR Consulting</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <p>Strategic HR solutions and talent acquisition services.</p>
           <img src="imgs/service1.png">
           <span>></span>
         </div>
         <div class="services-card">
+          <img src="icons/global.svg" alt="">
           <h3>Digital Presence</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <p>Web design, social media management, and content creation services.</p>
           <img src="imgs/service2.png">
           <span>></span>
         </div>
         <div class="services-card">
-          <h3>IT Support</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <img src="icons/shield-security.svg" alt="">
+          <h3>Cyber Security </h3>
+          <p>Comprehensive security solutions and incident response services.</p>
           <img src="imgs/service3.png">
           <span>></span>
         </div>
         <div class="services-card">
-          <h3>Communication</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <img src="icons/monitor-mobbile.svg" alt="">
+          <h3>IT Support</h3>
+          <p>24/7 remote assistance,ticketing system, and technical support.</p>
           <img src="imgs/service4.png">
           <span>></span>
         </div>
         <div class="services-card">
-          <h3>P2P Recruitment</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <img src="icons/box.png" alt="">
+          <h3>Staff & Management</h3>
+          <p>Web design, social media management, and content creation services.</p>
           <img src="imgs/service5.png">
           <span>></span>
         </div>
         <div class="services-card">
-          <h3>Staff & Management</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <img src="icons/like-tag.svg" alt="">
+          <h3>Job Opportunities</h3>
+          <p>You want a fine digital solver, here is the right place.</p>
           <img src="imgs/service6.png">
           <span>></span>
         </div>

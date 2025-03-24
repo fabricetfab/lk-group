@@ -17,6 +17,7 @@
         margin: auto;
         max-width: 1660px;
         overflow-x: hidden;
+        margin-top: 110px;
     }
       .service1-contents .with-img{
           position: relative;
@@ -65,9 +66,9 @@
     
     <div class="header-navigation">
       <a href="home.php">Home</a>
-      <a href="services.php">Services</a>
+      <a href="services.php" class="active">Services</a>
       <a href="about.php">About Us</a>
-      <a href="contact.php" class="active">Contact Us</a>
+      <a href="contact.php">Contact Us</a>
     </div>
 
     <div class="header-links">

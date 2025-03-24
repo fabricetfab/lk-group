@@ -40,13 +40,14 @@ button,input{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: auto;
-    background: linear-gradient(90deg,rgb(5, 5, 5),#111111D9,#111111D9);
-    z-index: 10000;
+    background: #111111D9;
+    backdrop-filter: blur(20px);
+    z-index: 10000000000000;
     height: 110px;
     border-bottom: 2px solid #2BADE2;
     width: 100%;
     top: 0;
+    position: fixed;
 }
 .navigation-container a{
     font-size: .9em;
@@ -310,7 +311,7 @@ button,input{
     padding: 20px;
     position: absolute;
     bottom: 0;
-    z-index: 10000000000;
+    z-index: 10000000;
 }
 .home-hero-footer div{
     border-right: 2px solid transparent;  /* Set border to transparent */
@@ -502,7 +503,7 @@ button,input{
     justify-content: center;
     align-content: center;
     justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 50px;
 }
 .services-card {
@@ -533,12 +534,15 @@ button,input{
 
 .services-card h3{
     color: #13AEEE;
+    text-align: center;
 }
 .services-card p{
     color: white;
     opacity: .7;
     margin-top: 30px;
     font-size: 1.1em;
+    z-index: 1;
+    text-align: center;
 }
 .services-card img{
     position: absolute;
@@ -550,13 +554,25 @@ button,input{
 .services-card:hover img{
     bottom: -40px;
     left: -30px;
+    filter: brightness(40%);
+    z-index: -1;
+}
+.services-card img:first-child{
+    position: relative;
+    width: 40px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+    transition: .5s all;
+    filter: brightness(100%);
 }
 .services-card span{
     font-size: 1.8em;
     font-weight: 600;
     padding: 0 14px;
     border: none;
-    border: .1em solid #2BADE2;
+    box-shadow: 0 2px 5px 0 #13AEEE;
     border-radius: 50%;
     color: #2BADE2;
     background-color: transparent;
@@ -1125,10 +1141,11 @@ button,input{
 
 .footer{
     background-color: #010C11;
-    padding: 20px 40px;
+    padding: 20px 40px 0 40px;
     display: grid;
     width: 100%;
     grid-template-columns: repeat(6, 1fr);
+    text-align: left;
 }
 .footer div:first-child{
     justify-content: center;
@@ -1137,6 +1154,7 @@ button,input{
     align-items: center;
     text-align: center;
 }
+
 .footer div:first-child img{
     width: 100px;
     margin: auto;
@@ -1151,6 +1169,7 @@ button,input{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 40px;
 }
 .footer div h4{
     font-size: 1em;
@@ -1183,15 +1202,13 @@ button,input{
 
 .footer .footer-social{
     display: block;
+    margin-bottom: 0;
 }
 
 .footer .footer-social img{
     width: 30px;
     margin-right: 10px;
 }
-
-
-
 
 
 
@@ -1211,7 +1228,15 @@ button,input{
     background-color: #111111;
     color: white;
     max-width: 300px;
-    z-index: 100000000000000000000000;
+    position: fixed;
+    top: 0; 
+    right: 0; 
+    height: 100vh; 
+    width: 250px; 
+    z-index: 10; 
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease; 
+    backdrop-filter: blur(20px);
 }
 .offcanvas-body ul{
     list-style-type: none;
@@ -1636,6 +1661,25 @@ button,input{
      .home-hero-footer{
         padding: 10px;
     }
+    .footer{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .footer div:first-child{
+        justify-content: start;
+        justify-items: start;
+        align-content: start;
+        align-items: start;
+        text-align: left;
+    }
+    
+    .footer div:first-child img{
+        width: 100px;
+        margin: 0;
+    }
+    .footer div:first-of-type h5{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
 }
 @media (max-width: 990px) {
     .hero-phone-image{
@@ -1722,6 +1766,11 @@ button,input{
     }
 }
 
+@media (max-width: 768px) {
+    .footer{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
 
 @media (max-width: 710px) {
@@ -1837,8 +1886,25 @@ button,input{
         display: block;
         width: 100%;
     }
+    .services-contents .services-card{
+        height: 350px;
+    }
+    .services-card img{
+        position: absolute;
+        width: 230px;
+        bottom: -60px;
+        left: -60px;
+        transition: .5s all;
+    }
     
 }
+
+@media (max-width: 680px) {
+    .footer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media (max-width: 670px) {
     .hero-phone-image{
         transform: translateX(0%);
@@ -2051,8 +2117,26 @@ button,input{
     .subscribe-form div h1{
         font-size: 1.7em;
     }
+    .footer{
+        grid-template-columns: repeat(2, 1fr);
+    }
     
 }
+@media (max-width: 480px) {
+    .footer div h4{
+        font-size: .9em;
+        color: white;
+        font-family: "phudu-big";
+    }
+    .footer div a{
+        font-size: .8em;
+        opacity: 1;
+        color: white;
+        font-family: "poppins";
+        transition: all .3s ease;
+    }
+}
+
 @media (max-width: 450px) {
     .home-hero .home-union-hero{
         width: 245%;
@@ -2120,6 +2204,19 @@ button,input{
         width: 100%;
         height: 130px;
     }
+    .footer{
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .hero-contents h1{
+        font-size: 2.4em;
+    }
+    .services-contents{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
 }
 
 @media(max-width: 360px){

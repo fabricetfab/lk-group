@@ -17,6 +17,7 @@
         margin: auto;
         max-width: 1660px;
         overflow-x: hidden;
+        margin-top: 110px;
     }
 
 
