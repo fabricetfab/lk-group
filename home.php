@@ -108,19 +108,20 @@
           <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <h1 id="corousel">HR & Communication</h1>
-                <p>Tailored solutions for modern businesses to thrive in a fast-paced digital world.</p>
+                <h1 id="carouselTitle1">HR & Communication</h1>
+                <p id="carouselText1">Tailored solutions for modern businesses to thrive in a fast-paced digital world.</p>
               </div>
               <div class="carousel-item">
-                <h1>Your Growth, Our Mission</h1>
-                <p>Transforming challenges into opportunities with customized services for your business.</p>
+                <h1 id="carouselTitle2">Your Growth, Our Mission</h1>
+                <p id="carouselText2">Transforming challenges into opportunities with customized services for your business.</p>
               </div>
               <div class="carousel-item">
-                <h1>Innovative Solutions for Modern Businesses</h1>
-                <p>Helping organizations unlock their full potential in today’s digital landscape.</p>
+                <h1 id="carouselTitle3">Innovative Solutions for Modern Businesses</h1>
+                <p id="carouselText3">Helping organizations unlock their full potential in today’s digital landscape.</p>
               </div>
             </div>
           </div>
+
           <button class="get-started" id="getStartedBtn">Get Started</button>
           <div class="home-hero-navs">
             <button id="prevBtn"><img src="icons/prev.svg"></button>
@@ -147,52 +148,56 @@
               <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
                 <div class="carousel-inner">
                   <div class="carousel-item bg active">
-                    <p>Digital Presence in</p>
-                    <h2>Social Media</h2>
+                    <p id="serviceOneText1">Digital Presence in</p>
+                    <h2 id="serviceOneTitle1">Social Media</h2>
                   </div>
                   <div class="carousel-item bg">
-                    <p>Cybersecurity in</p>
-                    <h2>Assessment</h2>
+                    <p id="serviceOneText2">Cybersecurity in</p>
+                    <h2 id="serviceOneTitle2">Assessment</h2>
                   </div>
                   <div class="carousel-item bg">
-                    <p>IT Support in</p>
-                    <h2>Remote Updates</h2>
+                    <p id="serviceOneText3">IT Support in</p>
+                    <h2 id="serviceOneTitle3">Remote Updates</h2>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- Floating Service Two -->
             <div class="floating-service two">
               <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
                 <div class="carousel-inner">
                   <div class="carousel-item bg active">
-                    <p>Digital Presence in</p>
-                    <h2>Web Design</h2>
+                    <p id="serviceTwoText1">Digital Presence in</p>
+                    <h2 id="serviceTwoTitle1">Web Design</h2>
                   </div>
                   <div class="carousel-item bg">
-                    <p>Cybersecurity in</p>
-                    <h2>Incidents Response</h2>
+                    <p id="serviceTwoText2">Cybersecurity in</p>
+                    <h2 id="serviceTwoTitle2">Incidents Response</h2>
                   </div>
                   <div class="carousel-item bg">
-                    <p>IT Support in</p>
-                    <h2>Interventions Reporting</h2>
+                    <p id="serviceTwoText3">IT Support in</p>
+                    <h2 id="serviceTwoTitle3">Interventions Reporting</h2>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- Floating Service Three -->
             <div class="floating-service three">
               <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
                 <div class="carousel-inner">
                   <div class="carousel-item bg active">
-                    <p>Digital Presence in</p>
-                    <h2>Contents Creation</h2>
+                   <p id="serviceThreeText1">Digital Presence in</p>
+                   <h2 id="serviceThreeTitle1">Contents Creation</h2>
                   </div>
                   <div class="carousel-item bg">
-                    <p>Cybersecurity in</p>
-                    <h2>Solutions</h2>
+                    <p id="serviceThreeText2">Cybersecurity in</p>
+                    <h2 id="serviceThreeTitle2">Solutions</h2>
                   </div>
                   <div class="carousel-item bg">
-                    <p>IT Support in</p>
-                    <h2>Ticketing</h2>
+                    <p id="serviceThreeText3">IT Support in</p>
+                    <h2 id="serviceThreeTitle3">Ticketing</h2>
                   </div>
                 </div>
               </div>
@@ -206,16 +211,16 @@
 
       <div class="home-hero-footer">
         <div>
-          <h5>1M+</h5>
-          <p>Tickets Delivered This Month</p>
+          <h5 id="ticketsDelivered">1M+</h5>
+          <p id="ticketsDeliveredText">Tickets Delivered This Month</p>
         </div>
         <div>
-          <h5>53K+</h5>
-          <p>Active Customers Rate</p>
+          <h5 id="activeCustomers">53K+</h5>
+          <p id="activeCustomersText">Active Customers Rate</p>
         </div>
         <div>
-          <h5>98.27%</h5>
-          <p>Customer Satisfaction Rate</p>
+          <h5 id="customerSatisfaction">98.27%</h5>
+          <p id="customerSatisfactionText">Customer Satisfaction Rate</p>
         </div>
       </div>
     </div>
@@ -223,19 +228,24 @@
 
 
     <div class="about" id="about">
-      <div class="text-in-bg"><h1>ABOUT</h1><h1>US</h1></div>
-      <h1 class="about-header">GET TO <span>KNOW</span> US !</h1>
+      <div class="text-in-bg"><h1 id="aboutTitle">ABOUT US</h1></div>
+      <h1 class="about-header" id="knowusText">GET TO <span>KNOW</span> US !</h1>
       <div class="about-contents">
-        <h2 class="about-tech-solutions">Tech Solutions <span>></span><span>></span><span>></span></h2>
+      <h2  class="about-tech-solutions" id="techSolutionsTitle">
+  Tech Solutions <span>></span><span>></span><span>></span>
+</h2>
         <div class="about-contents-container">
           <img src="imgs/about3.png">
           <img src="imgs/about2.png">
           <img src="imgs/about1.png">
           <div>
-            <p>At LK Group  we offer cutting-edge solutions that address pressing Technology challenges. Our focus on research innovation leads to sustainable practices and policies that benefit communities globally.</p>
-            <p class="about-paragraph">Innovate  with confidence! Explore the future of IT infrastructure and  how  we lead the way with cutting edge solutions.</p>
+            <p id="aboutText">At LK Group  we offer cutting-edge solutions that address pressing Technology challenges. Our focus on research innovation leads to sustainable practices and policies that benefit communities globally.</p>
+            <p id="aboutParagraph" class="about-paragraph">
+              Innovate with confidence! Explore the future of IT infrastructure and
+              how we lead the way with cutting edge solutions.
+            </p>
 
-            <button>Learn more</button>
+            <button id="learnMoreBtn">Learn more</button>
           </div>
           
         </div>
@@ -367,7 +377,7 @@
         <div class="blogs-contents">
           <div class="blogs-side">
             <div class="blogs-card">
-              <img src="imgs/blog1.png">
+              <img src="imgs/blog4.jpg">
               <div class="blogs-card-contents">
                 <div class="bg"></div>
                 <h4>LK Recruitment embraces the agenda 2063, Future thrive</h4>
@@ -396,7 +406,7 @@
           </div>
           <div class="blogs-side">
             <div class="blogs-card">
-              <img src="imgs/blog3.png">
+              <img src="imgs/blog3.jpg">
               <div class="blogs-card-contents">
                 <div class="bg"></div>
                 <h4>LK Recruitment embraces the agenda 2063, Future thrive</h4>
@@ -412,7 +422,7 @@
               <img src="imgs/blog4.png">
             </div>
             <div class="blogs-card">
-              <img src="imgs/blog5.png">
+              <img src="imgs/blog1.jpg">
               <div class="blogs-card-contents">
                 <div class="bg"></div>
                 <h4>LK Recruitment embraces the agenda 2063, Future thrive</h4>

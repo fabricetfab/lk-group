@@ -177,7 +177,7 @@
         <div class="bg-2"></div>
         <div class="basic-info">
           <div>
-            <h4>Loneto Kelly</h4>
+            <h4>LONETE Kelly</h4>
             <a href=""><img src="icons/mail.svg"></a>
           </div>
           <p>CEO - Chief Executive Officer</p>
@@ -198,7 +198,7 @@
         <div class="bg-2"></div>
         <div class="basic-info">
           <div>
-            <h4>Loneto Kelly</h4>
+            <h4>LONETE Kelly</h4>
             <a href=""><img src="icons/mail.svg"></a>
           </div>
           <p>CEO - Chief Executive Officer</p>
@@ -219,7 +219,7 @@
         <div class="bg-2"></div>
         <div class="basic-info">
           <div>
-            <h4>Loneto Kelly</h4>
+            <h4>LONETE Kelly</h4>
             <a href=""><img src="icons/mail.svg"></a>
           </div>
           <p>CEO - Chief Executive Officer</p>
@@ -240,7 +240,7 @@
         <div class="bg-2"></div>
         <div class="basic-info">
           <div>
-            <h4>Loneto Kelly</h4>
+            <h4>LONETE Kelly</h4>
             <a href=""><img src="icons/mail.svg"></a>
           </div>
           <p>CEO - Chief Executive Officer</p>
