@@ -29,6 +29,7 @@
 <body>
   <div class="page">
   <div class="navigation-container p-3">
+  <div class="real-header">
     <img src="imgs/logo.png" alt="logo" class="logo" />
     
     <div class="header-navigation">
@@ -43,6 +44,7 @@
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
       </svg>
+      <form action="" class="form"><input type="search" class="search-bar" placeholder="Search..." /></form>
     </div>
 
 
@@ -88,7 +90,7 @@
             Contact Us
           </li></a>
         </ul>
-
+        </div>
         </div>
       </div>
   </div>
@@ -144,18 +146,18 @@
                 <p>Nyarugenge Kiyovu, Kigali City</p>
               </div>
             </div>
-            <div class="contact-item">
+            <!-- <div class="contact-item">
               <img src="icons/time.svg">
               <div>
                 <p>Opening time</p>
                 <p>Mon - Fri (9:00 AM - 17:00 PM)</p>
               </div>
-            </div>
-            <div class="contact-item">
+            </div> -->
+            <!-- <div class="contact-item">
               <button>See location on map<svg class="ms-3" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-right" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M14 13.5a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1 0-1h4.793L2.146 2.854a.5.5 0 1 1 .708-.708L13 12.293V7.5a.5.5 0 0 1 1 0z"/>
-            </svg></button>
-            </div>
+              </svg></button>
+            </div> -->
           </div>
           <div class="contact-form">
             <h3>Message <span>US !</span></h3>
@@ -187,7 +189,7 @@
       </div>
 
 
-      <div class="location container-xlg">
+      <!-- <div class="location container-xlg">
         <h1 class="h3 my-5">Location on map</h1>
         <div class="location-contents">
           <div class="">
@@ -249,7 +251,7 @@
             <img src="imgs/img1.jfif">
             <img src="imgs/about3.png">
           </div>  
-        </div>
+        </div> -->
 
 
 
@@ -301,5 +303,25 @@
   </div>
 
 <script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    const searchIcon = document.querySelector('.header-search');
+    const searchBar = document.querySelector('.search-bar');
+    const form = document.querySelector('.form');
+
+    // Toggle the search bar visibility when clicking the search icon
+    searchIcon.addEventListener('click', (event) => {
+      event.stopPropagation(); // Prevent the click from propagating to the document
+      searchBar.classList.add('active'); // Toggle the "active" class to show/hide the input
+    });
+
+    // Close the search bar if clicking outside the search area
+    document.addEventListener('click', (event) => {
+      if (!searchIcon.contains(event.target) && !searchBar.contains(event.target)) {
+        searchBar.classList.remove('active'); // Hide the search bar if clicked outside
+      }
+    });
+
+
+  </script>
 </body>
 </html>

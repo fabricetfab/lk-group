@@ -34,20 +34,25 @@ button,input{
 }
 
 .navigation-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: auto;
     background: linear-gradient(90deg,rgb(5, 5, 5),#111111D9,#111111D9);
     z-index: 10000;
     height: 110px;
     border-bottom: 2px solid #2BADE2;
     width: 100%;
     top: 0;
+    left: 0;
+    right: 0;
     background: #111111D9;
     backdrop-filter: blur(20px);
     z-index: 10000000000000;
     position: fixed;
+}
+.real-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1660px;
 }
 .navigation-container a{
     font-size: .9em;
@@ -92,7 +97,24 @@ button,input{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: -30px;
+    right: 10px;
+}
+.search-bar{
+    display: none;
+    padding: 7px 30px 7px 20px;
+    width: 100px;
+    font-size: .7em;
+    color: white;
+    outline: none;
+    border: none;
+    border: .1em solid #2BADE2;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: width 1s ease-in-out;
+}
+.search-bar.active {
+    display: inline-block; /* Show the search bar when active */
+    width: 200px;
 }
 .header-links a{
     color: #2BADE2;
@@ -256,10 +278,10 @@ button,input{
 .tab-content {
     margin-top: 20px;
     border: none;
-    padding: 15px;
+    padding: 15px 0;
     background-color: transparent;
     color: white;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 .tab-content .with-grid .for-grid{
     width: 100%;
@@ -267,23 +289,24 @@ button,input{
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
-.tab-content .with-grid .two{
+.tab-content .two .for-grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
+
 .tab-content .with-grid div{
     position: relative;
-    bordr: 1px solid green;
 }
 .tab-content .with-grid div img{
-    width: 40%;
+    width: 70%;
     margin: auto;
     position: relative;
     left: 10%;
 }
-.tab-content .with-grid div p{
-    width: 100%;
-}
+
 
 .tab-content .with-grid div:last-child{
     grid-column: span 2;
@@ -292,10 +315,6 @@ button,input{
     width: 100%;
 }
 
-.tab-content{
-    line-height: 2;
-    font-size: 1.1em;
-}
 .tab-content ul span{
     font-size: 1.1em;
     font-weight: 500;
@@ -494,7 +513,7 @@ button,input{
     gap: 20px;
     background-color: #021E2A;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     border: none;
 }
 .left-side .work-card{
@@ -694,9 +713,6 @@ button,input{
             width: 100%;
             overflow: hidden;
         }
-        .tab-content .tab-pane:first-child div img{
-            width: 60%;
-        }
     }
 
     @media (max-width: 1024px) {
@@ -721,7 +737,7 @@ button,input{
             position: relative;
         }
         .tab-content {
-            font-size: 1em;
+            font-size: 1.2em;
         }
         .work-card h4{
             color: #2BADE2;
@@ -760,6 +776,27 @@ button,input{
         .story p{
             font-size: 1.1em;
         }
+        .mission{
+            margin: 20px 40px;
+            position: relative;
+            padding: 20px;
+        }
+        .team{
+            padding: 20px 40px;
+            background-color: #111111;
+        }
+        .work{
+            padding: 40px;
+        }
+        .work-contents .left-side .work-side{
+            height: 250px;
+        }
+        .work-contents .right-side .work-side{
+            height: 250px;
+        }
+        .tab-content ul{
+            padding-left: 20px;
+        }
     }
 
     @media (max-width: 900px) {
@@ -774,11 +811,94 @@ button,input{
             overflow: hidden;
             margin-top: -100px;
         }
+        
     }
     
     @media (max-width: 768px) {
         .footer{
             grid-template-columns: repeat(4, 1fr);
+        }
+        .team-card{ 
+            min-width: 300px;
+            max-width: 300px;
+        }
+        .team-card a img{ 
+            width: 15px;
+        }
+        .team-card p{ 
+            font-size: .8em;
+        }
+        .team-card h4{ 
+            font-size: 1.1em;
+        }
+        .member{
+            width: 120px;
+            height: 120px;
+        }
+        .nav-tabs .nav-link {
+            font-weight: 400;
+            margin-right: 10px;
+            padding: 10px 30px;
+            font-size: .9em;
+        }
+        .work-contents{
+            padding: 30px 0;
+        }
+        .work-card h4{
+            color: #2BADE2;
+            font-size: 1.6em;
+        }
+        .work-card p{
+            color: white;
+            font-size: 1em;
+        }
+        .work-contents .left-side .work-card,.work-contents .right-side .work-card{
+            width: 250px;
+        }
+        .work-contents .left-side{
+            border-right: 2px solid #2BADE2;
+        }
+        
+        .work-contents .right-side{
+            border-left: 2px solid #2BADE2;
+        }
+        .work-contents .left-side .work-side{
+            height: 300px;
+            border-top: 2px solid #2BADE2;
+            border-left: 2px solid #2BADE2;
+        }
+        .work-contents .right-side .work-side{
+            height: 300px;
+            border-bottom: 2px solid #2BADE2;
+            border-right: 2px solid #2BADE2;
+        }
+        .work-contents .work-side{
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+        .tab-content {
+            font-size: .9em;
+        }
+        .tab-content .with-grid div img{
+            width: 80%;
+            margin: auto;
+            position: relative;
+            left: 10%;
+        }
+        .work h3{
+            font-size: 1.2em;
+        }
+        .team h3{
+            font-size: 1.2em;
+        }
+        .story h3{
+            font-size: 1.2em;
+        }
+        .story p{
+            margin-top: 20px;
+        }
+        .team-cards{
+            margin-top: 30px;
         }
     }
     @media (max-width: 710px) {
@@ -805,10 +925,64 @@ button,input{
         .story p{
             font-size: 1em;
         }
+        .mission{
+            margin: 20px 30px;
+            position: relative;
+            padding: 20px;
+        }
+        .team{
+            padding: 20px 30px;
+            background-color: #111111;
+        }
+        .work{
+            padding: 30px;
+        }
+        .work-contents .left-side .work-card,.work-contents .right-side .work-card{
+            padding: 15px;
+            gap: 10px;
+        }
     }
     @media (max-width: 680px) {
         .footer{
             grid-template-columns: repeat(3, 1fr);
+        }
+        .mission{
+            margin: 20px 10px;
+            position: relative;
+            padding: 20px;
+        }
+        .team-card{ 
+            min-width: 23px;
+            max-width: 280px;
+        }
+        .team-card p{ 
+            font-size: .7em;
+        }
+        .team-card h4{ 
+            font-size: 1.1em;
+        }
+        .member{
+            width: 110px;
+            height: 110px;
+        }
+        .work-card h4{
+            color: #2BADE2;
+            font-size: 1.4em;
+        }
+        .work-card p{
+            color: white;
+            font-size: .9em;
+        }
+        .work-contents .left-side .work-side{
+            height: 210px;
+        }
+        .work-contents .right-side .work-side{
+            height: 210px;
+        }
+    }
+    @media (max-width: 600px) {
+        .work-contents .left-side .work-card,.work-contents .right-side .work-card{
+            width: 200px;
         }
     }
     @media (max-width: 520px) {
@@ -824,6 +998,9 @@ button,input{
         }
         .hero-contents h1{
             font-size: 4em;
+        }
+        .work-contents .left-side .work-card,.work-contents .right-side .work-card{
+            width: 180px;
         }
     }
 
@@ -857,6 +1034,84 @@ button,input{
         .story p{
             font-size: .9em;
         }
+        .team{
+            padding: 20px 10px;
+            background-color: #111111;
+        }
+        .team-cards{
+            padding: 20px 10px;
+        }
+        .team-card{ 
+            min-width: 200px;
+            max-width: 250px;
+        }
+        .team-card p{ 
+            font-size: .7em;
+        }
+        .team-card h4{ 
+            font-size: 1em;
+        }
+        .member{
+            width: 100px;
+            height: 100px;
+        }
+        .nav-tabs .nav-link {
+            font-weight: 400;
+            margin-right: 8px;
+            padding: 8px 20px;
+            font-size: .8em;
+        }
+        .work{
+            padding: 20px 10px;
+        }
+        .work-card h4{
+            color: #2BADE2;
+            font-size: 1.3em;
+        }
+        .work-card p{
+            color: white;
+            font-size: .8em;
+        }
+        .work-contents .work-side{
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .tab-content {
+            font-size: .8em;
+        }
+        .tab-content .with-grid div img{
+            width: 100%;
+            margin: auto;
+            position: relative;
+            left: 10%;
+        }
+        .search-bar{
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 0px;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            padding: 10px 20px;
+            transform: translateY(101%);
+            background: #111111;
+            backdrop-filter: blur(20px);
+            font-size: .8em;
+        }
+        .header-links{
+            position: unset;
+        }
+        .search-bar.active {
+            display: inline-block; /* Show the search bar when active */
+            width: 100%;
+        }
+        .header-search{
+            top: 42%;
+            right: 70px;
+            transform: translateY(-50%);
+        }
     }
 @media (max-width: 425px) { 
     .footer{
@@ -872,10 +1127,33 @@ button,input{
     .hero-contents h1{
         font-size: 3em;
     }
+    .work-card h4{
+        color: #2BADE2;
+        font-size: 1em;
+    }
+    .work-card p{
+        color: white;
+        font-size: .7em;
+    }
+    .work-contents .left-side .work-card,.work-contents .right-side .work-card{
+        width: 150px;
+    }
 }
 @media (max-width: 375px) {
     .hero-contents h1{
         font-size: 2.4em;
     }
-
+    .nav-tabs .nav-link {
+        font-weight: 400;
+        margin-right: 3px;
+        padding: 8px 20px;
+        font-size: .7em;
+    }
+    .work-contents .left-side .work-card,.work-contents .right-side .work-card{
+        width: 130px;
+    }
+    .work-contents .work-side{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
 }

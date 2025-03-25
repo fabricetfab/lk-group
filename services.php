@@ -62,6 +62,7 @@
 <div class="page">
 
 <div class="navigation-container p-3">
+<div class="real-header">
     <img src="imgs/logo.png" alt="logo" class="logo" />
     
     <div class="header-navigation">
@@ -76,6 +77,7 @@
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
       </svg>
+      <form action="" class="form"><input type="search" class="search-bar" placeholder="Search..." /></form>
     </div>
 
 
@@ -121,7 +123,7 @@
             Contact Us
           </li></a>
         </ul>
-
+        </div>
         </div>
       </div>
   </div>
@@ -234,10 +236,10 @@
       </div>
     </div>
 
-    <h3 class="h3 mt-5 text-center" style="color: #2BADE2;">Why Choose Us?</h3>
-    <p class="fs-6 mt-3 text-center text-light">Leading technology solutions since 2010</p>
+    <h3 class="why-header h3 text-center" style="color: #2BADE2;">Why Choose Us?</h3>
+    <p class="why-subheader mt-3 text-center text-light">Leading technology solutions since 2010</p>
 
-    <div class="row gap-5 text-light why-choose">
+    <div class="row text-light why-choose">
       <div class="col">
         <div class="d-flex justify-content-between">
           <h4 class="h4">13+ Years</h1>
@@ -303,5 +305,24 @@
     </div>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+    const searchIcon = document.querySelector('.header-search');
+    const searchBar = document.querySelector('.search-bar');
+    const form = document.querySelector('.form');
+
+    // Toggle the search bar visibility when clicking the search icon
+    searchIcon.addEventListener('click', (event) => {
+      event.stopPropagation(); // Prevent the click from propagating to the document
+      searchBar.classList.add('active'); // Toggle the "active" class to show/hide the input
+    });
+
+    // Close the search bar if clicking outside the search area
+    document.addEventListener('click', (event) => {
+      if (!searchIcon.contains(event.target) && !searchBar.contains(event.target)) {
+        searchBar.classList.remove('active'); // Hide the search bar if clicked outside
+      }
+    });
+
+  </script>
 </body>
 </html>

@@ -37,20 +37,25 @@ button,input{
 }
 
 .navigation-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: auto;
     background: linear-gradient(90deg,rgb(5, 5, 5),#111111D9,#111111D9);
     z-index: 10000;
     height: 110px;
     border-bottom: 2px solid #2BADE2;
     width: 100%;
     top: 0;
+    left: 0;
+    right: 0;
     background: #111111D9;
     backdrop-filter: blur(20px);
     z-index: 10000000000000;
     position: fixed;
+}
+.real-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1660px;
 }
 .navigation-container a{
     font-size: .9em;
@@ -92,7 +97,24 @@ button,input{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: -30px;
+    right: 10px;
+}
+.search-bar{
+    display: none;
+    padding: 7px 30px 7px 20px;
+    width: 100px;
+    font-size: .7em;
+    color: white;
+    outline: none;
+    border: none;
+    border: .1em solid #2BADE2;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: width 1s ease-in-out;
+}
+.search-bar.active {
+    display: inline-block; /* Show the search bar when active */
+    width: 200px;
 }
 .header-links a{
     color: #2BADE2;
@@ -278,8 +300,19 @@ button,input{
     color: black;
 }
 
+.why-header{
+    font-size: 1.5em;
+}
+.why-subheader{
+    font-size: 1em;
+}
+
 .why-choose{
   padding: 50px 80px;
+  gap: 20px;
+}
+.why-choose h3{
+    margin-top: 30px;
 }
 .why-choose img{
   width: 30px;
@@ -506,11 +539,32 @@ button,input{
         overflow: hidden;
         margin-top: -400px;
     }
+    .why-choose{
+        padding: 0px 40px 20px;
+    }
+    .why-choose img{
+        width: 25px;
+    }
+    .why-choose h3{
+        margin-top: 10px;
+    }
+    .why-choose h4{
+        font-size: 1em;
+    }
+    .why-choose p{
+        font-size: .8em;
+    }
 }
 
 @media (max-width: 768px) {
     .footer{
         grid-template-columns: repeat(4, 1fr);
+    }
+    .why-header{
+        font-size: 1.3em;
+    }
+    .why-subheader{
+        font-size: .9em;
     }
 }
 
@@ -562,6 +616,19 @@ button,input{
 @media (max-width: 680px) {
     .footer{
         grid-template-columns: repeat(3, 1fr);
+    }
+    .why-choose{
+        padding: 0px 20px 20px;
+        gap: 10px;
+    }
+    .why-choose h3{
+        margin-top: 10px;
+    }
+    .why-choose h4{
+        font-size: .9em;
+    }
+    .why-choose p{
+        font-size: .7em;
     }
 }
 
@@ -628,6 +695,36 @@ button,input{
         font-family: "poppins";
         transition: all .3s ease;
     }
+    .why-subheader{
+        font-size: .8em;
+    }
+    .search-bar{
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 0px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        padding: 10px 20px;
+        transform: translateY(101%);
+        background: #111111;
+        backdrop-filter: blur(20px);
+        font-size: .8em;
+    }
+    .header-links{
+        position: unset;
+    }
+    .search-bar.active {
+        display: inline-block; /* Show the search bar when active */
+        width: 100%;
+    }
+    .header-search{
+        top: 42%;
+        right: 70px;
+        transform: translateY(-50%);
+    }
 }
 
 @media (max-width: 425px) {
@@ -662,6 +759,9 @@ button,input{
     }
     .footer{
         padding: 10px 20px;
+    }
+    .why-choose h4{
+        font-size: .9em;
     }
 }
 @media (max-width: 375px) {

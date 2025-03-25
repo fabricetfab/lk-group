@@ -18,6 +18,7 @@
         max-width: 1660px;
         overflow-x: hidden;
         margin-top: 110px;
+        position: relative;
     }
 
 
@@ -26,7 +27,8 @@
 <body>
 <div class="page">
 
-  <div class="navigation-container p-3">
+  <div class="navigation-container p-3 w-100">
+    <div class="real-header">
     <img src="imgs/logo.png" alt="logo" class="logo" />
     
     <div class="header-navigation">
@@ -41,7 +43,9 @@
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
       </svg>
+      <form action="" class="form"><input type="search" class="search-bar" placeholder="Search..." /></form>
     </div>
+
   <button class="hamburger btn btn-primary" style="background-color:transparent;border:none;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#2BADE2" class="bi bi-list" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -83,7 +87,7 @@
             Contact Us
           </li></a>
         </ul>
-
+        </div>
         </div>
       </div>
     </div>
@@ -236,7 +240,7 @@
           
         </div>
         <div class="shadows"></div>
-        <div class="partners">
+        <!-- <div class="partners">
           <h1>OUR PARTNERS</h1>
           <div>
             <img src="imgs/about3.png">
@@ -246,7 +250,7 @@
             <img src="imgs/img1.jfif">
             <img src="imgs/about3.png">
           </div>  
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -495,13 +499,13 @@
                 <p>Nyarugenge Kiyovu, Kigali City</p>
               </div>
             </div>
-            <div class="contact-item">
+            <!-- <div class="contact-item">
               <img src="icons/time.svg">
               <div>
                 <p>Opening time</p>
                 <p>Mon - Fri (9:00 AM - 17:00 PM)</p>
               </div>
-            </div>
+            </div> -->
             <div class="contact-item">
               <img src="icons/linkedin.svg">
               <img src="icons/x.svg">
@@ -601,14 +605,14 @@
               <li><span>Commitment to Innovation:</span> We stay at the forefront of new technologies and trends.</li>
             </ol>
           </div>
-          <div class="subscribe-form">
+          <!-- <div class="subscribe-form">
             <div><h1>STAY <h1>INFORMED</h1></h1></div>
             <h1>let’s Keep You <span>updated !</span></h1>
             <form>
               <input type="email" placeholder="Type your Email" name="">
               <button>Subscribe</button>
             </form>
-          </div>
+          </div> -->
         </div>
       </div>
   </div>
@@ -710,6 +714,26 @@ function syncTestimonials(newIndex) {
 
 // **Ensure correct state on first load**
 syncTestimonials(0);
+
+  </script>
+  <script>
+    const searchIcon = document.querySelector('.header-search');
+    const searchBar = document.querySelector('.search-bar');
+    const form = document.querySelector('.form');
+
+    // Toggle the search bar visibility when clicking the search icon
+    searchIcon.addEventListener('click', (event) => {
+      event.stopPropagation(); // Prevent the click from propagating to the document
+      searchBar.classList.add('active'); // Toggle the "active" class to show/hide the input
+    });
+
+    // Close the search bar if clicking outside the search area
+    document.addEventListener('click', (event) => {
+      if (!searchIcon.contains(event.target) && !searchBar.contains(event.target)) {
+        searchBar.classList.remove('active'); // Hide the search bar if clicked outside
+      }
+    });
+
 
   </script>
 

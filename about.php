@@ -27,6 +27,7 @@
 <div class="page">
 
   <div class="navigation-container p-3">
+  <div class="real-header">
     <img src="imgs/logo.png" alt="logo" class="logo" />
     
     <div class="header-navigation">
@@ -41,6 +42,7 @@
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
       </svg>
+      <form action="" class="form"><input type="search" class="search-bar" placeholder="Search..." /></form>
     </div>
 
 
@@ -86,7 +88,7 @@
             Contact Us
           </li></a>
         </ul>
-
+        </div>
         </div>
       </div>
   </div>
@@ -120,11 +122,12 @@
           <button class="nav-link" id="values-tab" data-bs-toggle="tab" data-bs-target="#values" type="button" role="tab" aria-controls="values" aria-selected="false">Values</button>
       </div>
     </nav>
+
     <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active with-grid" id="mission" role="tabpanel" aria-labelledby="mission-tab" tabindex="0">
           <div class="for-grid">
           <div>
-            <p>To empower businesses with seamless technology solutions that drive growth, efficiency, and innovation.</p>
+            <p class="w-100 md:w-75">To empower businesses with seamless technology solutions that drive growth, efficiency, and innovation.</p>
           </div>
           <div>
             <img src="imgs/service1copy.png">
@@ -140,7 +143,7 @@
           <img src="imgs/service1copy.png">
           </div>
           <div>
-            <p>To empower businesses with seamless technology solutions that drive growth, efficiency, and innovation.</p>
+            <p class="w-100 md:w-75">To empower businesses with seamless technology solutions that drive growth, efficiency, and innovation.</p>
           </div>
           <div>
             <p>LK GROUP is a unique and dynamic company dedicated to helping businesses thrive in today's digital landscape. We oAer a comprehensive suite of services, tailored to address the specific challenges and opportunities faced by modern organizations.</p>
@@ -452,9 +455,24 @@
     },
   }
 });
+  </script>
+  <script>
+    const searchIcon = document.querySelector('.header-search');
+    const searchBar = document.querySelector('.search-bar');
+    const form = document.querySelector('.form');
 
+    // Toggle the search bar visibility when clicking the search icon
+    searchIcon.addEventListener('click', (event) => {
+      event.stopPropagation(); // Prevent the click from propagating to the document
+      searchBar.classList.add('active'); // Toggle the "active" class to show/hide the input
+    });
 
-
+    // Close the search bar if clicking outside the search area
+    document.addEventListener('click', (event) => {
+      if (!searchIcon.contains(event.target) && !searchBar.contains(event.target)) {
+        searchBar.classList.remove('active'); // Hide the search bar if clicked outside
+      }
+    });
   </script>
 </body>
 </html>

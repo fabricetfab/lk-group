@@ -37,17 +37,22 @@ button,input{
 }
 
 .navigation-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background: #111111D9;
     backdrop-filter: blur(20px);
     z-index: 10000000000000;
     height: 110px;
-    border-bottom: 2px solid #2BADE2;
-    width: 100%;
+    border-bottom: 1px solid #2BADE2;
     top: 0;
+    left: 0;
+    right: 0;
     position: fixed;
+}
+.real-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1660px;
 }
 .navigation-container a{
     font-size: .9em;
@@ -79,7 +84,9 @@ button,input{
 }
 .header-links{
     position: relative;
+    display: inline-block;
 }
+
 .header-links a{
     color: white;
     padding: 0 15px;
@@ -119,7 +126,24 @@ button,input{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: -30px;
+    right: 10px;
+}
+.search-bar{
+    display: none;
+    padding: 7px 30px 7px 20px;
+    width: 100px;
+    font-size: .7em;
+    color: white;
+    outline: none;
+    border: none;
+    border: .1em solid #2BADE2;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: width 1s ease-in-out;
+}
+.search-bar.active {
+    display: inline-block; /* Show the search bar when active */
+    width: 200px;
 }
 .header-links a{
     color: #2BADE2;
@@ -2134,6 +2158,33 @@ button,input{
         color: white;
         font-family: "poppins";
         transition: all .3s ease;
+    }
+    .search-bar{
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 0px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        padding: 10px 20px;
+        transform: translateY(101%);
+        background: #111111;
+        backdrop-filter: blur(20px);
+        font-size: .8em;
+    }
+    .header-links{
+        position: unset;
+    }
+    .search-bar.active {
+        display: inline-block; /* Show the search bar when active */
+        width: 100%;
+    }
+    .header-search{
+        top: 42%;
+        right: 70px;
+        transform: translateY(-50%);
     }
 }
 
