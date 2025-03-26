@@ -26,7 +26,7 @@
 <body>
 <div class="page">
 
-  <div class="navigation-container p-3">
+  <div class="navigation-container">
   <div class="real-header">
     <img src="imgs/logo.png" alt="logo" class="logo" />
     
@@ -45,6 +45,7 @@
       <form action="" class="form"><input type="search" class="search-bar" placeholder="Search..." /></form>
     </div>
 
+    <button class="lang-btn d-flex" onclick="toggleLanguage()"><img src="icons/language.svg"><span id="languageBtn"></span></button>
 
     <button class="hamburger btn btn-primary" style="background-color:transparent;border:none;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#2BADE2" class="bi bi-list" viewBox="0 0 16 16">
@@ -474,5 +475,6 @@
       }
     });
   </script>
+  <script src="js/languageToggle.js"></script> 
 </body>
 </html>

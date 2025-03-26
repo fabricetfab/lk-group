@@ -90,7 +90,7 @@ function toggleLanguage() {
   localStorage.setItem('language', currentLanguage);
 
   // Change the button text based on the current language
-  document.getElementById('languageBtn').innerText = currentLanguage === 'en' ? 'Français' : 'English';
+  document.getElementById('languageBtn').innerText = currentLanguage === 'en' ? 'Fr' : 'En';
 
   // Update content based on the selected language
   document.getElementById("homeLink").innerHTML = translations[currentLanguage].home;
@@ -147,7 +147,7 @@ function toggleLanguage() {
 // Set default language content on page load
 document.addEventListener("DOMContentLoaded", () => {
   // Ensure that the correct language is set on page load
-  document.getElementById('languageBtn').innerText = currentLanguage === 'en' ? 'Français' : 'English';
+  document.getElementById('languageBtn').innerText = currentLanguage === 'en' ? 'Fr' : 'En';
 
   // Update content based on the saved language
   document.getElementById("homeLink").innerHTML = translations[currentLanguage].home;

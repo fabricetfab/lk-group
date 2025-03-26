@@ -46,6 +46,10 @@ button,input{
     left: 0;
     right: 0;
     position: fixed;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    padding: 15px;
 }
 .real-header{
     display: flex;
@@ -53,7 +57,9 @@ button,input{
     justify-content: space-between;
     margin: auto;
     max-width: 1660px;
+    position: relative;
 }
+
 .navigation-container a{
     font-size: .9em;
 }
@@ -85,38 +91,28 @@ button,input{
 .header-links{
     position: relative;
     display: inline-block;
+    margin-right: 70px;
 }
 
 .header-links a{
     color: white;
     padding: 0 15px;
 }
-.language-toggle {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  
+
   .lang-btn {
-    background: linear-gradient(90deg, #2BADE2, #2286AF, #185F7C); /* Gradient color */
-    border: none;
-    padding: 10px 20px;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 25px;
+    position: absolute;
     color: white;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    right: 10px;
+    font-size: .8em;
+    border: 1px solid #2BADE2;
+    background-color: transparent;
+    gap: 5px;
+    padding: 3px;
   }
-  
-  .lang-btn:hover {
-    background-color: #185F7C; /* Change to a solid color on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover for better interaction */
+  .lang-btn img{
+    width: 25px;
   }
-  
-  .lang-btn.active {
-    background-color: #185F7C; /* Keep a solid color when active */
-  }
+
   
 .header-search{
     color: #2BADE2;
@@ -128,6 +124,7 @@ button,input{
     transform: translateY(-50%);
     right: 10px;
 }
+
 .search-bar{
     display: none;
     padding: 7px 30px 7px 20px;
@@ -385,6 +382,9 @@ button,input{
     color: #13AEEE;
     text-align: right;
     margin-bottom: 40px;
+}
+.about .about-tech-solutions span{
+    font-family: "poppins";
 }
 .about .about-tech-solutions span:first-of-type{
     margin-left: 40px;
@@ -1499,7 +1499,7 @@ button,input{
     }
     .header-links{
         position: absolute;
-        right: 70px;
+        right: 45px;
     }
     .header-navigation{
         display: none;
@@ -1703,6 +1703,9 @@ button,input{
     .footer div:first-of-type h5{
         margin-top: 10px;
         margin-left: 5px;
+    }
+    .lang-btn {
+        right: 50px;
     }
 }
 @media (max-width: 990px) {
@@ -2146,7 +2149,7 @@ button,input{
     }
     
 }
-@media (max-width: 480px) {
+@media (max-width: 510px) {
     .footer div h4{
         font-size: .9em;
         color: white;
@@ -2159,32 +2162,40 @@ button,input{
         font-family: "poppins";
         transition: all .3s ease;
     }
+    .header-links{
+        position: unset;
+    }
     .search-bar{
         display: none;
         position: absolute;
         bottom: 0;
-        left: 0;
         border-radius: 0px;
         border-left: none;
         border-right: none;
         border-top: none;
         padding: 10px 20px;
-        transform: translateY(101%);
+        transform: translateY(180%);
         background: #111111;
         backdrop-filter: blur(20px);
         font-size: .8em;
     }
-    .header-links{
-        position: unset;
-    }
+    
     .search-bar.active {
         display: inline-block; /* Show the search bar when active */
-        width: 100%;
+        left: -10px;
+        right: 10px;
+        width: 105%;
     }
     .header-search{
-        top: 42%;
-        right: 70px;
+        top: 50%;
+        right: 120px;
         transform: translateY(-50%);
+    }
+    .navigation-container{
+        padding: 6px;
+    }
+    .logo{
+        width: 120px;
     }
 }
 
@@ -2257,6 +2268,13 @@ button,input{
     }
     .footer{
         padding: 10px 20px;
+    }
+    .about .about-tech-solutions span:first-of-type{
+        margin-left: 10px;
+    }
+    .about .about-tech-solutions{
+        font-size: 1.1em;
+        margin-bottom: 20px;
     }
 }
 
