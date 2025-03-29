@@ -134,7 +134,7 @@ const translations = {
     contact: "Contactez-nous",
     HeaderMobile1: "Accueil",
     HeaderMobile2: "Services",
-    HeaderMobile3: "À propos de nous",
+    HeaderMobile3: "À propos",
     HeaderMobile4: "Contactez-nous",
     getStarted: "Commencer",
     aboutTitle: "À PROPOS",
