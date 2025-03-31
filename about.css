@@ -11,6 +11,12 @@
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Monoton';
+    src: url('fonts/Monoton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 body{
     padding: 0;
     margin: 0;
@@ -34,19 +40,37 @@ button,input{
 }
 
 .navigation-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: auto;
     background: linear-gradient(90deg,rgb(5, 5, 5),#111111D9,#111111D9);
     z-index: 10000;
     height: 110px;
     border-bottom: 2px solid #2BADE2;
     width: 100%;
     top: 0;
+    left: 0;
+    right: 0;
+    background: #111111D9;
+    backdrop-filter: blur(20px);
+    z-index: 10000000000000;
+    position: fixed;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    padding: 15px;
 }
+.real-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1660px;
+    position: relative;
+}
+
 .navigation-container a{
     font-size: .9em;
+}
+.logo{
+    width: 200px;
 }
 
 .header-navigation{
@@ -72,11 +96,28 @@ button,input{
 }
 .header-links{
     position: relative;
+    display: inline-block;
+    margin-right: 70px;
 }
 .header-links a{
     color: white;
     padding: 0 15px;
 }
+
+.lang-btn {
+    position: absolute;
+    color: white;
+    right: 10px;
+    font-size: .8em;
+    border: 1px solid #2BADE2;
+    background-color: transparent;
+    gap: 5px;
+    padding: 3px;
+  }
+  .lang-btn img{
+    width: 25px;
+  }
+
 .header-search{
     color: #2BADE2;
     height: 16px;
@@ -85,7 +126,24 @@ button,input{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: -30px;
+    right: 10px;
+}
+.search-bar{
+    display: none;
+    padding: 7px 30px 7px 20px;
+    width: 100px;
+    font-size: .7em;
+    color: white;
+    outline: none;
+    border: none;
+    border: .1em solid #2BADE2;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: width 1s ease-in-out;
+}
+.search-bar.active {
+    display: inline-block; /* Show the search bar when active */
+    width: 200px;
 }
 .header-links a{
     color: #2BADE2;
@@ -95,13 +153,13 @@ button,input{
 }
 .about-hero{
     width: 100%;
-    height: 85vh;
+    height: 650px;
     overflow: hidden;
     position: relative;
 }
 .about-hero img{
-    margin-top: -40vh;
-    height: 140vh;
+    margin-top: -100px;
+    height: 800px;
     width: 100%;
     overflow: hidden;
 }
@@ -113,11 +171,11 @@ button,input{
     bottom: 0;
     justify-items: center;
     align-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
 }
 .hero-contents h1{
-    font-family: monoton;
+    font-family: 'Monoton',sans-serif;
     font-size: 6em;
 }
 .hero-contents h1 span{
@@ -125,8 +183,9 @@ button,input{
     margin-left: 15px;
 }
 .hero-contents p{
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: 300;
+    width: 80%;
 }
 .about-contents{
     position: relative;
@@ -136,6 +195,7 @@ button,input{
     width: 100%;
     position: absolute;
     top: -100vh;
+    height: 100%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -208,6 +268,10 @@ button,input{
     border-image: linear-gradient(-90deg, #185974, #FFFFFF03) 1;  /* Apply gradient border */
 }
 
+.tab-content, .tab-pane, .tab-content {
+    height: auto;
+    max-height: auto;
+  }
 
 .nav-tabs {
     border-bottom: 3px solid transparent;
@@ -243,36 +307,51 @@ button,input{
 .tab-content {
     margin-top: 20px;
     border: none;
-    padding: 15px;
+    padding: 15px 0;
     background-color: transparent;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
-.tab-content .tab-pane:first-child{
+.tab-content .with-grid .for-grid{
+    width: 100%;
+    height: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
 }
-.tab-content .tab-pane:first-child div{
+.tab-content .two .for-grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+.tab-content .with-grid div{
     position: relative;
 }
-.tab-content .tab-pane:first-child div img{
-    width: 50%;
+.tab-content .with-grid div img{
+    width: 70%;
     margin: auto;
     position: relative;
-    left: 50%;
-    top: -30%;
-    transform: translateX(-50%);
+    left: 10%;
 }
-.tab-content .tab-pane:first-child div p{
-    width: 70%;
-}
-.tab-content .tab-pane:first-child div:last-child{
+
+
+.tab-content .with-grid div:last-child{
     grid-column: span 2;
-    transform: translateY(-100%);
 }
-.tab-content .tab-pane:first-child div:last-child p{
+.tab-content .with-grid div:last-child p{
     width: 100%;
 }
+
+.tab-content ul span{
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.tab-content, .tab-pane, .tab-content {
+    height: auto;
+    max-height: auto;
+  }
 .shadows{
     position: absolute;
     width: 120px;
@@ -324,17 +403,40 @@ button,input{
     justify-content: space-around;
     position: relative;
 }
-.team-card{
-    width: 400px;
+.swiper-btn{
+    color: #2BADE2;
+    transition: all .3s ease;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-btn:hover{
+    color: #185F7C;
+}
+.swiper-btn::before,
+.swiper-btn::after{
+    font-size: 20px;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgb(89, 84, 84);
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: #2BADE2;
+}
+
+.team-card{ 
+    min-width: 350px;
+    max-width: 400px;
     background-color: #111111;
     position: relative;
     z-index: 1;
 }
 .team-card .bg-1{
     position: absolute;
-    width: 100%;
+    width: 99%;
     height: 90%;
-    bottom: 0;
+    bottom: 2px;
     clip-path: polygon(0% 100%, 100% 100%, 100% 25%, 0% 0%);
     background-color: #2BADE291;
     z-index: 1;
@@ -345,7 +447,7 @@ button,input{
     height: 90%;
     bottom: 0;
     clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 25%);
-    background-color: #000000;
+    background-color: #021E2B;
     z-index: 2;
 }
 .member{
@@ -417,8 +519,8 @@ button,input{
 .work-contents{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 70%;
-    padding: 100px 20px;
+    width: 80%;
+    padding: 60px 20px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -436,12 +538,11 @@ button,input{
     display: flex;
     width: 380px;
     height: 100%;
-    background-color: green;
     padding: 20px;
     gap: 20px;
-    background-color: #000000;
+    background-color: #021E2A;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     border: none;
 }
 .left-side .work-card{
@@ -484,12 +585,15 @@ button,input{
     margin-bottom: 120px;
 }
 
+
+
 .footer{
     background-color: #010C11;
-    padding: 20px 40px;
+    padding: 20px 40px 0 40px;
     display: grid;
     width: 100%;
     grid-template-columns: repeat(6, 1fr);
+    text-align: left;
 }
 .footer div:first-child{
     justify-content: center;
@@ -498,6 +602,7 @@ button,input{
     align-items: center;
     text-align: center;
 }
+
 .footer div:first-child img{
     width: 100px;
     margin: auto;
@@ -512,6 +617,7 @@ button,input{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 40px;
 }
 .footer div h4{
     font-size: 1em;
@@ -544,9 +650,558 @@ button,input{
 
 .footer .footer-social{
     display: block;
+    margin-bottom: 0;
 }
 
 .footer .footer-social img{
     width: 30px;
     margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsiveness*/
+
+.hamburger{
+    display: none;
+}
+.offcanvas{
+    background-color: #111111;
+    color: white;
+    max-width: 300px;
+    z-index: 100000000000000000000000;
+    position: fixed;
+    top: 0; 
+    right: 0; 
+    height: 100vh; 
+    width: 250px; 
+    z-index: 10; 
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease; 
+    backdrop-filter: blur(20px);
+}
+.offcanvas-body ul{
+    list-style-type: none;
+    width: 100%;
+    padding-left: 0;
+}
+.offcanvas-body ul{
+    overflow: hidden;
+}
+.offcanvas-body ul li{
+    font-size: 1.3em;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: white;
+    transition: all .3s;
+    transform: translateX(10px);
+}
+.offcanvas-body ul li:hover{
+    background-color: rgba(0, 0, 0, 1);
+}
+.offcanvas-body ul li svg{
+    margin-right: 10px;
+    color: #13AEEE;
+}
+
+
+
+@media (max-width: 1400px) {
+    .work-contents{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        padding: 60px 20px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
+@media (max-width: 1200px) {
+        .about-hero{
+            height: 550px;
+            overflow: hidden;
+            position: relative;
+        }
+        .about-hero img{
+            height: 800px;
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .logo{
+            width: 150px;
+        }
+        .header-links{
+            position: absolute;
+            right: 55px;
+        }
+        .lang-btn {
+            right: 50px;
+        }
+        .header-navigation{
+            display: none;
+        }
+        .hamburger{
+            display: block;
+        }
+        .story p{
+            margin-top: 40px;
+            color: white;
+            font-size: 1.1em;
+            line-height: 1.7;
+            position: relative;
+        }
+        .tab-content {
+            font-size: 1.2em;
+        }
+        .work-card h4{
+            color: #2BADE2;
+            font-size: 2em;
+        }
+        .work-card p{
+            color: white;
+            font-size: 1.1em;
+        }
+        .work-contents .left-side .work-card,.work-contents .right-side .work-card{
+            width: 300px;
+        }
+        .footer{
+            grid-template-columns: repeat(5, 1fr);
+        }
+        .footer div:first-child{
+            justify-content: start;
+            justify-items: start;
+            align-content: start;
+            align-items: start;
+            text-align: left;
+        }
+        
+        .footer div:first-child img{
+            width: 100px;
+            margin: 0;
+        }
+        .footer div:first-of-type h5{
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+        .story{
+            padding: 40px;
+            background-color: #111111;
+        }
+        .story p{
+            font-size: 1.1em;
+        }
+        .mission{
+            margin: 20px 40px;
+            position: relative;
+            padding: 20px;
+        }
+        .team{
+            padding: 20px 40px;
+            background-color: #111111;
+        }
+        .work{
+            padding: 40px;
+        }
+        .work-contents .left-side .work-side{
+            height: 250px;
+        }
+        .work-contents .right-side .work-side{
+            height: 250px;
+        }
+        .tab-content ul{
+            padding-left: 20px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .about-hero{
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+        }
+        .about-hero img{
+            height: 600px;
+            width: 100%;
+            overflow: hidden;
+            margin-top: -100px;
+        }
+        
+    }
+    
+    @media (max-width: 768px) {
+        .footer{
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .team-card{ 
+            min-width: 300px;
+            max-width: 300px;
+        }
+        .team-card a img{ 
+            width: 15px;
+        }
+        .team-card p{ 
+            font-size: .8em;
+        }
+        .team-card h4{ 
+            font-size: 1.1em;
+        }
+        .member{
+            width: 120px;
+            height: 120px;
+        }
+        .nav-tabs .nav-link {
+            font-weight: 400;
+            margin-right: 10px;
+            padding: 10px 30px;
+            font-size: .9em;
+        }
+        .work-contents{
+            padding: 30px 0;
+        }
+        .work-card h4{
+            color: #2BADE2;
+            font-size: 1.6em;
+        }
+        .work-card p{
+            color: white;
+            font-size: 1em;
+        }
+        .work-contents .left-side .work-card,.work-contents .right-side .work-card{
+            width: 250px;
+        }
+        .work-contents .left-side{
+            border-right: 2px solid #2BADE2;
+        }
+        
+        .work-contents .right-side{
+            border-left: 2px solid #2BADE2;
+        }
+        .work-contents .left-side .work-side{
+            height: 300px;
+            border-top: 2px solid #2BADE2;
+            border-left: 2px solid #2BADE2;
+        }
+        .work-contents .right-side .work-side{
+            height: 300px;
+            border-bottom: 2px solid #2BADE2;
+            border-right: 2px solid #2BADE2;
+        }
+        .work-contents .work-side{
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+        .tab-content {
+            font-size: .9em;
+        }
+        .tab-content .with-grid div img{
+            width: 80%;
+            margin: auto;
+            position: relative;
+            left: 10%;
+        }
+        .work h3{
+            font-size: 1.2em;
+        }
+        .team h3{
+            font-size: 1.2em;
+        }
+        .story h3{
+            font-size: 1.2em;
+        }
+        .story p{
+            margin-top: 20px;
+        }
+        .team-cards{
+            margin-top: 30px;
+        }
+    }
+    @media (max-width: 710px) {
+        .about-hero{
+            height: 400px;
+        }
+        .about-hero img{
+            height: 500px;
+            margin-top: -100px;
+        }
+        .hero-contents h1{
+            font-size: 4.7em;
+        }
+        .hero-contents h1 span{
+            margin-left: 10px;
+        }
+        .hero-contents p{
+            font-size: .9em;
+        }
+        .story{
+            padding: 30px;
+            background-color: #111111;
+        }
+        .story p{
+            font-size: 1em;
+        }
+        .mission{
+            margin: 20px 30px;
+            position: relative;
+            padding: 20px;
+        }
+        .team{
+            padding: 20px 30px;
+            background-color: #111111;
+        }
+        .work{
+            padding: 30px;
+        }
+        .work-contents .left-side .work-card,.work-contents .right-side .work-card{
+            padding: 15px;
+            gap: 10px;
+        }
+    }
+    @media (max-width: 680px) {
+        .footer{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .mission{
+            margin: 20px 10px;
+            position: relative;
+            padding: 20px;
+        }
+        .team-card{ 
+            min-width: 23px;
+            max-width: 280px;
+        }
+        .team-card p{ 
+            font-size: .7em;
+        }
+        .team-card h4{ 
+            font-size: 1.1em;
+        }
+        .member{
+            width: 110px;
+            height: 110px;
+        }
+        .work-card h4{
+            color: #2BADE2;
+            font-size: 1.4em;
+        }
+        .work-card p{
+            color: white;
+            font-size: .9em;
+        }
+        .work-contents .left-side .work-side{
+            height: 210px;
+        }
+        .work-contents .right-side .work-side{
+            height: 210px;
+        }
+    }
+    @media (max-width: 600px) {
+        .work-contents .left-side .work-card,.work-contents .right-side .work-card{
+            width: 200px;
+        }
+    }
+    @media (max-width: 520px) {
+        .footer{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .about-hero{
+            height: 350px;
+        }
+        .about-hero img{
+            height: 450px;
+            margin-top: -100px;
+        }
+        .hero-contents h1{
+            font-size: 4em;
+        }
+        .work-contents .left-side .work-card,.work-contents .right-side .work-card{
+            width: 180px;
+        }
+    }
+
+    .footer div h4{
+        font-size: .9em;
+        color: white;
+        font-family: "phudu-big";
+    }
+    @media(max-width: 510px){
+        .search-bar{
+            display: none;
+            position: absolute;
+            bottom: 0;
+            border-radius: 0px;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            padding: 10px 20px;
+            transform: translateY(180%);
+            background: #111111;
+            backdrop-filter: blur(20px);
+            font-size: .8em;
+        }
+        
+        .search-bar.active {
+            display: inline-block; /* Show the search bar when active */
+            left: -10px;
+            right: 10px;
+            width: 105%;
+        }
+        .header-links{
+            position: unset;
+        }
+        .header-search{
+            top: 42%;
+            right: 70px;
+            transform: translateY(-50%);
+        }
+        .header-search{
+            top: 50%;
+            right: 120px;
+            transform: translateY(-50%);
+        }
+        .navigation-container{
+            padding: 6px;
+        }
+        .logo{
+            width: 120px;
+        }
+    }
+    @media (max-width: 480px) {
+        .footer div a{
+            font-size: .8em;
+            opacity: 1;
+            color: white;
+            font-family: "poppins";
+            transition: all .3s ease;
+        }
+        .about-hero{
+            height: 350px;
+        }
+        .about-hero img{
+            height: 400px;
+            margin-top: -50px;
+        }
+        .hero-contents h1{
+            font-size: 3.5em;
+        }
+        .story{
+            padding: 15px;
+            background-color: #111111;
+        }
+        .story p{
+            font-size: .9em;
+        }
+        .team{
+            padding: 20px 10px;
+            background-color: #111111;
+        }
+        .team-cards{
+            padding: 20px 10px;
+        }
+        .team-card{ 
+            min-width: 200px;
+            max-width: 250px;
+        }
+        .team-card p{ 
+            font-size: .7em;
+        }
+        .team-card h4{ 
+            font-size: 1em;
+        }
+        .member{
+            width: 100px;
+            height: 100px;
+        }
+        .nav-tabs .nav-link {
+            font-weight: 400;
+            margin-right: 8px;
+            padding: 8px 20px;
+            font-size: .8em;
+        }
+        .work{
+            padding: 20px 10px;
+        }
+        .work-card h4{
+            color: #2BADE2;
+            font-size: 1.3em;
+        }
+        .work-card p{
+            color: white;
+            font-size: .8em;
+        }
+        .work-contents .work-side{
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .tab-content {
+            font-size: .8em;
+        }
+        .tab-content .with-grid div img{
+            width: 100%;
+            margin: auto;
+            position: relative;
+            left: 10%;
+        }
+        
+    }
+@media (max-width: 425px) { 
+    .footer{
+        padding: 10px 20px;
+    }
+    .about-hero{
+        height: 300px;
+    }
+    .about-hero img{
+        height: 300px;
+        margin-top: -0px;
+    }
+    .hero-contents h1{
+        font-size: 3em;
+    }
+    .work-card h4{
+        color: #2BADE2;
+        font-size: 1em;
+    }
+    .work-card p{
+        color: white;
+        font-size: .7em;
+    }
+    .work-contents .left-side .work-card,.work-contents .right-side .work-card{
+        width: 150px;
+    }
+}
+@media (max-width: 375px) {
+    .hero-contents h1{
+        font-size: 2.4em;
+    }
+    .nav-tabs .nav-link {
+        font-weight: 400;
+        margin-right: 3px;
+        padding: 8px 20px;
+        font-size: .7em;
+    }
+    .work-contents .left-side .work-card,.work-contents .right-side .work-card{
+        width: 130px;
+    }
+    .work-contents .work-side{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
 }

@@ -1,0 +1,952 @@
+@font-face {
+    font-family: 'Phudu';
+    src: url('fonts/Phudu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Phudu-big';
+    src: url('fonts/Phudu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Monoton';
+    src: url('fonts/Monoton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins",sans-serif;
+    text-align: left;
+}
+
+span,a,label,p{
+    font-family: "poppins",sans-serif;
+    text-decoration: none;
+}
+
+h1 span,h2 span,h3 span,h4 span,h6 span,h6 span{
+    font-family: "Phudu-big";
+     font-size: bold;
+}
+
+h1,h2,h3,h4,h6,h6{
+    font-family: "Phudu-big";
+     font-size: bold;
+}
+button,input{
+    font-family: "poppins",sans-serif;
+}
+
+.navigation-container{
+    background: linear-gradient(90deg,rgb(5, 5, 5),#111111D9,#111111D9);
+    z-index: 10000;
+    height: 110px;
+    border-bottom: 2px solid #2BADE2;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #111111D9;
+    backdrop-filter: blur(20px);
+    z-index: 10000000000000;
+    position: fixed;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    padding: 15px;
+}
+.real-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1660px;
+    position: relative;
+}
+.navigation-container a{
+    font-size: .9em;
+}
+.logo{
+    width: 200px;
+}
+
+.header-navigation{
+    padding: 20px 15px;
+    border-radius: 50px;
+    background: linear-gradient(90deg,rgb(5, 5, 5),#111111D9,#111111D9);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.header-navigation a{
+    color: white;
+    padding: 10px 23px;
+    border: none;
+    border-radius: 30px; 
+    margin-left: 3px;
+    transition: all .5s;
+}
+.header-navigation a.active{
+    background: linear-gradient(90deg,#2BADE2,#2286AF,#185F7C);
+}
+.header-navigation a:hover{
+    background: linear-gradient(90deg,#2BADE2,#2286AF,#185F7C);
+}
+.header-links{
+    position: relative;
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.lang-btn {
+    position: absolute;
+    color: white;
+    right: 10px;
+    font-size: .8em;
+    border: 1px solid #2BADE2;
+    background-color: transparent;
+    gap: 5px;
+    padding: 3px;
+  }
+  .lang-btn img{
+    width: 25px;
+  }
+
+.header-links a{
+    color: white;
+    padding: 0 15px;
+}
+.header-search{
+    color: #2BADE2;
+    height: 16px;
+    width: 16px;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+.search-bar{
+    display: none;
+    padding: 7px 30px 7px 20px;
+    width: 100px;
+    font-size: .7em;
+    color: white;
+    outline: none;
+    border: none;
+    border: .1em solid #2BADE2;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: width 1s ease-in-out;
+}
+.search-bar.active {
+    display: inline-block; /* Show the search bar when active */
+    width: 200px;
+}
+.header-links a{
+    color: #2BADE2;
+}
+.header-links a:first-of-type{
+    border-right: 3px solid #2BADE2;
+}
+.contacts-hero{
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+}
+.contacts-hero img{
+    margin-top: -250px;
+    height: 1000px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-contents{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    justify-items: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+.hero-contents h1{
+    font-family: monoton;
+    font-size: 5.8em;
+}
+.hero-contents h1 span{
+    font-family: monoton;
+    margin-left: 15px;
+}
+.hero-contents p{
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.contacts-contents{
+    position: relative;
+    z-index: 1;
+}
+.contacts-contents-bg{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100.1%;
+}
+.container-xlg.one h1 {
+    position: relative;
+    display: inline-block; /* This makes h1 fit to text width */
+    padding-bottom: 7px; /* Ensure space for the lines */
+}
+
+.container-xlg.one h1::before, 
+.container-xlg.one h1::after {
+    content: "";
+    background-color: #2BADE2;
+    height: 3px;
+    position: absolute;
+    width: 50%; /* The width of the lines */
+}
+
+.container-xlg.one h1::before {
+    left: 0; /* Position the left line at the start of the text */
+    bottom: -5px; /* Distance from the bottom */
+}
+
+.container-xlg.one h1::after {
+    right: 0; /* Position the right line at the end of the text */
+    bottom: -15px; /* Distance from the bottom */
+}
+
+
+.contact{
+    width: 100%;
+    padding: 0 40px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.contact .contact-header{
+    color: white;
+    text-align: center;
+}
+.contact .contact-header span{
+    color: #13AEEE;
+}
+.contact-contents{
+    padding: 0 40px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr;
+    gap: 50px;
+}
+.contact-contents{
+    color: white;
+}
+.contact-contents span{
+    color: #13AEEE;
+}
+.contact-contents form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+.contact-contents form textarea{
+    grid-column: span 2;
+    padding: 16px;
+    font-family: "poppins",sans-serif;
+    background-color: #011E2B;
+    color: #595C5F;
+    height: 250px;
+    resize: none;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.contact-contents form input{
+    width: 100%;
+    padding: 15px 10px;
+    font-family: "poppins",sans-serif;
+    background-color: #011E2B;
+    color: #595C5F;
+    border-radius: 10px;
+    border: none;
+    min-width: none;
+    outline: none;
+}
+.contact-contents form .fortextarea{
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.contact-contents .contact-form{
+    padding: 0;
+}
+
+.contact-contents .icons{
+    justify-items: center;
+    position: relative;
+    padding: 100px 0;
+}
+
+.contact-contents .icons button{
+    padding: 12px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 2px 5px 0 #13AEEE;
+    margin-top: 20px;
+}
+.contact-contents .icons img{
+    width: 20px;
+}
+
+.contact-info h4{
+    margin-bottom: 30px;
+}
+.contact-item{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.contact-item img{
+    width: 30px;
+}
+.contact-item p{
+    line-height: 2;
+    margin-top: auto;
+    font-size: 1em;
+    margin: 0;
+}
+.contact-item button{
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: 1px solid #2BADE2;
+    background-color: transparent;
+    color: #2BADE2;
+    font-weight: 500;
+    font-size: .9em;
+    cursor: pointer;
+    margin-top: 40px;
+    overflow: hidden;
+}
+.contact .send{
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: 1px solid #2BADE2;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 40px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s;
+    width: 70%;
+}
+.contact .send::before{
+    content: "";
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    left: -121%;
+    transform: skewX(30deg);
+    top: 0;
+    transition: all 0.5s;
+    background-color:  #2BADE2;
+    z-index: -1;
+}
+.contact .send:hover::before{
+    left: -6%;
+    background-color: #2BADE2;
+}
+.contact .send:hover{
+    color: black;
+}
+
+.location{
+    padding: 0 100px;
+}
+
+.location h1{
+    position: relative;
+    display: inline-block; /* This makes h1 fit to text width */
+    padding-bottom: 0px; /* Ensure space for the lines */
+    color: #2BADE2;
+}
+
+.location h1::before, 
+.location h1::after {
+    content: "";
+    background-color: #2BADE2;
+    height: 3px;
+    position: absolute;
+    width: 50%; /* The width of the lines */
+}
+
+.location h1::before {
+    left: 0; /* Position the left line at the start of the text */
+    bottom: -5px; /* Distance from the bottom */
+}
+
+.location h1::after {
+    right: 0; /* Position the right line at the end of the text */
+    bottom: -15px; /* Distance from the bottom */
+}
+.location h2{
+    color: #2BADE2;
+}
+.location h2 span{
+    font-family: "Phudu-big";
+}
+
+.location-contents{
+    display: grid;
+    grid-template-columns: 4fr .8fr;
+    gap: 30px;
+}
+.location-contents div:last-child{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.location-text{
+    padding: 0 80px 100px 80px;
+    color: white;
+}
+
+.partners{
+    color: #2BADE2;
+    padding: 0 80px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.partners h1{
+    font-size: 1.8em;
+    position: relative;
+    text-align: center;
+}
+.partners h1::after{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 3px;
+    background-color: #2BADE2;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+.partners div{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    gap: 30px;
+    padding: 0 0 20px 0;
+    scrollbar-width: none; /* Thin scrollbar */
+    scrollbar-color: transparent; /* Thumb color and track color */
+    scrollbar-arrow-color: transparent;
+}
+.partners div img{
+    max-width: 300px;
+    min-width: 300px;
+    margin-top: 30px;
+    height: 150px;
+    border-radius: 30px;
+}
+
+
+
+
+
+.footer{
+    background-color: #010C11;
+    padding: 20px 40px 0 40px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: left;
+}
+.footer div:first-child{
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer div:first-child img{
+    width: 100px;
+    margin: auto;
+}
+.footer div:first-of-type h5{
+    text-align: center;
+    color: white;
+    font-family: "phudu-big";
+    margin-top: 15px;
+}
+.footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.footer div h4{
+    font-size: 1em;
+    color: white;
+    font-family: "phudu-big";
+}
+.footer div a{
+    font-size: .9em;
+    opacity: 1;
+    color: white;
+    font-family: "poppins";
+    transition: all .3s ease;
+}
+.footer div a:hover{
+    transform: scale(1.02);
+}
+.footer div a.active{
+    color: #2BADE2;
+    position: relative;
+}
+.footer div a.active:after{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 2px;
+    background-color: #2BADE2;
+    bottom: -5px;
+    left: 0;
+}
+
+.footer .footer-social{
+    display: block;
+    margin-bottom: 0;
+}
+
+.footer .footer-social img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsiveness*/
+
+.hamburger{
+    display: none;
+}
+.offcanvas{
+    background-color: #111111;
+    color: white;
+    max-width: 300px;
+    position: fixed;
+    top: 0; 
+    right: 0; 
+    height: 100vh; 
+    width: 250px; 
+    z-index: 10; 
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease; 
+    backdrop-filter: blur(20px);
+}
+.offcanvas-body ul{
+    list-style-type: none;
+    width: 100%;
+    padding-left: 0;
+}
+.offcanvas-body ul{
+    overflow: hidden;
+}
+.offcanvas-body ul li{
+    font-size: 1.3em;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: white;
+    transition: all .3s;
+    transform: translateX(10px);
+}
+.offcanvas-body ul li:hover{
+    background-color: rgba(0, 0, 0, 1);
+}
+.offcanvas-body ul li svg{
+    margin-right: 10px;
+    color: #13AEEE;
+}
+
+
+@media (max-width: 1200px) {
+    .contacts-hero{
+        height: 550px;
+        overflow: hidden;
+        position: relative;
+    }
+    .contacts-hero img{
+        height: 800px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -200px;
+    }
+    .location h2{
+        color: #2BADE2;
+        font-size: 1.1em;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    .logo{
+        width: 150px;
+    }
+    .header-navigation{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .header-links{
+        position: absolute;
+        right: 55px;
+    }
+    .lang-btn {
+        right: 50px;
+    }
+    .contacts-hero{
+        height: 550px;
+        overflow: hidden;
+        position: relative;
+    }
+    .contacts-hero img{
+        height: 800px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -200px;
+    }
+    .contact-contents{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 50px;
+        margin-top: 50px;
+    }
+    .icons{
+        display: flex;
+        gap: 20px;
+        grid-row: 3;
+        padding: 0;
+    }
+    .contact-contents .icons{
+        padding: 5px 0;
+        margin: auto;
+    }
+    .contact-info{
+        grid-row: 2;
+        max-width: 400px;
+        margin: auto;
+    }
+    .contact-form{
+        grid-row: 1;
+    }
+    form input,form textarea{
+        font-size: .9em;
+    }
+    .contact-item button{
+        margin: auto;
+    }
+    .location-contents{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 30px;
+    }
+    .location-contents div:last-child{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    .location-contents div:first-child{
+        min-height: 350px;
+    }
+    .location-contents div:last-child h2{
+        grid-row: 1;
+    }
+    .location-contents div:last-child img{
+        grid-row: 2;
+    }
+    .location-text{
+        font-size: 1em;
+    }
+    .footer{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .footer div:first-child{
+        justify-content: start;
+        justify-items: start;
+        align-content: start;
+        align-items: start;
+        text-align: left;
+    }
+    
+    .footer div:first-child img{
+        width: 100px;
+        margin: 0;
+    }
+    .footer div:first-of-type h5{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    
+}
+
+
+
+@media (max-width: 900px) {
+    .contacts-hero{
+        height: 500px;
+        overflow: hidden;
+        position: relative;
+    }
+    .contacts-hero img{
+        height: 650px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -150px;
+    }
+}
+@media (max-width: 768px) {
+    .footer{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media (max-width: 710px) {
+    .contacts-hero{
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+    }
+    .contacts-hero img{
+        height: 550px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -120px;
+    }
+    .hero-contents h1{
+        font-size: 4.7em;
+    }
+    .hero-contents h1 span{
+        margin-left: 10px;
+    }
+    .hero-contents p{
+        font-size: .9em;
+    }
+    .contact{
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 50px;
+    }
+    .contact-contents{
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 680px) {
+    .footer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 580px) {
+    .contacts-hero{
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+    }
+    .contacts-hero img{
+        height: 450px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -100px;
+    }
+    .hero-contents h1{
+        font-size: 4em;
+    }
+    .contact-contents{
+        width: 100%;
+        padding: 0px;
+        margin-top: 50px;
+    }
+    .contact-info img{
+        width: 20px;
+    }
+    .contact-info p{
+        font-size: .9em;
+    }
+    .contact-info h4{
+        font-size: 1.1em;
+    }
+    .contact h3{
+        font-size: 1.1em;
+    }
+    form label{
+        font-size: .9em;
+    }
+    
+}
+@media (max-width: 520px) {
+    .footer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 510px){
+    .search-bar{
+        display: none;
+        position: absolute;
+        bottom: 0;
+        border-radius: 0px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        padding: 10px 20px;
+        transform: translateY(180%);
+        background: #111111;
+        backdrop-filter: blur(20px);
+        font-size: .8em;
+    }
+    
+    .search-bar.active {
+        display: inline-block; /* Show the search bar when active */
+        left: -10px;
+        right: 10px;
+        width: 105%;
+    }
+    .header-links{
+        position: unset;
+    }
+    .header-search{
+        top: 42%;
+        right: 70px;
+        transform: translateY(-50%);
+    }
+    .header-search{
+        top: 50%;
+        right: 120px;
+        transform: translateY(-50%);
+    }
+    .navigation-container{
+        padding: 6px;
+    }
+    .logo{
+        width: 120px;
+    }
+}
+@media (max-width: 480px) {
+    .contacts-hero{
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+    }
+    .contacts-hero img{
+        height: 400px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -50px;
+    }
+    .hero-contents h1{
+        font-size: 3.5em;
+    }
+    .hero-contents h1 span{
+        margin-left: 10px;
+    }
+    .hero-contents p{
+        font-size: .8em;
+    }
+    .container-xlg.one h1{
+        font-size: 1.2em;
+    }
+    .container-xlg.one p{
+        font-size: .9em;
+    }
+    .contact-contents form{
+        display: block;
+        margin-top: 30px;
+    }
+    .contact .send{
+        width: 60%;
+    }
+    .footer div h4{
+        font-size: .9em;
+        color: white;
+        font-family: "phudu-big";
+    }
+    .footer div a{
+        font-size: .8em;
+        opacity: 1;
+        color: white;
+        font-family: "poppins";
+        transition: all .3s ease;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .contacts-hero{
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+    }
+    .contacts-hero img{
+        height: 320px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -20px;
+    }
+    .hero-contents h1{
+        font-size: 3em;
+    }
+    .hero-contents h1 span{
+        margin-left: 10px;
+    }
+    .hero-contents p{
+        font-size: .8em;
+    }
+    .footer{
+        padding: 10px 20px;
+    }
+}
+@media (max-width: 375px) {
+    .hero-contents h1{
+        font-size: 2.4em;
+    }
+
+}

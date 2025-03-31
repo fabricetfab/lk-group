@@ -1,0 +1,96 @@
+
+@media (max-width: 900px) {
+    .services-hero{
+        height: 500px;
+        overflow: hidden;
+        position: relative;
+    }
+    .services-hero img{
+        height: 1200px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -400px;
+    }
+}
+
+
+@media (max-width: 710px) {
+    .services-hero{
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+    }
+    .services-hero img{
+        height: 1000px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -300px;
+    }
+    .hero-contents h1{
+        font-size: 5em;
+    }
+    .hero-contents h1 span{
+        margin-left: 10px;
+    }
+    .hero-contents p{
+        font-size: .9em;
+    }
+}
+@media (max-width: 580px) {
+    .services-hero{
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+    }
+    .services-hero img{
+        height: 800px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -250px;
+    }
+}
+@media (max-width: 480px) {
+    .services-hero{
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+    }
+    .services-hero img{
+        height: 600px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -150px;
+    }
+    .hero-contents h1{
+        font-size: 4em;
+    }
+    .hero-contents h1 span{
+        margin-left: 10px;
+    }
+    .hero-contents p{
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 425px) {
+    .services-hero{
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+    }
+    .services-hero img{
+        height: 450px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -100px;
+    }
+    .hero-contents h1{
+        font-size: 3em;
+    }
+    .hero-contents h1 span{
+        margin-left: 10px;
+    }
+    .hero-contents p{
+        font-size: .8em;
+    }
+}
