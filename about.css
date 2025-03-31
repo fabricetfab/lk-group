@@ -11,6 +11,12 @@
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Monoton';
+    src: url('fonts/Monoton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 body{
     padding: 0;
     margin: 0;
@@ -169,7 +175,7 @@ button,input{
     color: white;
 }
 .hero-contents h1{
-    font-family: monoton;
+    font-family: 'Monoton',sans-serif;
     font-size: 6em;
 }
 .hero-contents h1 span{

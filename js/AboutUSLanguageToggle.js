@@ -87,7 +87,7 @@ const translations = {
     HeaderMobile2: "Services",
     HeaderMobile3: "À propos",
     HeaderMobile4: "Contactez-nous",
-    AboutHero: "À propos de<span> Nous</span>",
+    AboutHero: "À propos",
     HeroText: '“LK GROUP est une entreprise unique et dynamique dédiée à aider les entreprises à prospérer dans le paysage numérique d\'aujourd\'hui.”',
     OurStory: "Notre Histoire",
     ContactButton: "Contactez-nous",

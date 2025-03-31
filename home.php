@@ -32,7 +32,7 @@
     <img src="imgs/logo.png" alt="logo" class="logo" />
     
     <div class="header-navigation">
-      <a href="#about" id="homeLink" class="active">Home</a>
+      <a href="#home" id="homeLink" class="active">Home</a>
       <a href="services.php" id="servicesLink">Services</a>
       <a href="about.php" id="aboutLink">About Us</a>
       <a href="contact.php" id="contactLink">Contact Us</a>
@@ -275,28 +275,28 @@
           <h3 id="OfferTitle1">HR Consulting</h3>
           <p id="OfferText1">Strategic HR solutions and talent acquisition services.</p>
           <img src="imgs/service1.png">
-          <span>></span>
+          <a href="services.php#Communication+HR+Consulting"><span>></span></a>
         </div>
         <div class="services-card">
           <img src="icons/global.svg" alt="">
           <h3 id="OfferTitle2">Digital Presence</h3>
           <p id="OfferText2">Web design, social media management, and content creation services.</p>
           <img src="imgs/service2.png">
-          <span>></span>
+          <a href="services.php#Digita+Presence"><span>></span></a>
         </div>
         <div class="services-card">
           <img src="icons/shield-security.svg" alt="">
           <h3 id="OfferTitle3">Cyber Security </h3>
           <p id="OfferText3">Comprehensive security solutions and incident response services.</p>
           <img src="imgs/service3.png">
-          <span>></span>
+          <a href="services.php#Cyber+Security"><span>></span></a>
         </div>
-        <div class="services-card">
+        <!--<div class="services-card">
           <img src="icons/monitor-mobbile.svg" alt="">
           <h3 id="OfferTitle4">IT Support</h3>
           <p id="OfferText4">24/7 remote assistance,ticketing system, and technical support.</p>
           <img src="imgs/service4.png">
-          <span>></span>
+          <a href="services.php#IT+Support"><span>></span></a>
         </div>
         <div class="services-card">
           <img src="icons/box.png" alt="">
@@ -311,7 +311,7 @@
           <p id="OfferText6">You want a fine digital solver, here is the right place.</p>
           <img src="imgs/service6.png">
           <span>></span>
-        </div>
+        </div>-->
 
       </div>
     </div>
@@ -648,7 +648,7 @@
         <div>
           <h4 id="footerMenu4">Useful Links</h4>
           <a href="#" id="footerMenuLink11">How we work</a>
-          <a href="#"id="footerMenuLink12">>What we do</a>
+          <a href="#"id="footerMenuLink12">What we do</a>
         </div>
         <div>
           <h4 id="footerMenu5">Social</h4>

@@ -33,7 +33,7 @@
     <div class="header-navigation">
       <a href="home.php" id="homeLink">Home</a>
       <a href="services.php" id="servicesLink">Services</a>
-      <a href="about.php" class="active" id="aboutLink">About Us</a>
+      <a href="#about" class="active" id="aboutLink">About Us</a>
       <a href="contact.php" id="contactLink">Contact Us</a>
     </div>
 

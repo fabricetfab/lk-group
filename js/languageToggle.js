@@ -369,10 +369,6 @@ function toggleLanguage() {
   document.getElementById("SendButton").innerHTML = translations[currentLanguage].SendButton;
   document.getElementById("ContactHead3").innerHTML = translations[currentLanguage].ContactHead3;
 
-  document.querySelector("input[placeholder='Your Name']").setAttribute("placeholder", translations[currentLanguage].placeholderName);
-  document.querySelector("input[placeholder='Your Email']").setAttribute("placeholder", translations[currentLanguage].placeholderEmail);
-  document.querySelector("input[placeholder='Your Location']").setAttribute("placeholder", translations[currentLanguage].placeholderLocation);
-  document.querySelector("textarea[placeholder='Type a message...']").setAttribute("placeholder", translations[currentLanguage].placeholderMessage);
    
   // Why Choose Us Section
   document.getElementById("ChooseUsSection").innerHTML = translations[currentLanguage].ChooseUsSection;
@@ -419,6 +415,10 @@ function toggleLanguage() {
   document.getElementById("footerMenuLink12").innerHTML = translations[currentLanguage].footerMenuLink12;
   document.getElementById("footerMenu5").innerHTML = translations[currentLanguage].footerMenu5;
 
+  document.querySelector("input[placeholder='Your Name']").setAttribute("placeholder", translations[currentLanguage].placeholderName);
+  document.querySelector("input[placeholder='Your Email']").setAttribute("placeholder", translations[currentLanguage].placeholderEmail);
+  document.querySelector("input[placeholder='Your Location']").setAttribute("placeholder", translations[currentLanguage].placeholderLocation);
+  document.querySelector("textarea[placeholder='Type a message...']").setAttribute("placeholder", translations[currentLanguage].placeholderMessage);
 
 
   
@@ -513,11 +513,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("SendButton").innerHTML = translations[currentLanguage].SendButton;
     document.getElementById("ContactHead3").innerHTML = translations[currentLanguage].ContactHead3;
 
-    document.querySelector("input[placeholder='Your Name']").setAttribute("placeholder", translations[currentLanguage].placeholderName);
-    document.querySelector("input[placeholder='Your Email']").setAttribute("placeholder", translations[currentLanguage].placeholderEmail);
-    document.querySelector("input[placeholder='Your Location']").setAttribute("placeholder", translations[currentLanguage].placeholderLocation);
-    document.querySelector("textarea[placeholder='Type a message...']").setAttribute("placeholder", translations[currentLanguage].placeholderMessage);
-
     // why choose us section
     document.getElementById("ChooseUsSection").innerHTML = translations[currentLanguage].ChooseUsSection;
     document.getElementById("ChooseUsli1").innerHTML = translations[currentLanguage].ChooseUsli1;
@@ -562,6 +557,11 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("footerMenuLink11").innerHTML = translations[currentLanguage].footerMenuLink11;
   document.getElementById("footerMenuLink12").innerHTML = translations[currentLanguage].footerMenuLink12;
   document.getElementById("footerMenu5").innerHTML = translations[currentLanguage].footerMenu5;
+
+  document.querySelector("input[placeholder='Your Name']").setAttribute("placeholder", translations[currentLanguage].placeholderName);
+  document.querySelector("input[placeholder='Your Email']").setAttribute("placeholder", translations[currentLanguage].placeholderEmail);
+  document.querySelector("input[placeholder='Your Location']").setAttribute("placeholder", translations[currentLanguage].placeholderLocation);
+  document.querySelector("textarea[placeholder='Type a message...']").setAttribute("placeholder", translations[currentLanguage].placeholderMessage);
 
 
   
