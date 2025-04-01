@@ -106,14 +106,14 @@ button,input{
     position: absolute;
     color: white;
     right: 10px;
-    font-size: .8em;
+    font-size: .7em;
     border: 1px solid #2BADE2;
     background-color: transparent;
     gap: 5px;
-    padding: 3px;
+    padding: 0 3px;
   }
   .lang-btn img{
-    width: 25px;
+    width: 20px;
   }
 
 .header-links a{
@@ -175,11 +175,13 @@ button,input{
     justify-items: center;
     align-content: center;
     background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: rgba(235, 222, 222, 0);
 }
+
 .hero-contents h1{
     font-family: monoton;
     font-size: 5.8em;
+    text-align: center;
 }
 .hero-contents h1 span{
     font-family: monoton;
@@ -635,10 +637,11 @@ button,input{
     }
     .header-links{
         position: absolute;
-        right: 55px;
+        right: 35px;
     }
     .lang-btn {
         right: 50px;
+        margin-top: 2px;
     }
     .contacts-hero{
         height: 550px;
@@ -724,7 +727,6 @@ button,input{
         margin-top: 10px;
         margin-left: 5px;
     }
-    
 }
 
 
@@ -860,7 +862,7 @@ button,input{
     }
     .header-search{
         top: 50%;
-        right: 120px;
+        right: 110px;
         transform: translateY(-50%);
     }
     .navigation-container{
