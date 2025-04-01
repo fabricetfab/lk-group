@@ -72,7 +72,7 @@ const translations = {
     HeaderMobile2: "Services",
     HeaderMobile3: "À propos",
     HeaderMobile4: "Contactez-nous",
-    ContactTitle: "NOUS CONTACTER",
+    ContactTitle: "CONTACT",
     ContactText: "“Nous comprenons que la réussite dans le monde numérique nécessite une approche holistique, c'est pourquoi LK group adopte une approche multifacette pour la croissance des entreprises”",
     ContactHead2: 'Envoyez-nous un <span>message !</span>',
     ContactHead3: '<span>Nous sommes</span> ouverts à toute suggestion par tout moyen de <span>communication.</span>',

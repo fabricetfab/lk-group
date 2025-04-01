@@ -175,7 +175,7 @@ button,input{
     justify-items: center;
     align-content: center;
     background-color: rgba(0, 0, 0, 0.6);
-    color: rgba(235, 222, 222, 0);
+    color: white;
 }
 
 .hero-contents h1{
