@@ -330,14 +330,6 @@ function toggleLanguage() {
   document.getElementById("OfferTitle3").innerHTML = translations[currentLanguage].WeOfferTitle3;
   document.getElementById("OfferText3").innerHTML = translations[currentLanguage].WeOfferText3;
 
-  document.getElementById("OfferTitle4").innerHTML = translations[currentLanguage].WeOfferTitle4;
-  document.getElementById("OfferText4").innerHTML = translations[currentLanguage].WeOfferText4;
-
-  document.getElementById("OfferTitle5").innerHTML = translations[currentLanguage].WeOfferTitle5;
-  document.getElementById("OfferText5").innerHTML = translations[currentLanguage].WeOfferText5;
-
-  document.getElementById("OfferTitle6").innerHTML = translations[currentLanguage].WeOfferTitle6;
-  document.getElementById("OfferText6").innerHTML = translations[currentLanguage].WeOfferText6;
 
   // Testimonials section 
   document.getElementById("TestmonialHead").innerHTML = translations[currentLanguage].TestmonialHead;
@@ -474,14 +466,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("OfferTitle3").innerHTML = translations[currentLanguage].WeOfferTitle3;
   document.getElementById("OfferText3").innerHTML = translations[currentLanguage].WeOfferText3;
 
-  document.getElementById("OfferTitle4").innerHTML = translations[currentLanguage].WeOfferTitle4;
-  document.getElementById("OfferText4").innerHTML = translations[currentLanguage].WeOfferText4;
-
-  document.getElementById("OfferTitle5").innerHTML = translations[currentLanguage].WeOfferTitle5;
-  document.getElementById("OfferText5").innerHTML = translations[currentLanguage].WeOfferText5;
-
-  document.getElementById("OfferTitle6").innerHTML = translations[currentLanguage].WeOfferTitle6;
-  document.getElementById("OfferText6").innerHTML = translations[currentLanguage].WeOfferText6;
 
   // testiomials section
   document.getElementById("TestmonialHead").innerHTML = translations[currentLanguage].TestmonialHead;

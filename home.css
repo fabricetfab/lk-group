@@ -109,14 +109,14 @@ button,input{
     position: absolute;
     color: white;
     right: 10px;
-    font-size: .8em;
+    font-size: .7em;
     border: 1px solid #2BADE2;
     background-color: transparent;
     gap: 5px;
-    padding: 3px;
+    padding: 0 3px;
   }
   .lang-btn img{
-    width: 25px;
+    width: 20px;
   }
 
   
@@ -1505,7 +1505,11 @@ button,input{
     }
     .header-links{
         position: absolute;
-        right: 45px;
+        right: 35px;
+    }
+    .lang-btn {
+        right: 50px;
+        margin-top: 2px;
     }
     .header-navigation{
         display: none;
@@ -2083,6 +2087,9 @@ button,input{
     .testimonial-list{
         left: 34%;
     }
+    .text-in-bg.contact-monoton{
+        left: 10px;
+    }
 }
 @media (max-width: 520px) {
     .text-in-bg h1{
@@ -2194,7 +2201,7 @@ button,input{
     }
     .header-search{
         top: 50%;
-        right: 120px;
+        right: 110px;
         transform: translateY(-50%);
     }
     .navigation-container{
@@ -2258,6 +2265,9 @@ button,input{
     .text-in-bg h1{
         font-size: 1.7em;
         font-family: monoton;
+    }
+    .text-in-bg.contact-monoton{
+        font-size: .8em;
     }
     .faqs-contents{
         padding: 0 0px;

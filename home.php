@@ -474,7 +474,7 @@
 
       
       <div class="contact">
-        <div class="text-in-bg"><h1 id="ContactSection">CONTACT US</h1></div>
+        <div class="text-in-bg contact-monoton"><h1 id="ContactSection">CONTACT US</h1></div>
         <h1 class="contact-header" id="ContactHead1">LET'S <span>TALK !</span></h1>
         <div class="contact-contents">
           <div class="contact-form">
@@ -524,7 +524,7 @@
       </div>
 
 
-      <div class="faqs">
+      <div class="faqs" id="faq-sec">
         <div class="text-in-bg"><h1 id="faqsSection">FAQs</h1></div>
         <h1 class="faqs-header" id="faqsHead">FREQUENTLY <span>ASKED </span>QUESTION !</h1>
         <div class="faqs-contents">
@@ -628,27 +628,27 @@
         </div>
         <div>
           <h4 id="footerMenu1">Resources</h4>
-          <a href="#" id="footerMenuLink1" class="active">Home</a>
-          <a href="#" id="footerMenuLink2">Services</a>
-          <a href="#" id="footerMenuLink3">About</a>
-          <a href="#" id="footerMenuLink4">Contact Us</a>
+          <a href="#about" id="footerMenuLink1" class="active">Home</a>
+          <a href="services.php" id="footerMenuLink2">Services</a>
+          <a href="about.php" id="footerMenuLink3">About</a>
+          <a href="contact.php" id="footerMenuLink4">Contact Us</a>
         </div>
         <div>
           <h4 id="footerMenu2">Support</h4>
-          <a href="#" id="footerMenuLink5">FAQs</a>
-          <a href="#" id="footerMenuLink6">Help</a>
+          <a href="#faq-sec" id="footerMenuLink5">FAQs</a>
+          <a href="contact.php#help" id="footerMenuLink6">Help</a>
         </div>
         <div>
           <h4 id="footerMenu3">Company</h4>
-          <a href="#" id="footerMenuLink7">Our Mission</a>
-          <a href="#" id="footerMenuLink8">Our Objective</a>
-          <a href="#" id="footerMenuLink9">Our Values</a>
-          <a href="#" id="footerMenuLink10">Our Team</a>
+          <a href="about.php#mission-sec" id="footerMenuLink7">Our Mission</a>
+          <a href="about.php#mission-sec" id="footerMenuLink8">Our Objective</a>
+          <a href="about.php#mission-sec" id="footerMenuLink9">Our Values</a>
+          <a href="about.php#team-sec" id="footerMenuLink10">Our Team</a>
         </div>
         <div>
           <h4 id="footerMenu4">Useful Links</h4>
-          <a href="#" id="footerMenuLink11">How we work</a>
-          <a href="#"id="footerMenuLink12">What we do</a>
+          <a href="about.php#how-sec" id="footerMenuLink11">How we work</a>
+          <a href="services.php#service-sec"id="footerMenuLink12">What we do</a>
         </div>
         <div>
           <h4 id="footerMenu5">Social</h4>

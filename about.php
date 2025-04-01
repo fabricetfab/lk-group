@@ -105,7 +105,7 @@
     </div>
   </div>
 
-  <div class="about-contents">
+  <div class="about-contents" id="about-sec">
   <img src="imgs/about-big-bg.png" class="img-fluid about-contents-bg">
   <section class="story">
     <div class="story-head">
@@ -115,7 +115,7 @@
     <p id="StoryText">L<span>K</span> GROUP was founded in 2010 by a small team of passionate IT professionals who believed in the power of technology to empower businesses and individuals. Driven by a shared desire to create a more connected and secure digital world, they started by providing local IT support and consulting services to small businesses in their community. As their reputation for excellence grew, so did their client base, which led to the expansion of their service oWerings. LK GROUP quickly became known for their innovative solutions and their dedication to exceeding client expectations. Today, LK GROUP has evolved into a leading technology solutions provider, serving clients across various industries and sectors. The company's commitment to innovation, customer satisfaction, and a strong ethical foundation has remained steadfast throughout its growth, making it a trusted partner for businesses seeking to navigate the complexities of the digital age.</p>
   </section>
 
-  <section class="mission">
+  <section class="mission" id="mission-sec">
     <nav>
       <div class="nav nav-tabs" id="nav-tab" role="tablist">
           <button class="nav-link active" id="mission-tab" data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab" aria-controls="mission" aria-selected="true">Mission</button>
@@ -165,7 +165,7 @@
   </section>
   
 
- <section class="team">
+ <section class="team" id="team-sec">
     <div class="team-head">
       <h3 id="OurTeam">Our Team</h3>
     </div>
@@ -307,7 +307,7 @@
 
 
 
-  <section class="work">
+  <section class="work" id="how-sec">
     <div class="work-head">
       <h3 id="HowWeWork">How do we work?</h3>
     </div>
@@ -351,27 +351,27 @@
         </div>
         <div>
           <h4 id="footerMenu1">Resources</h4>
-          <a href="#" id="footerMenuLink1">Home</a>
-          <a href="#" id="footerMenuLink2">Services</a>
-          <a href="#" id="footerMenuLink3" class="active">About</a>
-          <a href="#" id="footerMenuLink4">Contact Us</a>
+          <a href="home.php#about" id="footerMenuLink1">Home</a>
+          <a href="services.php" id="footerMenuLink2">Services</a>
+          <a href="#about-sec" id="footerMenuLink3" class="active">About</a>
+          <a href="contact.php" id="footerMenuLink4">Contact Us</a>
         </div>
         <div>
           <h4 id="footerMenu2">Support</h4>
-          <a href="#" id="footerMenuLink5">FAQs</a>
-          <a href="#" id="footerMenuLink6">Help</a>
+          <a href="home.php#faq-sec" id="footerMenuLink5">FAQs</a>
+          <a href="contact.php#help" id="footerMenuLink6">Help</a>
         </div>
         <div>
           <h4 id="footerMenu3">Company</h4>
-          <a href="#" id="footerMenuLink7">Our Mission</a>
-          <a href="#" id="footerMenuLink8">Our Objective</a>
-          <a href="#" id="footerMenuLink9">Our Values</a>
-          <a href="#" id="footerMenuLink10">Our Team</a>
+          <a href="#mission-sec" id="footerMenuLink7">Our Mission</a>
+          <a href="#mission-sec" id="footerMenuLink8">Our Objective</a>
+          <a href="#mission-sec" id="footerMenuLink9">Our Values</a>
+          <a href="#team-sec" id="footerMenuLink10">Our Team</a>
         </div>
         <div>
           <h4 id="footerMenu4">Useful Links</h4>
-          <a href="#" id="footerMenuLink11">How we work</a>
-          <a href="#"id="footerMenuLink12">What we do</a>
+          <a href="#how-sec" id="footerMenuLink11">How we work</a>
+          <a href="services.php#service-sec"id="footerMenuLink12">What we do</a>
         </div>
         <div>
           <h4 id="footerMenu5">Social</h4>
