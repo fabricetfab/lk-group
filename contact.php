@@ -47,18 +47,23 @@
       <form action="" class="form"><input type="search" class="search-bar" placeholder="Search..." /></form>
     </div>
 
-    <button class="lang-btn d-flex" onclick="toggleLanguage()"><img src="icons/language.svg"><span id="languageBtn"></span></button>
+    <button class="lang-btn d-flex" onclick="toggleLanguage()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="black" class="bi bi-translate" viewBox="0 0 16 16">
+        <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+        <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+    </svg>
+    <span id="languageBtn"></span></button>
 
     <button class="hamburger btn btn-primary" style="background-color:transparent;border:none;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#2BADE2" class="bi bi-list" viewBox="0 0 16 16">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#343973" class="bi bi-list" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
       </svg>
     </button>
 
-      <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas offcanvas-end" data-bs-scroll="false" data-bs-backdrop="false" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasTopLabel" style="color: #13AEEE;">MENUS</h5>
-          <button type="button me-2" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <h5 class="offcanvas-title" id="offcanvasTopLabel" style="color: #343973;">MENUS</h5>
+          <button type="button me-2" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
         <ul>
@@ -108,11 +113,11 @@
 
 
   <div class="contacts-contents" id="help">
-    <img src="imgs/new-big-bg.png" class="img-fluid contacts-contents-bg">
+    <img src="imgs/m.png" class="img-fluid contacts-contents-bg">
     <div class="container-xlg one text-center px-2">
-      <h1 class="pt-4 h3" style="color: #2BADE2;" id="FromYOu">We’d Love to Hear from You!</h1>
-      <p class="text-light mt-5 m-auto" style="max-width: 768px;opacity: .7;" id="WeAreHere">we're here to help! Our team at LK GROUP is just a message away. Fill out the form below, and let's connect to make your vision a reality.</p>
-      <p class="text-light mt-5 m-auto" id="NextStep">Your next step toward growth starts here—let's chat!</p>
+      <h1 class="pt-4 h3" style="color: #343973;" id="FromYOu">We’d Love to Hear from You!</h1>
+      <p class="text-black mt-5 m-auto" style="max-width: 768px;opacity: .7;" id="WeAreHere">we're here to help! Our team at LK GROUP is just a message away. Fill out the form below, and let's connect to make your vision a reality.</p>
+      <p class="text-black mt-5 m-auto" id="NextStep">Your next step toward growth starts here—let's chat!</p>
       <div class="container-sm border-bottom mt-4 border-dark"></div>
     </div>
 
@@ -120,8 +125,8 @@
         <div class="contact-contents">
           <div class="icons">
             <button class="d-block"><img src="icons/linkedin.svg" class="d-block"></button>
-            <button class="d-block"><img style="height: 20px;" src="icons/face.svg" class="d-block"></button>
-            <button class="d-block"><img src="icons/insta.svg" class="d-block"></button>
+            <button class="d-block"><img style="height: 20px;" src="icons/new_face.svg" class="d-block"></button>
+            <button class="d-block"><img src="icons/new_insta.svg" class="d-block"></button>
             <button class="d-block"><img src="icons/x.svg" class="d-block"></button>
           </div>
           <div class="contact-info">
@@ -164,7 +169,7 @@
                 <input type="email" name="" placeholder="Email">
               </div>
               <div>
-                <label class="mb-2 mt-2" id="subject">Subject</label><br>
+                <label class="mb-2 mt-2" id="subject">Location</label><br>
                 <input type="text" name="" placeholder="Subject">
               </div>
               <div>

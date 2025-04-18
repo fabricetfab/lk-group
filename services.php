@@ -80,19 +80,24 @@
       <form action="" class="form"><input type="search" class="search-bar" placeholder="Search..." /></form>
     </div>
 
-    <button class="lang-btn d-flex" onclick="toggleLanguage()"><img src="icons/language.svg"><span id="languageBtn"></span></button>
+    <button class="lang-btn d-flex" onclick="toggleLanguage()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="black" class="bi bi-translate" viewBox="0 0 16 16">
+        <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+        <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+    </svg>  
+    <span id="languageBtn"></span></button>
 
 
     <button class="hamburger btn btn-primary" style="background-color:transparent;border:none;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#2BADE2" class="bi bi-list" viewBox="0 0 16 16">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#343973" class="bi bi-list" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
       </svg>
     </button>
 
-      <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas offcanvas-end" data-bs-scroll="false" data-bs-backdrop="false" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasTopLabel" style="color: #13AEEE;">MENUS</h5>
-          <button type="button me-2" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <h5 class="offcanvas-title" id="offcanvasTopLabel" style="color: #343973;">MENUS</h5>
+          <button type="button me-2" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
         <ul>
@@ -143,7 +148,7 @@
 
 
   <div class="services-contents" id="service-sec">
-    <img src="imgs/services-big-bg.png" class="services-contents-bg">
+    <img src="imgs/m.png" class="services-contents-bg">
     
     <div class="service1 position-relative pb-5" id="Digita+Presence">
       <div class="service-head first">
@@ -238,10 +243,10 @@
       </div>
     </div>
 
-    <h3 class="why-header h3 text-center" style="color: #2BADE2;" id="WhyChooseUs">Why Choose Us?</h3>
+    <h3 class="why-header h3 text-center" style="color: #343973;" id="WhyChooseUs">Why Choose Us?</h3>
     <p class="why-subheader mt-3 text-center text-light" id="WhyChooseUsP">Leading technology solutions since 2010</p>
 
-    <div class="row text-light why-choose">
+    <div class="row why-choose">
       <div class="col">
         <div class="d-flex justify-content-between">
           <h4 class="h4" id="WhyChooseUsH1">13+ Years</h1>

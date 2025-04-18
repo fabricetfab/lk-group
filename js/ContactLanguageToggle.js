@@ -30,7 +30,7 @@ const translations = {
 
     name: "Name",
     email: "Email",
-    subject: "Subject",
+    subject: "Location",
     service: "Service",
     message: "Message",
 
@@ -78,7 +78,7 @@ const translations = {
     ContactHead3: '<span>Nous sommes</span> ouverts à toute suggestion par tout moyen de <span>communication.</span>',
     placeholderName: 'Nom',
     placeholderEmail: 'Email',
-    placeholderLocation: 'Sujet',
+    placeholderLocation: 'Votre localisation',
     placeholderMessage: 'Tapez un message...',
     FromYOu: "Nous aimerions avoir de vos nouvelles!",
     WeAreHere: "Nous sommes là pour vous aider! Notre équipe chez LK GROUP est à un message près. Remplissez le formulaire ci-dessous et connectons-nous pour concrétiser votre vision.",
@@ -90,7 +90,7 @@ const translations = {
 
     name: "Nom",
     email: "Email",
-    subject: "Sujet",
+    subject: "Localisation",
     service: "Service",
     message: "Message",
 

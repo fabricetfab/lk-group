@@ -45,18 +45,23 @@
       <form action="" class="form"><input type="search" class="search-bar" placeholder="Search..." /></form>
     </div>
 
-    <button class="lang-btn d-flex" onclick="toggleLanguage()"><img src="icons/language.svg"><span id="languageBtn"></span></button>
+    <button class="lang-btn d-flex" onclick="toggleLanguage()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="black" class="bi bi-translate" viewBox="0 0 16 16">
+        <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+        <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+    </svg>
+    <span id="languageBtn"></span></button>
 
     <button class="hamburger btn btn-primary" style="background-color:transparent;border:none;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#2BADE2" class="bi bi-list" viewBox="0 0 16 16">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#343973" class="bi bi-list" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
       </svg>
     </button>
 
-      <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas offcanvas-end" data-bs-scroll="false" data-bs-backdrop="false" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasTopLabel" style="color: #13AEEE;">MENUS</h5>
-          <button type="button me-2" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <h5 class="offcanvas-title" id="offcanvasTopLabel" style="color: #343973;">MENUS</h5>
+          <button type="button me-2" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
         <ul>
@@ -106,7 +111,7 @@
   </div>
 
   <div class="about-contents" id="about-sec">
-  <img src="imgs/about-big-bg.png" class="img-fluid about-contents-bg">
+  <img src="imgs/m.png" class="img-fluid about-contents-bg">
   <section class="story">
     <div class="story-head">
       <h3 id="OurStory">Our Story</h3>
@@ -165,7 +170,7 @@
   </section>
   
 
- <section class="team" id="team-sec">
+ <section class="team" id="team-sec" style="background-color: #F4F8FF;">
     <div class="team-head">
       <h3 id="OurTeam">Our Team</h3>
     </div>
@@ -187,7 +192,7 @@
         <p id="text1">"Every individual has the potential to contribute significantly to the workplace." – Kelly Natacha, CEO</p>
         <p id="text2">Under Kelly Natacha's leadership, LK Group empowers organizations to thrive through innovation and social impact, fostering workplaces where talent and performance excel.</p>
           <div>
-            <a href=""><img src="icons/insta.svg"></a>
+            <a href=""><img src="icons/new_insta.svg"></a>
             <a href=""><img src="icons/linkedin.svg"></a>
             <a href=""><img src="icons/x.svg"></a>
           </div>
@@ -208,7 +213,7 @@
         <p id="text3">"Every individual has the potential to contribute significantly to the workplace." – Kelly Natacha, CEO</p>
         <p id="text4">Under Kelly Natacha's leadership, LK Group empowers organizations to thrive through innovation and social impact, fostering workplaces where talent and performance excel.</p>
           <div>
-            <a href=""><img src="icons/insta.svg"></a>
+            <a href=""><img src="icons/new_insta.svg"></a>
             <a href=""><img src="icons/linkedin.svg"></a>
             <a href=""><img src="icons/x.svg"></a>
           </div>
@@ -229,7 +234,7 @@
         <p id="text5">"Every individual has the potential to contribute significantly to the workplace." – Kelly Natacha, CEO</p>
         <p id="text6">Under Kelly Natacha's leadership, LK Group empowers organizations to thrive through innovation and social impact, fostering workplaces where talent and performance excel.</p>
           <div>
-            <a href=""><img src="icons/insta.svg"></a>
+            <a href=""><img src="icons/new_insta.svg"></a>
             <a href=""><img src="icons/linkedin.svg"></a>
             <a href=""><img src="icons/x.svg"></a>
           </div>
@@ -250,7 +255,7 @@
         <p id="text7">"Every individual has the potential to contribute significantly to the workplace." – Kelly Natacha, CEO</p>
         <p id="text8">Under Kelly Natacha's leadership, LK Group empowers organizations to thrive through innovation and social impact, fostering workplaces where talent and performance excel.</p>
           <div>
-            <a href=""><img src="icons/insta.svg"></a>
+            <a href=""><img src="icons/new_insta.svg"></a>
             <a href=""><img src="icons/linkedin.svg"></a>
             <a href=""><img src="icons/x.svg"></a>
           </div>
@@ -271,7 +276,7 @@
         <p id="text9">"Every individual has the potential to contribute significantly to the workplace." – Kelly Natacha, CEO</p>
         <p id="text10">Under Kelly Natacha's leadership, LK Group empowers organizations to thrive through innovation and social impact, fostering workplaces where talent and performance excel.</p>
           <div>
-            <a href=""><img src="icons/insta.svg"></a>
+            <a href=""><img src="icons/new_insta.svg"></a>
             <a href=""><img src="icons/linkedin.svg"></a>
             <a href=""><img src="icons/x.svg"></a>
           </div>
@@ -292,17 +297,17 @@
           <p id="text11">“Every individual has the potential to achieve amazing things.”</p>
           <p id="text12">It's a passion that fuels everything, we do at LK RECRUITMENT we believe in a world where talent flourishes.</p>
           <div>
-            <a href=""><img src="icons/insta.svg"></a>
+            <a href=""><img src="icons/new_insta.svg"></a>
             <a href=""><img src="icons/linkedin.svg"></a>
             <a href=""><img src="icons/x.svg"></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="swiper-button-next swiper-btn"></div>
-    <div class="swiper-button-prev swiper-btn"></div>
     </div>
     <div class="swiper-pagination"></div>
+    <div class="swiper-button-next swiper-btn right"></div>
+    <div class="swiper-button-prev swiper-btn left"></div>
   </section>
 
 
@@ -378,7 +383,7 @@
           <div class="footer-social">
             <a href="#" id="footerMenuLink13"><img src="icons/linkedin.svg"></a>
             <a href="#" id="footerMenuLink14"><img src="icons/x.svg"><a>
-            <a href="#" id="footerMenuLink15"><img src="icons/insta.svg"></</a>
+            <a href="#" id="footerMenuLink15"><img src="icons/new_insta.svg"></</a>
           </div>
         </div>
     </div>
@@ -391,7 +396,7 @@
       const swiperWrapper = document.querySelector('.swiper-wrapper'); // Get the wrapper
 
       slides.forEach(slide => {
-        slide.style.opacity = "0.6"; // Default opacity for all slides
+        slide.style.opacity = "1"; // Default opacity for all slides
         slide.style.transform = "scale(.8)"; // Reset scale
       });
 
@@ -416,7 +421,7 @@
   const swiperWrapper = document.querySelector('.swiper-wrapper'); // Get the wrapper
 
   slides.forEach(slide => {
-    slide.style.opacity = "0.6"; // Default opacity for all slides
+    slide.style.opacity = "1"; // Default opacity for all slides
     slide.style.transform = "scale(0.8)"; // Reset scale
   });
 

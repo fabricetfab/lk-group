@@ -46,17 +46,22 @@
       <form action="" class="form"><input type="search" class="search-bar" placeholder="Search..." /></form>
     </div>
     
-    <button class="lang-btn d-flex" onclick="toggleLanguage()"><img src="icons/language.svg"><span id="languageBtn"></span></button>
+    <button class="lang-btn d-flex" onclick="toggleLanguage()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="black" class="bi bi-translate" viewBox="0 0 16 16">
+        <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+        <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+      </svg>
+      <span id="languageBtn"></span></button>
 
   <button class="hamburger btn btn-primary" style="background-color:transparent;border:none;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#2BADE2" class="bi bi-list" viewBox="0 0 16 16">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#343973" class="bi bi-list" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
       </svg>
     </button>
-      <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas offcanvas-end" data-bs-scroll="false" data-bs-backdrop="false" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
       <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasTopLabel" style="color: #13AEEE;">MENUS</h5>
-          <button type="button me-2" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <h5 class="offcanvas-title" id="offcanvasTopLabel" style="color: #343973;">MENUS</h5>
+          <button type="button me-2" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
         <ul>
@@ -236,7 +241,7 @@
       <h2  class="about-tech-solutions" id="techSolutionsTitle">
   Tech Solutions <span>></span><span>></span><span>></span>
 </h2>
-        <div class="about-contents-container">
+        <div class="about-contents-container shadow-lg">
           <img src="imgs/about3.png">
           <img src="imgs/about2.png">
           <img src="imgs/about1.png">
@@ -270,26 +275,26 @@
       <div class="text-in-bg"><h1>SERVICES</h1></div>
       <h1 class="services-header" id="WeOffer">WHAT WE <span>OFFER !</span></h1>
       <div class="services-contents">
-        <div class="services-card">
-          <img src="icons/people.svg" alt="">
+        <div class="services-card shadow">
+          <img src="icons/people.svg" alt="" class="service_icon">
           <h3 id="OfferTitle1">HR Consulting</h3>
           <p id="OfferText1">Strategic HR solutions and talent acquisition services.</p>
           <img src="imgs/service1.png">
-          <a href="services.php#Communication+HR+Consulting"><span>></span></a>
+          <a href="services.php#Communication+HR+Consulting"><span><img src="icons/next.svg"></span></a>
         </div>
-        <div class="services-card">
-          <img src="icons/global.svg" alt="">
+        <div class="services-card shadow">
+          <img src="icons/global.svg" alt="" class="service_icon">
           <h3 id="OfferTitle2">Digital Presence</h3>
           <p id="OfferText2">Web design, social media management, and content creation services.</p>
           <img src="imgs/service2.png">
-          <a href="services.php#Digita+Presence"><span>></span></a>
+          <a href="services.php#Digita+Presence"><span><img src="icons/next.svg"></span></a>
         </div>
-        <div class="services-card">
-          <img src="icons/shield-security.svg" alt="">
+        <div class="services-card shadow">
+          <img src="icons/shield-security.svg" alt="" class="service_icon">
           <h3 id="OfferTitle3">Cyber Security </h3>
           <p id="OfferText3">Comprehensive security solutions and incident response services.</p>
           <img src="imgs/service3.png">
-          <a href="services.php#Cyber+Security"><span>></span></a>
+          <a href="services.php#Cyber+Security"><span><img src="icons/next.svg"></span></a>
         </div>
         <!--<div class="services-card">
           <img src="icons/monitor-mobbile.svg" alt="">
@@ -385,8 +390,8 @@
                 <h4>LK Recruitment embraces the agenda 2063, Future thrive</h4>
                 <p>LK recently participated in the “One Africa, One HR” Summit...</p>
                 <button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2BADE2" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#2BADE2" stroke-width="1.8"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#343973" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#343973" stroke-width="1.8"/>
                   </svg>
                 </button>
 
@@ -399,8 +404,8 @@
                 <h4>LK Recruitment embraces the agenda 2063, Future thrive</h4>
                 <p>LK recently participated in the “One Africa, One HR” Summit...</p>
                 <button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2BADE2" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#2BADE2" stroke-width="1.8"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#343973" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#343973" stroke-width="1.8"/>
                   </svg>
                 </button>
               </div>
@@ -414,8 +419,8 @@
                 <h4>LK Recruitment embraces the agenda 2063, Future thrive</h4>
                 <p>LK recently participated in the “One Africa, One HR” Summit...</p>
                 <button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2BADE2" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#2BADE2" stroke-width="1.8"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#343973" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#343973" stroke-width="1.8"/>
                   </svg>
                 </button>
               </div>
@@ -430,8 +435,8 @@
                 <h4>LK Recruitment embraces the agenda 2063, Future thrive</h4>
                 <p>LK recently participated in the “One Africa, One HR” Summit...</p>
                 <button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2BADE2" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#2BADE2" stroke-width="1.8"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#343973" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#343973" stroke-width="1.8"/>
                   </svg>
                 </button>
               </div>
@@ -445,8 +450,8 @@
                 <h4>LK Recruitment embraces the agenda 2063, Future thrive</h4>
                 <p>LK recently participated in the “One Africa, One HR” Summit...</p>
                 <button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2BADE2" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#2BADE2" stroke-width="1.8"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#343973" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#343973" stroke-width="1.8"/>
                   </svg>
                 </button>
               </div>
@@ -458,8 +463,8 @@
                 <h4>LK Recruitment embraces the agenda 2063, Future thrive</h4>
                 <p>LK recently participated in the “One Africa, One HR” Summit...</p>
                 <button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2BADE2" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#2BADE2" stroke-width="1.8"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#343973" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#343973" stroke-width="1.8"/>
                   </svg>
                 </button>
               </div>
@@ -516,6 +521,7 @@
               <img src="icons/linkedin.svg">
               <img src="icons/x.svg">
               <img src="icons/insta.svg">
+              <img src="icons/face.svg">
             </div>
           </div>
         </div>
@@ -529,7 +535,7 @@
         <h1 class="faqs-header" id="faqsHead">FREQUENTLY <span>ASKED </span>QUESTION !</h1>
         <div class="faqs-contents">
           <!-- Accordion -->
-        <div class="accordion" id="faqAccordion">
+          <div class="accordion" id="faqAccordion">
 
             <!-- Section 1: What Are Digital Services We Provide? -->
             <div class="accordion-item">
@@ -601,7 +607,7 @@
       <div class="subscribe">
         <div class="subscribe-contents">
           <div class="image-cut">
-            <h2 class="ms-3 mb-3 text-light" id="ChooseUsSection">Why Choose Us?</h2>
+            <h2 class="ms-3 mb-3" id="ChooseUsSection">Why Choose Us?</h2>
             <ol>
               <li id="ChooseUsli1"><span>Comprehensive Solutions:</span> We offer a full range of services including digital presence, cybersecurity, IT support, and communication & HR consulting.</li>
               <li id="ChooseUsli2"><span>Tailored Services:</span> Our solutions are customized to meet the specific challenges and goals of each client.</li>

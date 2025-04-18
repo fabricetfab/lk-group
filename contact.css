@@ -43,15 +43,15 @@ button,input{
 }
 
 .navigation-container{
-    background: linear-gradient(90deg,rgb(5, 5, 5),#111111D9,#111111D9);
+    background: white;
     z-index: 10000;
     height: 110px;
-    border-bottom: 2px solid #2BADE2;
+    border-bottom: 2px solid #343973;
     width: 100%;
     top: 0;
     left: 0;
     right: 0;
-    background: #111111D9;
+    background: white;
     backdrop-filter: blur(20px);
     z-index: 10000000000000;
     position: fixed;
@@ -78,12 +78,11 @@ button,input{
 .header-navigation{
     padding: 20px 15px;
     border-radius: 50px;
-    background: linear-gradient(90deg,rgb(5, 5, 5),#111111D9,#111111D9);
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    background: #F4F8FF;
 }
 
 .header-navigation a{
-    color: white;
+    color: black;
     padding: 10px 23px;
     border: none;
     border-radius: 30px; 
@@ -91,37 +90,36 @@ button,input{
     transition: all .5s;
 }
 .header-navigation a.active{
-    background: linear-gradient(90deg,#2BADE2,#2286AF,#185F7C);
+    background: #343973;
+    color: white;
 }
 .header-navigation a:hover{
-    background: linear-gradient(90deg,#2BADE2,#2286AF,#185F7C);
+    background: #343973;
+    color: white;
 }
 .header-links{
     position: relative;
     display: inline-block;
     margin-right: 70px;
 }
-
 .lang-btn {
     position: absolute;
-    color: white;
+    color: black;
     right: 10px;
     font-size: .7em;
-    border: 1px solid #2BADE2;
+    border: 1px solid black;
     background-color: transparent;
     gap: 5px;
-    padding: 0 3px;
+    padding: 1px 5px;
+    outline: none;
   }
   .lang-btn img{
-    width: 20px;
+    width: 30px;
   }
 
-.header-links a{
-    color: white;
-    padding: 0 15px;
-}
+  
 .header-search{
-    color: #2BADE2;
+    color: #343973;
     height: 16px;
     width: 16px;
     align-items: center;
@@ -130,15 +128,16 @@ button,input{
     transform: translateY(-50%);
     right: 10px;
 }
+
 .search-bar{
     display: none;
     padding: 7px 30px 7px 20px;
     width: 100px;
     font-size: .7em;
-    color: white;
+    color: black;
     outline: none;
     border: none;
-    border: .1em solid #2BADE2;
+    border: .1em solid #343973;
     border-radius: 20px;
     background-color: transparent;
     transition: width 1s ease-in-out;
@@ -148,10 +147,10 @@ button,input{
     width: 200px;
 }
 .header-links a{
-    color: #2BADE2;
+    color: #343973;
 }
 .header-links a:first-of-type{
-    border-right: 3px solid #2BADE2;
+    border-right: 3px solid #343973;
 }
 .contacts-hero{
     width: 100%;
@@ -210,12 +209,13 @@ button,input{
     position: relative;
     display: inline-block; /* This makes h1 fit to text width */
     padding-bottom: 7px; /* Ensure space for the lines */
+    color: #343973;
 }
 
 .container-xlg.one h1::before, 
 .container-xlg.one h1::after {
     content: "";
-    background-color: #2BADE2;
+    background-color: #343973;
     height: 3px;
     position: absolute;
     width: 50%; /* The width of the lines */
@@ -238,15 +238,15 @@ button,input{
     position: relative;
     z-index: 1;
     overflow: hidden;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .contact .contact-header{
-    color: white;
+    color: black;
     text-align: center;
 }
 .contact .contact-header span{
-    color: #13AEEE;
+    color: #343973;
 }
 .contact-contents{
     padding: 0 40px;
@@ -256,10 +256,10 @@ button,input{
     gap: 50px;
 }
 .contact-contents{
-    color: white;
+    color: black;
 }
 .contact-contents span{
-    color: #13AEEE;
+    color: #343973;
 }
 .contact-contents form{
     display: grid;
@@ -271,9 +271,10 @@ button,input{
     grid-column: span 2;
     padding: 16px;
     font-family: "poppins",sans-serif;
-    background-color: #011E2B;
-    color: #595C5F;
-    height: 250px;
+    background-color: #E1E5F1;
+    color: #343973;
+    font-size: .9em;
+    height: 200px;
     resize: none;
     border-radius: 10px;
     border: none;
@@ -283,8 +284,9 @@ button,input{
     width: 100%;
     padding: 15px 10px;
     font-family: "poppins",sans-serif;
-    background-color: #011E2B;
-    color: #595C5F;
+    background-color: #E1E5F1;
+    color: #343973;
+    font-size: .9em;
     border-radius: 10px;
     border: none;
     min-width: none;
@@ -310,7 +312,7 @@ button,input{
     border-radius: 50%;
     background-color: transparent;
     border: none;
-    box-shadow: 0 2px 5px 0 #13AEEE;
+    box-shadow: 0 2px 5px 0 #343973;
     margin-top: 20px;
 }
 .contact-contents .icons img{
@@ -338,9 +340,9 @@ button,input{
 .contact-item button{
     padding: 10px 25px;
     border-radius: 8px;
-    border: 1px solid #2BADE2;
+    border: 1px solid #343973;
     background-color: transparent;
-    color: #2BADE2;
+    color: #343973;
     font-weight: 500;
     font-size: .9em;
     cursor: pointer;
@@ -350,9 +352,9 @@ button,input{
 .contact .send{
     padding: 10px 25px;
     border-radius: 8px;
-    border: 1px solid #2BADE2;
+    border: 1px solid #343973;
     background-color: transparent;
-    color: white;
+    color: black;
     font-weight: 500;
     font-size: 1em;
     cursor: pointer;
@@ -371,15 +373,15 @@ button,input{
     transform: skewX(30deg);
     top: 0;
     transition: all 0.5s;
-    background-color:  #2BADE2;
+    background-color:  #343973;
     z-index: -1;
 }
 .contact .send:hover::before{
     left: -6%;
-    background-color: #2BADE2;
+    background-color: #343973;
 }
 .contact .send:hover{
-    color: black;
+    color: white;
 }
 
 .location{
@@ -390,13 +392,13 @@ button,input{
     position: relative;
     display: inline-block; /* This makes h1 fit to text width */
     padding-bottom: 0px; /* Ensure space for the lines */
-    color: #2BADE2;
+    color: #343973;
 }
 
 .location h1::before, 
 .location h1::after {
     content: "";
-    background-color: #2BADE2;
+    background-color: #343973;
     height: 3px;
     position: absolute;
     width: 50%; /* The width of the lines */
@@ -412,7 +414,7 @@ button,input{
     bottom: -15px; /* Distance from the bottom */
 }
 .location h2{
-    color: #2BADE2;
+    color: #343973;
 }
 .location h2 span{
     font-family: "Phudu-big";
@@ -431,11 +433,11 @@ button,input{
 
 .location-text{
     padding: 0 80px 100px 80px;
-    color: white;
+    color: black;
 }
 
 .partners{
-    color: #2BADE2;
+    color: #343973;
     padding: 0 80px;
     text-align: center;
     align-items: center;
@@ -451,7 +453,7 @@ button,input{
     position: absolute;
     width: 10%;
     height: 3px;
-    background-color: #2BADE2;
+    background-color: #343973;
     left: 50%;
     transform: translateX(-50%);
     bottom: -10px;
@@ -481,7 +483,7 @@ button,input{
 
 
 .footer{
-    background-color: #010C11;
+    background-color: #E1E5F1;
     padding: 20px 40px 0 40px;
     display: grid;
     width: 100%;
@@ -502,7 +504,7 @@ button,input{
 }
 .footer div:first-of-type h5{
     text-align: center;
-    color: white;
+    color: #343973;
     font-family: "phudu-big";
     margin-top: 15px;
 }
@@ -514,13 +516,13 @@ button,input{
 }
 .footer div h4{
     font-size: 1em;
-    color: white;
+    color: black;
     font-family: "phudu-big";
 }
 .footer div a{
     font-size: .9em;
     opacity: 1;
-    color: white;
+    color: black;
     font-family: "poppins";
     transition: all .3s ease;
 }
@@ -528,7 +530,7 @@ button,input{
     transform: scale(1.02);
 }
 .footer div a.active{
-    color: #2BADE2;
+    color: #343973;
     position: relative;
 }
 .footer div a.active:after{
@@ -536,7 +538,7 @@ button,input{
     position: absolute;
     width: 10%;
     height: 2px;
-    background-color: #2BADE2;
+    background-color: #343973;
     bottom: -5px;
     left: 0;
 }
@@ -568,9 +570,10 @@ button,input{
     display: none;
 }
 .offcanvas{
-    background-color: #111111;
-    color: white;
+    background-color: #F4F8FF;
+    color: black;
     max-width: 300px;
+    z-index: 100000000000000000000000;
     position: fixed;
     top: 0; 
     right: 0; 
@@ -593,7 +596,7 @@ button,input{
     font-size: 1.3em;
     padding: 10px;
     margin-bottom: 5px;
-    color: white;
+    color: black;
     transition: all .3s;
     transform: translateX(10px);
 }
@@ -602,8 +605,9 @@ button,input{
 }
 .offcanvas-body ul li svg{
     margin-right: 10px;
-    color: #13AEEE;
+    color: #343973;
 }
+
 
 
 @media (max-width: 1200px) {
@@ -619,7 +623,7 @@ button,input{
         margin-top: -200px;
     }
     .location h2{
-        color: #2BADE2;
+        color: #343973;
         font-size: 1.1em;
     }
     
@@ -679,7 +683,7 @@ button,input{
         grid-row: 1;
     }
     form input,form textarea{
-        font-size: .9em;
+        font-size: .8em;
     }
     .contact-item button{
         margin: auto;
@@ -775,7 +779,7 @@ button,input{
     .contact{
         width: 100%;
         padding: 0 20px;
-        margin-bottom: 50px;
+        padding-bottom: 50px;
     }
     .contact-contents{
         width: 100%;
@@ -908,13 +912,13 @@ button,input{
     }
     .footer div h4{
         font-size: .9em;
-        color: white;
+        color: black;
         font-family: "phudu-big";
     }
     .footer div a{
         font-size: .8em;
         opacity: 1;
-        color: white;
+        color: black;
         font-family: "poppins";
         transition: all .3s ease;
     }
