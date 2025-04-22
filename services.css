@@ -279,18 +279,46 @@ button,input{
     font-size: 2em;
     line-height: 1;
 }
-
 .service1-contents p,.service1-contents li{
+    font-size: .9em;
+    line-height: 1.7;
+    font-weight: 300;
+    margin: 20px 0;
+    opacity: .8;
+  }
+.service1-contents p,.service1-contents .nesting li{
   font-size: .9em;
   line-height: 1.7;
   font-weight: 300;
   margin: 20px 0;
   opacity: .8;
 }
-.service1-contents li span{
+.service1-contents p,.service1-contents .nested li{
+    font-size: .9em;
+    line-height: 1.7;
+    font-weight: 300;
+    margin: 10px 0;
+    opacity: 1;
+    field-sizing: fl;
+  }
+.service1-contents .nesting li span{
   font-weight: 600;
   font-size: 1.3em;
   color: black;
+}
+.nesting table{
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+.nesting table tr{
+    padding: 10px;
+    border: 1px solid black;
+}
+.nesting table td{
+    padding: 10px;
+    border: 1px solid black;
 }
 .service1-contents button{
     padding: 7px 25px;
@@ -521,14 +549,17 @@ button,input{
     .service1-contents{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 50px;
+        gap: 20px;
         overflow: hidden;
         color: black;
         margin-top: 60px;
         grid-template-rows: auto auto;
         position: relative;
-        padding-bottom: 40px;
-        text-align: center;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+    .nesting{
+        padding-left: 10px;
     }
 
     .service1-contents .with-img{
