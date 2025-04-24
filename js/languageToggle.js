@@ -88,17 +88,14 @@ const translations = {
     placeholderMessage: 'Type a message...',
     faqsSection: "FAQs",
     faqsHead: "<h1 class='faqs-header' id='faqsHead'>FREQUENTLY <span>ASKED </span>QUESTIONS !</h1>",
-    WeProvide: "What Are Digital Services We Provide?",
-    WeProvideText: "Here you can describe the digital services your company provides.",
-    WeWork: "How do we work?",
-    WeWorkText: "Explain how your company operates, your processes, and workflow.",
-    toReset: "How do I reset my password?",
-    ToResetText: "If you’ve forgotten your password, follow these steps:",
-    ToResetItem1: "Click on the 'Forgot Password' link on the login page.",
-    ToResetItem2: "Enter your email address and follow the instructions in your inbox.",
-    ToResetItem3: "Create a new password and log in again.",
-    WhyUs: "Why LK Group for Your Choice",
-    WhyUsText: "Explain why users should choose LK Group, outlining the benefits, trust factors, and unique features that set you apart.",
+    WeProvide: "What industries does LK GROUP serve?",
+    WeProvideText: "We serve a wide range of industries including finance, healthcare, education, retail, and technology. Our services are designed to cater to the unique needs of each sector, ensuring optimal results and business growth.",
+    WeWork: "How do I get started with LK GROUP's services?",
+    WeWorkText: "Simply contact us via our website or schedule a consultation. We will discuss your business needs, assess your challenges, and create a tailored plan to help you achieve your goals.",
+    toReset: "Can LK GROUP assist with ongoing IT support and maintenance?",
+    ToResetItem1: "Yes, we offer ongoing IT support and maintenance services to ensure that your systems run smoothly. This includes remote assistance, software and hardware updates, and proactive issue monitoring.",
+    WhyUs: "What is the process for customizing a financial strategy for my business?",
+    WhyUsText: "Our team of financial consultants works with you to understand your business goals, assess your current financial situation, and develop a personalized strategy to improve cash flow, reduce risks, and optimize profitability.",
     footerH4: "LK GROUP",
     footerMenu1: "Resources",
     footerMenuLink1: "Home",
@@ -213,17 +210,14 @@ const translations = {
     placeholderMessage: 'Tapez un message...',
     faqsSection: "FAQ",
     faqsHead: "<h1 class='faqs-header' id='faqsHead'>QUESTIONS <span>FRÉQUEMMENT</span> POSÉES !</h1>",
-    WeProvide: "Quels services numériques proposons-nous ?",
-    WeProvideText: "Ici, vous pouvez décrire les services numériques que votre entreprise propose.",
-    WeWork: "Comment travaillons-nous ?",
-    WeWorkText: "Expliquez comment fonctionne votre entreprise, vos processus et votre flux de travail.",
-    toReset: "Comment réinitialiser mon mot de passe ?",
-    ToResetText: "Si vous avez oublié votre mot de passe, suivez ces étapes :",
-    ToResetItem1: "Cliquez sur le lien 'Mot de passe oublié' sur la page de connexion.",
-    ToResetItem2: "Entrez votre adresse e-mail et suivez les instructions dans votre boîte de réception.",
-    ToResetItem3: "Créez un nouveau mot de passe et reconnectez-vous.",
-    WhyUs: "Pourquoi choisir LK Group",
-    WhyUsText: "Expliquez pourquoi les utilisateurs devraient choisir LK Group, en mettant en avant les avantages, la confiance et les caractéristiques uniques qui vous distinguent.",
+    WeProvide: "Quels secteurs d'activité LK GROUP dessert-elle ?",
+    WeProvideText: "Nous servons une large gamme de secteurs, notamment la finance, la santé, l'éducation, le commerce de détail et la technologie. Nos services sont conçus pour répondre aux besoins spécifiques de chaque secteur, garantissant ainsi des résultats optimaux et la croissance de votre entreprise.",
+    WeWork: "Comment puis-je commencer avec les services de LK GROUP ?",
+    WeWorkText: "Il vous suffit de nous contacter via notre site internet ou de planifier une consultation. Nous discuterons de vos besoins commerciaux, évaluerons vos défis et élaborerons un plan sur mesure pour vous aider à atteindre vos objectifs.",
+    toReset: "LK GROUP peut-il fournir une assistance et une maintenance informatique continue ?",
+    ToResetItem1: "Oui, nous proposons des services de support et de maintenance informatique continus pour garantir le bon fonctionnement de vos systèmes. Cela inclut l'assistance à distance, les mises à jour logicielles et matérielles, ainsi que la surveillance proactive des problèmes.",
+    WhyUs: "Quel est le processus pour personnaliser une stratégie financière pour mon entreprise ?",
+    WhyUsText: "Notre équipe de consultants financiers travaille avec vous pour comprendre vos objectifs commerciaux, évaluer votre situation financière actuelle et élaborer une stratégie personnalisée visant à améliorer la trésorerie, réduire les risques et optimiser la rentabilité.",
     footerH4: "LK GROUP",
     footerMenu1: "Ressources",
     footerMenuLink1: "Accueil",
@@ -380,10 +374,7 @@ function toggleLanguage() {
   document.getElementById("WeWork").innerHTML = translations[currentLanguage].WeWork;
   document.getElementById("WeWorkText").innerHTML = translations[currentLanguage].WeWorkText;
   document.getElementById("toReset").innerHTML = translations[currentLanguage].toReset;
-  document.getElementById("ToResetText").innerHTML = translations[currentLanguage].ToResetText;
   document.getElementById("ToResetItem1").innerHTML = translations[currentLanguage].ToResetItem1;
-  document.getElementById("ToResetItem2").innerHTML = translations[currentLanguage].ToResetItem2;
-  document.getElementById("ToResetItem3").innerHTML = translations[currentLanguage].ToResetItem3;
   document.getElementById("WhyUs").innerHTML = translations[currentLanguage].WhyUs;
   document.getElementById("WhyUsText").innerHTML = translations[currentLanguage].WhyUsText;
 
@@ -515,10 +506,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("WeWork").innerHTML = translations[currentLanguage].WeWork;
     document.getElementById("WeWorkText").innerHTML = translations[currentLanguage].WeWorkText;
     document.getElementById("toReset").innerHTML = translations[currentLanguage].toReset;
-    document.getElementById("ToResetText").innerHTML = translations[currentLanguage].ToResetText;
     document.getElementById("ToResetItem1").innerHTML = translations[currentLanguage].ToResetItem1;
-    document.getElementById("ToResetItem2").innerHTML = translations[currentLanguage].ToResetItem2;
-    document.getElementById("ToResetItem3").innerHTML = translations[currentLanguage].ToResetItem3;
     document.getElementById("WhyUs").innerHTML = translations[currentLanguage].WhyUs;
     document.getElementById("WhyUsText").innerHTML = translations[currentLanguage].WhyUsText;
 

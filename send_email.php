@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Content
         $mail->isHTML(true);  // Send email as HTML
-        $mail->Subject = "New message from $name regarding $subject";
+        $mail->Subject = "New message from $name regarding $service";
 
         // Email body with HTML and CSS styling for a more appealing design
         $mail->Body    = '
@@ -109,7 +109,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <p>You have received a new message from your website contact form.</p>
                     <p><strong>Name:</strong> ' . $name . '</p>
                     <p><strong>Email:</strong> ' . $mailtoLink . '</p>
-                    <p><strong>Subject:</strong> ' . $subject . '</p>
+                    <p><strong>location:</strong> ' . $subject . '</p>
                     <p><strong>Service:</strong> ' . $service . '</p>
                     <p><strong>Message:</strong><br>' . nl2br($message) . '</p>
                     <p>If you wish to reply, click the button below to send an email directly to ' . $email . '.</p>

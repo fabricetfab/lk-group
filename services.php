@@ -163,7 +163,7 @@
           <li id="ServiceList1"><span>Web Design : </span> "We craft stunning, user-friendly websites that reflect your brand identity and engage your audience. From initial concept to launch, we handle every aspect of the design process, ensuring a seamless and professional experience."</li>
           <li id="ServiceList2"><span>Social Media Management : </span>  "We develop and implement engaging social media strategies to connect with your target audience on the platforms they use most. We create captivating content, manage your social media accounts, and track your performance, ensuring your brand is seen and heard." </li>
           <li id="ServiceList3"><span>Social Media Management : </span>  "We develop and implement engaging social media strategies to connect with your target audience on the platforms they use most. We create captivating content, manage your social media accounts, and track your performance, ensuring your brand is seen and heard." </li>
-          <li id="ServiceList4"><span> Content Creation : </span>   "We craft compelling content that educates, entertains, and inspires your audience. From blog posts and articles to website copy and social media captions, we provide high-quality content that resonates with your target market and drives engagement." </li>
+         
           </ul>
         </div>
         <div class="with-img">
@@ -174,137 +174,109 @@
     </div>
 
     <div class="service1 position-relative" id="OffshoreIT">
-      <div class="service-head first">
-        <h3 id="ServceHeader1">Offshore IT Solutions</h3>
-      </div>
-      <div class="service1-contents">
-      <div>
-        <h5 class="h5">
-          Web Development & Remote Teams from Kigali, Rwanda
-        </h5>
-        <p>
-          At LK GROUP, we offer scalable, cost-effective offshore IT services from Rwanda — from modern website builds to assembling high-performing remote tech teams.
-        </p>
+  <div class="service-head first">
+    <h3 id="ServceHeader1">Offshore IT Solutions</h3>
+  </div>
+  <div class="service1-contents">
+    <div>
+      <h5 id="OffshoreSubHeader">Web Development & Remote Teams from Kigali, Rwanda</h5>
+      <p id="OffshoreIntro">
+        At LK GROUP, we offer scalable, cost-effective offshore IT services from Rwanda — from modern website builds to assembling high-performing remote tech teams.
+      </p>
 
-        <ul class="nesting">
-          <li>
-            <span>Website Design & Development:</span>
-            <ul class="nested">
-              <li>Custom-built websites: responsive, mobile-friendly, and brand-aligned</li>
-              <li>E-Commerce Solutions: secure stores with payment integration & product management</li>
-              <li>CMS Platforms:
-                <ul>
-                  <li>WordPress</li>
-                  <li>Shopify</li>
-                  <li>Custom-built platforms with admin dashboards</li>
-                </ul>
-              </li>
-              <li>On-page SEO: meta tags, speed optimization, mobile-first design</li>
+      <ul class="nesting">
+        <li>
+          <span id="WebsiteDevelopmentTitle">Website Design & Development:</span>
+          <ul class="nested" id="WebsiteDevelopmentList">
+            <li id="WebsiteCustom">Custom-built websites: responsive, mobile-friendly, and brand-aligned</li>
+            <li id="WebsiteEcom">E-Commerce Solutions: secure stores with payment integration & product management</li>
+            <li id="WebsiteCMS">CMS Platforms:</li>
+            <ul>
+              <li id="CMSWordPress">WordPress</li>
+              <li id="CMSShopify">Shopify</li>
+              <li id="CMSCustom">Custom-built platforms with admin dashboards</li>
             </ul>
-          </li>
+            <li id="WebsiteSEO">On-page SEO: meta tags, speed optimization, mobile-first design</li>
+          </ul>
+        </li>
 
-          <li>
-            <span>Dedicated Remote Teams:</span>
-            <ul class="nested">
-              <li>Technologies:
-                <ul>
-                  <li>PHP, JavaScript, React, Laravel, .NET</li>
-                </ul>
-              </li>
-              <li>Engagement:
-                <ul>
-                  <li>Short-term sprints or ongoing contracts</li>
-                  <li>Part-time or full-time options</li>
-                </ul>
-              </li>
-              <li>Cultural Fit:
-                <ul>
-                  <li>English/French-speaking</li>
-                  <li>Time zone-aligned with Europe</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
+        <li>
+          <span id="RemoteTeamsTitle">Dedicated Remote Teams:</span>
+          <ul class="nested">
+            <li id="RemoteTech">Technologies: PHP, JavaScript, React, Laravel, .NET</li>
+            <li id="RemoteEngagement">Engagement: Short-term sprints or ongoing contracts, part-time or full-time</li>
+            <li id="RemoteCulture">Cultural Fit: English/French-speaking, time zone-aligned with Europe</li>
+          </ul>
+        </li>
 
-          <li>
-            <span>Ongoing Maintenance & Support:</span>
-            <ul class="nested">
-              <li>Performance monitoring</li>
-              <li>Bug fixing and security updates</li>
-              <li>Server and hosting management (optional)</li>
-              <li>24/7 tech support (for premium plans)</li>
-            </ul>
-          </li>
+        <li>
+          <span id="MaintenanceTitle">Ongoing Maintenance & Support:</span>
+          <ul class="nested" id="MaintenanceList">
+            <li id="MaintenancePerformance">Performance monitoring</li>
+            <li id="MaintenanceBugFix">Bug fixing and security updates</li>
+            <li id="MaintenanceHosting">Server and hosting management (optional)</li>
+            <li id="MaintenanceSupport">24/7 tech support (for premium plans)</li>
+          </ul>
+        </li>
 
-          <li>
-            <span>UI/UX & Digital Branding:</span>
-            <ul class="nested">
-              <li>Modern web/mobile interfaces</li>
-              <li>Custom landing pages & lead capture forms</li>
-              <li>Logo design and branding kits</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+        <li>
+          <span id="UIUXTitle">UI/UX & Digital Branding:</span>
+          <ul class="nested" id="UIUXList">
+            <li id="UIUXInterfaces">Modern web/mobile interfaces</li>
+            <li id="UIUXLanding">Custom landing pages & lead capture forms</li>
+            <li id="UIUXLogo">Logo design and branding kits</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-      <div>
-        <ul class="nesting">
-          <li style="margin-top: 0">
-            <span>Why Choose Us:</span>
-            <ul class="nested">
-              <li>Kigali – A fast-growing East African tech hub</li>
-              <li>Lower costs – up to 50% cheaper than Europe</li>
-              <li>Skilled, remote-ready talent</li>
-              <li>Time zone advantage – Ideal for European clients</li>
-            </ul>
-          </li>
+    <div>
+      <ul class="nesting">
+        <li style="margin-top: 0">
+          <span id="WhyChooseUsTitle">Why Choose Us:</span>
+          <ul class="nested" id="WhyChooseUsList">
+            <li id="WhyKigali">Kigali – A fast-growing East African tech hub</li>
+            <li id="WhyCosts">Lower costs – up to 50% cheaper than Europe</li>
+            <li id="WhyTalent">Skilled, remote-ready talent</li>
+            <li id="WhyTimeZone">Time zone advantage – Ideal for European clients</li>
+          </ul>
+        </li>
 
-          <li>
-            <span>Who This Is For:</span>
-            <ul class="nested">
-              <li>Startups needing fast & affordable MVPs</li>
-              <li>Agencies looking for white-label partners</li>
-              <li>SMEs building remote teams</li>
-              <li>Organizations expanding into Africa needing local IT presence</li>
-            </ul>
-          </li>
+        <li>
+          <span id="WhoIsThisForTitle">Who This Is For:</span>
+          <ul class="nested" id="WhoIsThisForList">
+            <li id="ForStartups">Startups needing fast & affordable MVPs</li>
+            <li id="ForAgencies">Agencies looking for white-label partners</li>
+            <li id="ForSMEs">SMEs building remote teams</li>
+            <li id="ForOrgs">Organizations expanding into Africa needing local IT presence</li>
+          </ul>
+        </li>
 
-          <li>
-            <span>Pricing Overview (Flexible Plans):</span>
-            <table>
-              <tr>
-                <td><strong>Basic Website</strong></td>
-                <td>€500+</td>
-              </tr>
-              <tr>
-                <td><strong>Business Website</strong></td>
-                <td>€850+</td>
-              </tr>
-              <tr>
-                <td><strong>E-Commerce Site</strong></td>
-                <td>€1,200+</td>
-              </tr>
-              <tr>
-                <td><strong>Dedicated Developer</strong></td>
-                <td>€900/month</td>
-              </tr>
-            </table>
-            <p>All packages are customizable based on your project scope.</p>
-          </li>
+        <li>
+          <span id="PricingTitle">Pricing Overview (Flexible Plans):</span>
+          <table>
+            <tr><td><strong id="BasicSite">Basic Website</strong></td><td>€500+</td></tr>
+            <tr><td><strong id="BusinessSite">Business Website</strong></td><td>€850+</td></tr>
+            <tr><td><strong id="EcomSite">E-Commerce Site</strong></td><td>€1,200+</td></tr>
+            <tr><td><strong id="DevPrice">Dedicated Developer</strong></td><td>€900/month</td></tr>
+          </table>
+          <p id="PricingNote">All packages are customizable based on your project scope.</p>
+        </li>
 
-          <li>
-            <span>Next Steps:</span>
-            <ul class="nested">
-              <li>Book a free consultation call</li>
-              <li>Tell us about your goals (we'll send you a short form)</li>
-              <li>Receive a tailored quote within 48 hours</li>
-              <li>Launch your project with our Kigali-based team</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+        <li>
+          <span id="NextStepsTitle">Next Steps:</span>
+          <ul class="nested" id="NextStepsList">
+            <li id="NextCall">Book a free consultation call</li>
+            <li id="NextGoals">Tell us about your goals (we'll send you a short form)</li>
+            <li id="NextQuote">Receive a tailored quote within 48 hours</li>
+            <li id="NextLaunch">Launch your project with our Kigali-based team</li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </div>
+</div>
+
 
     <div class="service1 position-relative" id="Cyber+Security">
       <div class="service1-contents container-xlg">

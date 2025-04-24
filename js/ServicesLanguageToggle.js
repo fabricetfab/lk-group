@@ -61,6 +61,7 @@ const translations = {
     ServiceList14: "<span>Branding: </span>\"We create a strong brand identity that reflects your values, mission, and vision. We create a consistent brand experience across all your marketing materials, online presence, and internal communications.\"",
     ServiceList15: "<span>HR Consulting: </span>\"We provide expert advice on all aspects of human resource management, including recruitment, onboarding, performance management, and employee engagement.\"",
     ServiceList16: "<span>Talent Acquisition: </span>\"We leverage our network and innovative recruiting strategies to identify and attract top talent. We help you build a strong talent pool and find the best people for your organization.\"",
+     WhyChooseUs: "Why Choose Us?",
     WhyChooseUsH1: "13+ Years",
     WhyChooseUsP1: "Of Experience Proven track record of delivering exceptional results",
 
@@ -68,7 +69,60 @@ const translations = {
     WhyChooseUsP2: "Certified professionals dedicated to your success.",
 
     WhyChooseUsH3: "Complete solutions",
-    WhyChooseUsP3: "End-to-end services covering all your technology needs"
+    WhyChooseUsP3: "End-to-end services covering all your technology needs",
+    ServceHeader1: "Offshore IT Solutions",
+    OffshoreSubHeader: "Web Development & Remote Teams from Kigali, Rwanda",
+    OffshoreIntro: "At LK GROUP, we offer scalable, cost-effective offshore IT services from Rwanda — from modern website builds to assembling high-performing remote tech teams.",
+  
+    WebsiteDevelopmentTitle: "Website Design & Development:",
+    WebsiteCustom: "Custom-built websites: responsive, mobile-friendly, and brand-aligned",
+    WebsiteEcom: "E-Commerce Solutions: secure stores with payment integration & product management",
+    WebsiteCMS: "CMS Platforms:",
+    CMSWordPress: "WordPress",
+    CMSShopify: "Shopify",
+    CMSCustom: "Custom-built platforms with admin dashboards",
+    WebsiteSEO: "On-page SEO: meta tags, speed optimization, mobile-first design",
+  
+    RemoteTeamsTitle: "Dedicated Remote Teams:",
+    RemoteTech: "Technologies: PHP, JavaScript, React, Laravel, .NET",
+    RemoteEngagement: "Engagement: Short-term sprints or ongoing contracts, part-time or full-time",
+    RemoteCulture: "Cultural Fit: English/French-speaking, time zone-aligned with Europe",
+  
+    MaintenanceTitle: "Ongoing Maintenance & Support:",
+    MaintenancePerformance: "Performance monitoring",
+    MaintenanceBugFix: "Bug fixing and security updates",
+    MaintenanceHosting: "Server and hosting management (optional)",
+    MaintenanceSupport: "24/7 tech support (for premium plans)",
+  
+    UIUXTitle: "UI/UX & Digital Branding:",
+    UIUXInterfaces: "Modern web/mobile interfaces",
+    UIUXLanding: "Custom landing pages & lead capture forms",
+    UIUXLogo: "Logo design and branding kits",
+  
+    WhyChooseUsTitle: "Why Choose Us:",
+    WhyKigali: "Kigali – A fast-growing East African tech hub",
+    WhyCosts: "Lower costs – up to 50% cheaper than Europe",
+    WhyTalent: "Skilled, remote-ready talent",
+    WhyTimeZone: "Time zone advantage – Ideal for European clients",
+  
+    WhoIsThisForTitle: "Who This Is For:",
+    ForStartups: "Startups needing fast & affordable MVPs",
+    ForAgencies: "Agencies looking for white-label partners",
+    ForSMEs: "SMEs building remote teams",
+    ForOrgs: "Organizations expanding into Africa needing local IT presence",
+  
+    PricingTitle: "Pricing Overview (Flexible Plans):",
+    BasicSite: "Basic Website",
+    BusinessSite: "Business Website",
+    EcomSite: "E-Commerce Site",
+    DevPrice: "Dedicated Developer",
+    PricingNote: "All packages are customizable based on your project scope.",
+  
+    NextStepsTitle: "Next Steps:",
+    NextCall: "Book a free consultation call",
+    NextGoals: "Tell us about your goals (we'll send you a short form)",
+    NextQuote: "Receive a tailored quote within 48 hours",
+    NextLaunch: "Launch your project with our Kigali-based team",
 
 
 
@@ -117,6 +171,7 @@ const translations = {
     ServiceHeader2: "Cybersécurité",
     ServiceSubHeader2: "Protégez votre entreprise des menaces cybernétiques",
     ServiceP2: "\"Les menaces de cybersécurité deviennent de plus en plus sophistiquées et omniprésentes. Chez LK GROUP, nous proposons des solutions de cybersécurité complètes pour protéger les données, les systèmes et la réputation de votre entreprise.\"",
+    ServiceList4: "Création de Contenu : Nous créons du contenu captivant qui éduque, divertit et inspire votre public. Des articles de blog et des articles aux textes de sites web et légendes sur les réseaux sociaux, nous fournissons du contenu de haute qualité qui résonne avec votre marché cible et favorise l'engagement.",
     ServiceList5: "<span>Évaluation de la cybersécurité : </span>\"Nous effectuons des évaluations approfondies de la cybersécurité pour identifier les vulnérabilités potentielles dans votre réseau, vos systèmes et vos applications. Nos experts fournissent un rapport détaillé avec des recommandations pour la correction et des améliorations continues de la sécurité.\"",
     ServiceList6: "<span>Solutions de sécurité : </span>\"Nous mettons en œuvre une gamme de solutions de sécurité adaptées à vos besoins et à votre profil de risque spécifiques, y compris la gestion des pare-feu, le chiffrement des données, la détection des intrusions, la protection anti-malware et le filtrage des e-mails de phishing et de spam.\"",
     ServiceList7: "<span>Réponse aux incidents : </span>\"En cas de violation de sécurité, notre équipe fournit des services de réponse aux incidents rapides et experts pour minimiser les dommages et restaurer vos systèmes rapidement. Nous vous aidons également avec l'analyse et la correction post-incident, vous aidant à récupérer et à prévenir de futures attaques.\"",
@@ -136,6 +191,7 @@ const translations = {
     ServiceList14: "<span>Branding : </span>\"Nous créons une identité de marque forte qui reflète vos valeurs, votre mission et votre vision. Nous créons une expérience de marque cohérente sur tous vos supports marketing, votre présence en ligne et vos communications internes.\"",
     ServiceList15: "<span>Conseil en RH : </span>\"Nous fournissons des conseils experts sur tous les aspects de la gestion des ressources humaines, y compris le recrutement, l'intégration, la gestion des performances et l'engagement des employés.\"",
     ServiceList16: "<span>Acquisition de talents : </span>\"Nous mettons à profit notre réseau et nos stratégies de recrutement innovantes pour identifier et attirer les meilleurs talents. Nous vous aidons à constituer un vivier de talents solide et à trouver les meilleures personnes pour votre organisation.\"",
+    WhyChooseUs: "Pourquoi nous choisir ?",
     WhyChooseUsH1: "13+ Ans",
     WhyChooseUsP1: "D'expérience. Un parcours prouvé de résultats exceptionnels.",
 
@@ -143,7 +199,60 @@ const translations = {
     WhyChooseUsP2: "Des professionnels certifiés dédiés à votre succès.",
 
     WhyChooseUsH3: "Solutions complètes",
-    WhyChooseUsP3: "Des services de bout en bout couvrant tous vos besoins technologiques"
+    WhyChooseUsP3: "Des services de bout en bout couvrant tous vos besoins technologiques",
+    ServceHeader1: "Solutions informatiques offshore",
+    OffshoreSubHeader: "Développement Web & Équipes distantes depuis Kigali, Rwanda",
+    OffshoreIntro: "Chez LK GROUP, nous proposons des services informatiques offshore évolutifs et rentables depuis le Rwanda — de la création de sites modernes à la mise en place d’équipes techniques performantes.",
+  
+    WebsiteDevelopmentTitle: "Conception & Développement de sites web :",
+    WebsiteCustom: "Sites web sur mesure : responsive, adaptés aux mobiles et alignés à votre marque",
+    WebsiteEcom: "Solutions E-commerce : boutiques sécurisées avec paiement intégré & gestion de produits",
+    WebsiteCMS: "Plateformes CMS :",
+    CMSWordPress: "WordPress",
+    CMSShopify: "Shopify",
+    CMSCustom: "Plateformes sur mesure avec tableaux de bord administrateurs",
+    WebsiteSEO: "SEO on-page : balises meta, optimisation de vitesse, design mobile-first",
+  
+    RemoteTeamsTitle: "Équipes Distantes Dédiées :",
+    RemoteTech: "Technologies : PHP, JavaScript, React, Laravel, .NET",
+    RemoteEngagement: "Engagement : sprints à court terme ou contrats continus, temps partiel ou plein",
+    RemoteCulture: "Adaptation culturelle : anglophones/francophones, alignés sur les fuseaux européens",
+  
+    MaintenanceTitle: "Maintenance & Support continu :",
+    MaintenancePerformance: "Surveillance des performances",
+    MaintenanceBugFix: "Correction de bugs et mises à jour de sécurité",
+    MaintenanceHosting: "Gestion des serveurs et hébergement (optionnel)",
+    MaintenanceSupport: "Support technique 24/7 (plans premium)",
+  
+    UIUXTitle: "UI/UX & Branding Digital :",
+    UIUXInterfaces: "Interfaces web/mobile modernes",
+    UIUXLanding: "Pages d’atterrissage personnalisées & formulaires de capture de leads",
+    UIUXLogo: "Conception de logos et kits de marque",
+  
+    WhyChooseUsTitle: "Pourquoi nous choisir :",
+    WhyKigali: "Kigali – Un hub technologique en pleine croissance en Afrique de l'Est",
+    WhyCosts: "Coûts réduits – jusqu’à 50 % moins chers qu’en Europe",
+    WhyTalent: "Talents qualifiés et prêts pour le télétravail",
+    WhyTimeZone: "Avantage de fuseau horaire – Idéal pour les clients européens",
+  
+    WhoIsThisForTitle: "Pour qui est-ce :",
+    ForStartups: "Startups ayant besoin de MVP rapides et abordables",
+    ForAgencies: "Agences recherchant des partenaires en marque blanche",
+    ForSMEs: "PME constituant des équipes distantes",
+    ForOrgs: "Organisations s’implantant en Afrique avec un besoin IT local",
+  
+    PricingTitle: "Aperçu des Tarifs (Plans Flexibles) :",
+    BasicSite: "Site Web de Base",
+    BusinessSite: "Site Web d’Entreprise",
+    EcomSite: "Site E-Commerce",
+    DevPrice: "Développeur Dédié",
+    PricingNote: "Tous les forfaits sont personnalisables selon votre projet.",
+  
+    NextStepsTitle: "Prochaines Étapes :",
+    NextCall: "Réservez un appel de consultation gratuit",
+    NextGoals: "Parlez-nous de vos objectifs (nous vous enverrons un court formulaire)",
+    NextQuote: "Recevez un devis personnalisé sous 48h",
+    NextLaunch: "Lancez votre projet avec notre équipe basée à Kigali",
 
 
      
@@ -232,6 +341,7 @@ function toggleLanguage() {
    document.getElementById("ServiceList16").innerHTML = translations[currentLanguage].ServiceList16;
 
    // Why choose us
+   document.getElementById("WhyChooseUs").innerHTML = translations[currentLanguage].WhyChooseUs;
    document.getElementById("WhyChooseUsH1").innerHTML = translations[currentLanguage].WhyChooseUsH1;
    document.getElementById("WhyChooseUsP1").innerHTML = translations[currentLanguage].WhyChooseUsP1;
 
@@ -240,6 +350,64 @@ function toggleLanguage() {
 
    document.getElementById("WhyChooseUsH3").innerHTML = translations[currentLanguage].WhyChooseUsH3;
    document.getElementById("WhyChooseUsP3").innerHTML = translations[currentLanguage].WhyChooseUsP3;
+
+
+   // off shore IT solutions
+
+   document.getElementById("ServceHeader1").innerHTML = translations[currentLanguage].ServceHeader1;
+   document.getElementById("OffshoreSubHeader").innerHTML = translations[currentLanguage].OffshoreSubHeader;
+   document.getElementById("OffshoreIntro").innerHTML = translations[currentLanguage].OffshoreIntro;
+
+   document.getElementById("WebsiteDevelopmentTitle").innerHTML = translations[currentLanguage].WebsiteDevelopmentTitle;
+   document.getElementById("WebsiteCustom").innerHTML = translations[currentLanguage].WebsiteCustom;
+   document.getElementById("WebsiteEcom").innerHTML = translations[currentLanguage].WebsiteEcom;
+   document.getElementById("WebsiteCMS").innerHTML = translations[currentLanguage].WebsiteCMS;
+   document.getElementById("CMSWordPress").innerHTML = translations[currentLanguage].CMSWordPress;
+   document.getElementById("CMSShopify").innerHTML = translations[currentLanguage].CMSShopify;
+   document.getElementById("CMSCustom").innerHTML = translations[currentLanguage].CMSCustom;
+   document.getElementById("WebsiteSEO").innerHTML = translations[currentLanguage].WebsiteSEO;
+
+   document.getElementById("RemoteTeamsTitle").innerHTML = translations[currentLanguage].RemoteTeamsTitle;
+   document.getElementById("RemoteTech").innerHTML = translations[currentLanguage].RemoteTech;
+   document.getElementById("RemoteEngagement").innerHTML = translations[currentLanguage].RemoteEngagement;
+   document.getElementById("RemoteCulture").innerHTML = translations[currentLanguage].RemoteCulture;
+
+   document.getElementById("MaintenanceTitle").innerHTML = translations[currentLanguage].MaintenanceTitle;
+   document.getElementById("MaintenancePerformance").innerHTML = translations[currentLanguage].MaintenancePerformance;
+   document.getElementById("MaintenanceBugFix").innerHTML = translations[currentLanguage].MaintenanceBugFix;
+   document.getElementById("MaintenanceHosting").innerHTML = translations[currentLanguage].MaintenanceHosting;
+   document.getElementById("MaintenanceSupport").innerHTML = translations[currentLanguage].MaintenanceSupport;
+
+   document.getElementById("UIUXTitle").innerHTML = translations[currentLanguage].UIUXTitle;
+   document.getElementById("UIUXInterfaces").innerHTML = translations[currentLanguage].UIUXInterfaces;
+   document.getElementById("UIUXLanding").innerHTML = translations[currentLanguage].UIUXLanding;
+   document.getElementById("UIUXLogo").innerHTML = translations[currentLanguage].UIUXLogo;
+
+   document.getElementById("WhyChooseUsTitle").innerHTML = translations[currentLanguage].WhyChooseUsTitle;
+   document.getElementById("WhyKigali").innerHTML = translations[currentLanguage].WhyKigali;
+   document.getElementById("WhyCosts").innerHTML = translations[currentLanguage].WhyCosts;
+   document.getElementById("WhyTalent").innerHTML = translations[currentLanguage].WhyTalent;
+   document.getElementById("WhyTimeZone").innerHTML = translations[currentLanguage].WhyTimeZone;
+
+   document.getElementById("WhoIsThisForTitle").innerHTML = translations[currentLanguage].WhoIsThisForTitle;
+   document.getElementById("ForStartups").innerHTML = translations[currentLanguage].ForStartups;
+   document.getElementById("ForAgencies").innerHTML = translations[currentLanguage].ForAgencies;
+   document.getElementById("ForSMEs").innerHTML = translations[currentLanguage].ForSMEs;
+   document.getElementById("ForOrgs").innerHTML = translations[currentLanguage].ForOrgs;
+
+   document.getElementById("PricingTitle").innerHTML = translations[currentLanguage].PricingTitle;
+   document.getElementById("BasicSite").innerHTML = translations[currentLanguage].BasicSite;
+   document.getElementById("BusinessSite").innerHTML = translations[currentLanguage].BusinessSite;
+   document.getElementById("EcomSite").innerHTML = translations[currentLanguage].EcomSite;
+   document.getElementById("DevPrice").innerHTML = translations[currentLanguage].DevPrice;
+   document.getElementById("PricingNote").innerHTML = translations[currentLanguage].PricingNote;
+
+   document.getElementById("NextStepsTitle").innerHTML = translations[currentLanguage].NextStepsTitle;
+   document.getElementById("NextCall").innerHTML = translations[currentLanguage].NextCall;
+   document.getElementById("NextGoals").innerHTML = translations[currentLanguage].NextGoals;
+   document.getElementById("NextQuote").innerHTML = translations[currentLanguage].NextQuote;
+   document.getElementById("NextLaunch").innerHTML = translations[currentLanguage].NextLaunch;
+
 
 
    
@@ -326,7 +494,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("ServiceList16").innerHTML = translations[currentLanguage].ServiceList16;
 
   // Why Choose US
-
+  document.getElementById("WhyChooseUs").innerHTML = translations[currentLanguage].WhyChooseUs;
   document.getElementById("WhyChooseUsH1").innerHTML = translations[currentLanguage].WhyChooseUsH1;
   document.getElementById("WhyChooseUsP1").innerHTML = translations[currentLanguage].WhyChooseUsP1;
 
@@ -335,6 +503,62 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("WhyChooseUsH3").innerHTML = translations[currentLanguage].WhyChooseUsH3;
   document.getElementById("WhyChooseUsP3").innerHTML = translations[currentLanguage].WhyChooseUsP3;
+
+     // off shore IT solutions
+
+  document.getElementById("ServceHeader1").innerHTML = translations[currentLanguage].ServceHeader1;
+  document.getElementById("OffshoreSubHeader").innerHTML = translations[currentLanguage].OffshoreSubHeader;
+  document.getElementById("OffshoreIntro").innerHTML = translations[currentLanguage].OffshoreIntro;
+  
+  document.getElementById("WebsiteDevelopmentTitle").innerHTML = translations[currentLanguage].WebsiteDevelopmentTitle;
+  document.getElementById("WebsiteCustom").innerHTML = translations[currentLanguage].WebsiteCustom;
+  document.getElementById("WebsiteEcom").innerHTML = translations[currentLanguage].WebsiteEcom;
+  document.getElementById("WebsiteCMS").innerHTML = translations[currentLanguage].WebsiteCMS;
+  document.getElementById("CMSWordPress").innerHTML = translations[currentLanguage].CMSWordPress;
+  document.getElementById("CMSShopify").innerHTML = translations[currentLanguage].CMSShopify;
+  document.getElementById("CMSCustom").innerHTML = translations[currentLanguage].CMSCustom;
+  document.getElementById("WebsiteSEO").innerHTML = translations[currentLanguage].WebsiteSEO;
+  
+  document.getElementById("RemoteTeamsTitle").innerHTML = translations[currentLanguage].RemoteTeamsTitle;
+  document.getElementById("RemoteTech").innerHTML = translations[currentLanguage].RemoteTech;
+  document.getElementById("RemoteEngagement").innerHTML = translations[currentLanguage].RemoteEngagement;
+  document.getElementById("RemoteCulture").innerHTML = translations[currentLanguage].RemoteCulture;
+  
+  document.getElementById("MaintenanceTitle").innerHTML = translations[currentLanguage].MaintenanceTitle;
+  document.getElementById("MaintenancePerformance").innerHTML = translations[currentLanguage].MaintenancePerformance;
+  document.getElementById("MaintenanceBugFix").innerHTML = translations[currentLanguage].MaintenanceBugFix;
+  document.getElementById("MaintenanceHosting").innerHTML = translations[currentLanguage].MaintenanceHosting;
+  document.getElementById("MaintenanceSupport").innerHTML = translations[currentLanguage].MaintenanceSupport;
+  
+  document.getElementById("UIUXTitle").innerHTML = translations[currentLanguage].UIUXTitle;
+  document.getElementById("UIUXInterfaces").innerHTML = translations[currentLanguage].UIUXInterfaces;
+  document.getElementById("UIUXLanding").innerHTML = translations[currentLanguage].UIUXLanding;
+  document.getElementById("UIUXLogo").innerHTML = translations[currentLanguage].UIUXLogo;
+  
+  document.getElementById("WhyChooseUsTitle").innerHTML = translations[currentLanguage].WhyChooseUsTitle;
+  document.getElementById("WhyKigali").innerHTML = translations[currentLanguage].WhyKigali;
+  document.getElementById("WhyCosts").innerHTML = translations[currentLanguage].WhyCosts;
+  document.getElementById("WhyTalent").innerHTML = translations[currentLanguage].WhyTalent;
+  document.getElementById("WhyTimeZone").innerHTML = translations[currentLanguage].WhyTimeZone;
+  
+  document.getElementById("WhoIsThisForTitle").innerHTML = translations[currentLanguage].WhoIsThisForTitle;
+  document.getElementById("ForStartups").innerHTML = translations[currentLanguage].ForStartups;
+  document.getElementById("ForAgencies").innerHTML = translations[currentLanguage].ForAgencies;
+  document.getElementById("ForSMEs").innerHTML = translations[currentLanguage].ForSMEs;
+  document.getElementById("ForOrgs").innerHTML = translations[currentLanguage].ForOrgs;
+  
+  document.getElementById("PricingTitle").innerHTML = translations[currentLanguage].PricingTitle;
+  document.getElementById("BasicSite").innerHTML = translations[currentLanguage].BasicSite;
+  document.getElementById("BusinessSite").innerHTML = translations[currentLanguage].BusinessSite;
+  document.getElementById("EcomSite").innerHTML = translations[currentLanguage].EcomSite;
+  document.getElementById("DevPrice").innerHTML = translations[currentLanguage].DevPrice;
+  document.getElementById("PricingNote").innerHTML = translations[currentLanguage].PricingNote;
+  
+  document.getElementById("NextStepsTitle").innerHTML = translations[currentLanguage].NextStepsTitle;
+  document.getElementById("NextCall").innerHTML = translations[currentLanguage].NextCall;
+  document.getElementById("NextGoals").innerHTML = translations[currentLanguage].NextGoals;
+  document.getElementById("NextQuote").innerHTML = translations[currentLanguage].NextQuote;
+  document.getElementById("NextLaunch").innerHTML = translations[currentLanguage].NextLaunch;
 
 
 

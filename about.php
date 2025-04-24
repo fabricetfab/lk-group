@@ -321,13 +321,15 @@
       <div class="work-side">
         <div class="work-card">
           <h4>01</h4>
-          <p id="step1">Businesses contact us with their staffing requirements.</p>
+          <p id="step1">
+          We collaborate closely with clients to understand their unique needs and goals, ensuring that our solutions align perfectly with their vision.</p>
         </div>
       </div>
       <div class="work-side">
         <div class="work-card">
           <h4>03</h4>
-          <p id="step2">We match the best-suited candidates with the job requirements and facilitate the placement process.</p>
+          <p id="step2">We maintain open and transparent communication throughout the project, ensuring clients are informed at every stage.
+          </p>
         </div>
       </div>
     </div>
@@ -335,13 +337,13 @@
       <div class="work-side">
         <div class="work-card">
           <h4>02</h4>
-          <p id="step3">We source and screen qualified and trained candidates from our pool of temporary workers.</p>
+          <p id="step3">We offer customized strategies and services to address the specific challenges your business faces, ensuring optimal results.</p>
         </div>
       </div>
       <div class="work-side">
         <div class="work-card">
           <h4>04</h4>
-          <p id="step4">We provide ongoing support and assistance to ensure a successful temporary work arrangement.</p>
+          <p id="step4">Our main goal is to deliver measurable results that drive growth, efficiency, and success for your business.</p>
         </div>
       </div>
     </div>

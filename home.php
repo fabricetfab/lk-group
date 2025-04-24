@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="home.css">
-  <title>Lk Group | Home Page</title>
+  <title>LK GROUP | Business Solutions for HR, IT, and Cybersecurity</title>
+  <meta name="description" content="LK GROUP offers strategic HR consulting, digital presence, and IT support to drive your business forward.">
   <style>
     body {
         background: #111111;
@@ -19,6 +20,10 @@
         overflow-x: hidden;
         margin-top: 110px;
         position: relative;
+    }
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
     }
 
 
@@ -413,16 +418,17 @@
           </div>
           <div class="blogs-side">
             <div class="blogs-card">
-              <img src="imgs/blog3.jpg">
+              <img src="imgs/blogs1.png">
               <div class="blogs-card-contents">
                 <div class="bg"></div>
-                <h4>LK Recruitment embraces the agenda 2063, Future thrive</h4>
-                <p>LK recently participated in the “One Africa, One HR” Summit...</p>
-                <button>
+                <h4>Web Design Trends in 2025: What Your Business Needs to Know</h4>
+                <p>As we approach 2025, the world of web design is evolving rapidly. Here are key trends
+                that can position your business for success:</p>
+                <a href="blog-web-design.php"> <button>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#343973" class="bi bi-chevron-right" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" stroke="#343973" stroke-width="1.8"/>
                   </svg>
-                </button>
+                </button></a>
               </div>
             </div>
             <div class="blogs-card">
@@ -484,14 +490,16 @@
         <div class="contact-contents">
           <div class="contact-form">
             <h3 id="ContactHead2">Message <span>US !</span></h3>
-            <form>
-              <input type="text" name="" placeholder="Your Name">
-              <input type="email" name="" placeholder="Your Email">
-              <input type="text" name="" placeholder="Your Location">
-              <input type="text" name="" placeholder="Services">
-              <textarea placeholder="Type a message..."></textarea>
+            <form id="contactForm" method="POST">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <input type="text" name="subject" placeholder="Your Location" required>
+              <input type="text" name="service" placeholder="Services" required>
+              <textarea name="message" placeholder="Type a message..." required></textarea>
               <button class="send" id="SendButton">Send</button>
             </form>
+              <!-- This is where the response message will appear -->
+              <div id="formResponse" style="margin-top: 15px;"></div>
           </div>
           <div class="contact-info">
             <h4 id="ContactHead3"><span>We are</span> open for any Suggestion by any mean of <span>communication.</span></h4>
@@ -541,12 +549,12 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="WeProvide">
-                        What Are Digital Services We Provide?
+                    What industries does LK GROUP serve?
                     </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                     <div class="accordion-body" id="WeProvideText">
-                        Here you can describe the digital services your company provides.
+                    We serve a wide range of industries including finance, healthcare, education, retail, and technology. Our services are designed to cater to the unique needs of each sector, ensuring optimal results and business growth.
                     </div>
                 </div>
             </div>
@@ -555,12 +563,12 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="WeWork">
-                        How do we work?
+                    How do I get started with LK GROUP's services?
                     </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                     <div class="accordion-body" id="WeWorkText">
-                        Explain how your company operates, your processes, and workflow.
+                    Simply contact us via our website or schedule a consultation. We will discuss your business needs, assess your challenges, and create a tailored plan to help you achieve your goals.
                     </div>
                 </div>
             </div>
@@ -569,17 +577,14 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="toReset">
-                        How do I reset my password?
+                    Can LK GROUP assist with ongoing IT support and maintenance?
                     </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                     <div class="accordion-body" >
-                        <label id="ToResetText">If you’ve forgotten your password, follow these steps:</label>
-                        <ol>
-                            <li id="ToResetItem1">Click on the "Forgot Password" link on the login page.</li>
-                            <li id="ToResetItem2">Enter your email address and follow the instructions in your inbox.</li>
-                            <li id="ToResetItem3">Create a new password and log in again.</li>
-                        </ol>
+                        <ul style="list-style-type: none;">
+                            <li id="ToResetItem1">Yes, we offer ongoing IT support and maintenance services to ensure that your systems run smoothly. This includes remote assistance, software and hardware updates, and proactive issue monitoring.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -588,7 +593,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="" id="WhyUs">
-                        Why LK Group for Your Choice
+                    What is the process for customizing a financial strategy for my business?
                     </button>
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
@@ -747,6 +752,66 @@ syncTestimonials(0);
 
 
   </script>
+  <script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+  const sendButton = document.getElementById('SendButton');
+  const messageDiv = document.getElementById('formResponse');
+
+  // Save original button content and show spinner
+  const originalButtonText = sendButton.innerHTML;
+  sendButton.disabled = true;
+  sendButton.innerHTML = `<span class="spinner" style="display:inline-block; width: 18px; height: 18px; border: 2px solid #59e3ff; border-top: 2px solid transparent; border-radius: 50%; animation: spin 0.8s linear infinite;"></span>`;
+
+  fetch('send_email.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(res => res.json())
+  .then(data => {
+    let alertType = data.status === 'success' ? 'success' : 'danger';
+    messageDiv.innerHTML = `
+      <div class="alert alert-${alertType} alert-dismissible fade show" role="alert">
+        ${data.message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    `;
+    if (data.status === 'success') {
+      form.reset();
+    }
+
+    // Auto-hide after 5 seconds
+    setTimeout(() => {
+      const alertEl = messageDiv.querySelector('.alert');
+      if (alertEl) {
+        bootstrap.Alert.getOrCreateInstance(alertEl).close();
+      }
+    }, 5000);
+  })
+  .catch(err => {
+    messageDiv.innerHTML = `
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        Something went wrong. Please try again later.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    `;
+    setTimeout(() => {
+      const alertEl = messageDiv.querySelector('.alert');
+      if (alertEl) {
+        bootstrap.Alert.getOrCreateInstance(alertEl).close();
+      }
+    }, 5000);
+    console.error(err);
+  })
+  .finally(() => {
+    sendButton.innerHTML = originalButtonText;
+    sendButton.disabled = false;
+  });
+});
+</script>
 
 </body>
 </html> 

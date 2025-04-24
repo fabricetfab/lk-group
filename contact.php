@@ -19,6 +19,10 @@
         overflow-x: hidden;
         margin-top: 110px;
     }
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
 
 
 </style>
@@ -159,30 +163,34 @@
           </div>
           <div class="contact-form">
             <h3 id="ContactHead2">Message <span>US !</span></h3>
-            <form>
+            <form id="contactForm" method="POST">
               <div>
-                <label class="mb-2 mt-2" id="name">Name</label><br> 
-                <input type="text" name="" placeholder="Name">
+               <label class="mb-2 mt-2" id="name">Name</label><br> 
+               <input type="text" name="name" placeholder="Name" required>
               </div>
               <div>
-                <label class="mb-2 mt-2" id="email">Email</label><br>  
-                <input type="email" name="" placeholder="Email">
+               <label class="mb-2 mt-2" id="email">Email</label><br>  
+               <input type="email" name="email" placeholder="Email" required>
               </div>
               <div>
-                <label class="mb-2 mt-2" id="subject">Location</label><br>
-                <input type="text" name="" placeholder="Subject">
+               <label class="mb-2 mt-2" id="subject">Location</label><br>
+               <input type="text" name="subject" placeholder="Subject" required>
               </div>
               <div>
-                <label class="mb-2 mt-2">Service</label><br>
-                <input type="text" name="" placeholder="Service">
+               <label class="mb-2 mt-2">Service</label><br>
+               <input type="text" name="service" placeholder="Service" required>
               </div>
               <div class="fortextarea">
-                <label class="mb-2 mt-2">Message</label><br> 
-                <textarea placeholder="Type a message..."></textarea>
+               <label class="mb-2 mt-2">Message</label><br> 
+               <textarea name="message" placeholder="Type a message..." required></textarea>
               </div>
               <button class="send" id="SendButton">Send</button>
             </form>
-          </div>
+
+               <!-- This is where the response message will appear -->
+              <div id="formResponse" style="margin-top: 15px;"></div>
+           </div>
+
         </div>
       </div>
 
@@ -321,5 +329,67 @@
 
 
   </script>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+  const sendButton = document.getElementById('SendButton');
+  const messageDiv = document.getElementById('formResponse');
+
+  // Save original button content and show spinner
+  const originalButtonText = sendButton.innerHTML;
+  sendButton.disabled = true;
+  sendButton.innerHTML = `<span class="spinner" style="display:inline-block; width: 18px; height: 18px; border: 2px solid #59e3ff; border-top: 2px solid transparent; border-radius: 50%; animation: spin 0.8s linear infinite;"></span>`;
+
+  fetch('send_email.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(res => res.json())
+  .then(data => {
+    let alertType = data.status === 'success' ? 'success' : 'danger';
+    messageDiv.innerHTML = `
+      <div class="alert alert-${alertType} alert-dismissible fade show" role="alert">
+        ${data.message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    `;
+    if (data.status === 'success') {
+      form.reset();
+    }
+
+    // Auto-hide after 5 seconds
+    setTimeout(() => {
+      const alertEl = messageDiv.querySelector('.alert');
+      if (alertEl) {
+        bootstrap.Alert.getOrCreateInstance(alertEl).close();
+      }
+    }, 5000);
+  })
+  .catch(err => {
+    messageDiv.innerHTML = `
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        Something went wrong. Please try again later.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    `;
+    setTimeout(() => {
+      const alertEl = messageDiv.querySelector('.alert');
+      if (alertEl) {
+        bootstrap.Alert.getOrCreateInstance(alertEl).close();
+      }
+    }, 5000);
+    console.error(err);
+  })
+  .finally(() => {
+    sendButton.innerHTML = originalButtonText;
+    sendButton.disabled = false;
+  });
+});
+</script>
+
+
 </body>
 </html>
