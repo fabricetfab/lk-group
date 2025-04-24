@@ -150,145 +150,6 @@
   <div class="services-contents" id="service-sec">
     <img src="imgs/m.png" class="services-contents-bg">
     
-    <div class="service1 position-relative" id="OffshoreIT">
-  <div class="service-head first">
-    <h3 id="ServceHeader1">Offshore IT Solutions</h3>
-  </div>
-
-
-  <div class="service1-contents">
-  <div>
-    <h5 class="h5">
-       Web Development & Remote Teams from Kigali, Rwanda
-    </h5>
-    <p>
-      At LK GROUP, we offer scalable, cost-effective offshore IT services from Rwanda — from modern website builds to assembling high-performing remote tech teams.
-    </p>
-
-    <ul class="nesting">
-      <li>
-        <span>Website Design & Development:</span>
-        <ul class="nested">
-          <li>Custom-built websites: responsive, mobile-friendly, and brand-aligned</li>
-          <li>E-Commerce Solutions: secure stores with payment integration & product management</li>
-          <li>CMS Platforms:
-            <ul>
-              <li>WordPress</li>
-              <li>Shopify</li>
-              <li>Custom-built platforms with admin dashboards</li>
-            </ul>
-          </li>
-          <li>On-page SEO: meta tags, speed optimization, mobile-first design</li>
-        </ul>
-      </li>
-
-      <li>
-        <span>Dedicated Remote Teams:</span>
-        <ul class="nested">
-          <li>Technologies:
-            <ul>
-              <li>PHP, JavaScript, React, Laravel, .NET</li>
-            </ul>
-          </li>
-          <li>Engagement:
-            <ul>
-              <li>Short-term sprints or ongoing contracts</li>
-              <li>Part-time or full-time options</li>
-            </ul>
-          </li>
-          <li>Cultural Fit:
-            <ul>
-              <li>English/French-speaking</li>
-              <li>Time zone-aligned with Europe</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-
-      <li>
-        <span>Ongoing Maintenance & Support:</span>
-        <ul class="nested">
-          <li>Performance monitoring</li>
-          <li>Bug fixing and security updates</li>
-          <li>Server and hosting management (optional)</li>
-          <li>24/7 tech support (for premium plans)</li>
-        </ul>
-      </li>
-
-      <li>
-        <span>UI/UX & Digital Branding:</span>
-        <ul class="nested">
-          <li>Modern web/mobile interfaces</li>
-          <li>Custom landing pages & lead capture forms</li>
-          <li>Logo design and branding kits</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-
-  <div>
-    <ul class="nesting">
-      <li style="margin-top: 0">
-        <span>Why Choose Us:</span>
-        <ul class="nested">
-          <li>Kigali – A fast-growing East African tech hub</li>
-          <li>Lower costs – up to 50% cheaper than Europe</li>
-          <li>Skilled, remote-ready talent</li>
-          <li>Time zone advantage – Ideal for European clients</li>
-        </ul>
-      </li>
-
-      <li>
-        <span>Who This Is For:</span>
-        <ul class="nested">
-          <li>Startups needing fast & affordable MVPs</li>
-          <li>Agencies looking for white-label partners</li>
-          <li>SMEs building remote teams</li>
-          <li>Organizations expanding into Africa needing local IT presence</li>
-        </ul>
-      </li>
-
-      <li>
-        <span>Pricing Overview (Flexible Plans):</span>
-        <table>
-          <tr>
-            <td><strong>Basic Website</strong></td>
-            <td>€500+</td>
-          </tr>
-          <tr>
-            <td><strong>Business Website</strong></td>
-            <td>€850+</td>
-          </tr>
-          <tr>
-            <td><strong>E-Commerce Site</strong></td>
-            <td>€1,200+</td>
-          </tr>
-          <tr>
-            <td><strong>Dedicated Developer</strong></td>
-            <td>€900/month</td>
-          </tr>
-        </table>
-        <p>All packages are customizable based on your project scope.</p>
-      </li>
-
-      <li>
-        <span>Next Steps:</span>
-        <ul class="nested">
-          <li>Book a free consultation call</li>
-          <li>Tell us about your goals (we'll send you a short form)</li>
-          <li>Receive a tailored quote within 48 hours</li>
-          <li>Launch your project with our Kigali-based team</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div>
-
-
-
-
-</div>
-
     
     <div class="service1 position-relative" id="Digita+Presence">
       <div class="service-head first">
@@ -311,6 +172,139 @@
         </div>
       </div>
     </div>
+
+    <div class="service1 position-relative" id="OffshoreIT">
+      <div class="service-head first">
+        <h3 id="ServceHeader1">Offshore IT Solutions</h3>
+      </div>
+      <div class="service1-contents">
+      <div>
+        <h5 class="h5">
+          Web Development & Remote Teams from Kigali, Rwanda
+        </h5>
+        <p>
+          At LK GROUP, we offer scalable, cost-effective offshore IT services from Rwanda — from modern website builds to assembling high-performing remote tech teams.
+        </p>
+
+        <ul class="nesting">
+          <li>
+            <span>Website Design & Development:</span>
+            <ul class="nested">
+              <li>Custom-built websites: responsive, mobile-friendly, and brand-aligned</li>
+              <li>E-Commerce Solutions: secure stores with payment integration & product management</li>
+              <li>CMS Platforms:
+                <ul>
+                  <li>WordPress</li>
+                  <li>Shopify</li>
+                  <li>Custom-built platforms with admin dashboards</li>
+                </ul>
+              </li>
+              <li>On-page SEO: meta tags, speed optimization, mobile-first design</li>
+            </ul>
+          </li>
+
+          <li>
+            <span>Dedicated Remote Teams:</span>
+            <ul class="nested">
+              <li>Technologies:
+                <ul>
+                  <li>PHP, JavaScript, React, Laravel, .NET</li>
+                </ul>
+              </li>
+              <li>Engagement:
+                <ul>
+                  <li>Short-term sprints or ongoing contracts</li>
+                  <li>Part-time or full-time options</li>
+                </ul>
+              </li>
+              <li>Cultural Fit:
+                <ul>
+                  <li>English/French-speaking</li>
+                  <li>Time zone-aligned with Europe</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <span>Ongoing Maintenance & Support:</span>
+            <ul class="nested">
+              <li>Performance monitoring</li>
+              <li>Bug fixing and security updates</li>
+              <li>Server and hosting management (optional)</li>
+              <li>24/7 tech support (for premium plans)</li>
+            </ul>
+          </li>
+
+          <li>
+            <span>UI/UX & Digital Branding:</span>
+            <ul class="nested">
+              <li>Modern web/mobile interfaces</li>
+              <li>Custom landing pages & lead capture forms</li>
+              <li>Logo design and branding kits</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="nesting">
+          <li style="margin-top: 0">
+            <span>Why Choose Us:</span>
+            <ul class="nested">
+              <li>Kigali – A fast-growing East African tech hub</li>
+              <li>Lower costs – up to 50% cheaper than Europe</li>
+              <li>Skilled, remote-ready talent</li>
+              <li>Time zone advantage – Ideal for European clients</li>
+            </ul>
+          </li>
+
+          <li>
+            <span>Who This Is For:</span>
+            <ul class="nested">
+              <li>Startups needing fast & affordable MVPs</li>
+              <li>Agencies looking for white-label partners</li>
+              <li>SMEs building remote teams</li>
+              <li>Organizations expanding into Africa needing local IT presence</li>
+            </ul>
+          </li>
+
+          <li>
+            <span>Pricing Overview (Flexible Plans):</span>
+            <table>
+              <tr>
+                <td><strong>Basic Website</strong></td>
+                <td>€500+</td>
+              </tr>
+              <tr>
+                <td><strong>Business Website</strong></td>
+                <td>€850+</td>
+              </tr>
+              <tr>
+                <td><strong>E-Commerce Site</strong></td>
+                <td>€1,200+</td>
+              </tr>
+              <tr>
+                <td><strong>Dedicated Developer</strong></td>
+                <td>€900/month</td>
+              </tr>
+            </table>
+            <p>All packages are customizable based on your project scope.</p>
+          </li>
+
+          <li>
+            <span>Next Steps:</span>
+            <ul class="nested">
+              <li>Book a free consultation call</li>
+              <li>Tell us about your goals (we'll send you a short form)</li>
+              <li>Receive a tailored quote within 48 hours</li>
+              <li>Launch your project with our Kigali-based team</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
     <div class="service1 position-relative" id="Cyber+Security">
       <div class="service1-contents container-xlg">
